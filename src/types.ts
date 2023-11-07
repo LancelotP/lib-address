@@ -1,4 +1,10 @@
 import type { CountryCode } from "./codes";
+import type {
+  LocalityType,
+  StateType,
+  SublocalityType,
+  ZipType,
+} from "./generated";
 
 export type CountryData = {
   id: string;
@@ -13,10 +19,10 @@ export type CountryData = {
   upper?: string;
   postprefix?: string;
   require?: string;
-  zip_name_type?: string;
-  state_name_type?: string;
-  locality_name_type?: string;
-  sublocality_name_type?: string;
+  zip_name_type?: ZipType;
+  state_name_type?: StateType;
+  locality_name_type?: LocalityType;
+  sublocality_name_type?: SublocalityType;
   languages?: string;
   isoid?: string;
 

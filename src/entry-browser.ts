@@ -1,5 +1,16 @@
-export { formatAddress } from "./formatter";
+export type {
+  LocalityType,
+  StateType,
+  SublocalityType,
+  ZipType,
+} from "./generated";
+
 export { registerCountry, getCountryData } from "./registry";
+
+export { getZipExamples } from "./helpers";
+
+export { formatAddress } from "./formatter";
+
 export {
   isAddressValid,
   isValidCountryCode,
@@ -7,4 +18,3 @@ export {
   validateAddress,
   getCountryFields,
 } from "./validator";
-export { getZipExamples } from "./helpers";
