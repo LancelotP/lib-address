@@ -60,3 +60,13 @@ export function getCountryData(
   if (!data) throw new CountryMissingError(countryCode);
   return { ...defaultCountryData, ...data };
 }
+
+/**
+ * @description Get a list of all registered countries with their name and value.
+ */
+export function getRegisteredCountries() {
+  return Array.from(registry.values()).map((data) => ({
+    value: data.key,
+    name: data.name,
+  }));
+}

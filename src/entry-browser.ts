@@ -1,11 +1,10 @@
-export type {
-  LocalityType,
-  StateType,
-  SublocalityType,
-  ZipType,
-} from "./generated.ts";
+export type * from "./generated.ts";
 
-export { registerCountry, getCountryData } from "./registry.ts";
+export {
+  registerCountry,
+  getCountryData,
+  getRegisteredCountries,
+} from "./registry.ts";
 
 export { getZipExamples } from "./helpers.ts";
 
