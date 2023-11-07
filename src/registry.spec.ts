@@ -1,9 +1,9 @@
-import { expect, describe, it } from "vitest";
-import { getCountryData, registerCountry, registry } from "./registry";
+import { describe, expect, it } from "vitest";
 
 import tg from "../countries/TG.json";
-import { CountryMissingError } from "./errors/country-missing.error";
 import type { CountryCode } from "./codes";
+import { CountryMissingError } from "./errors/country-missing.error";
+import { getCountryData, registerCountry, registry } from "./registry";
 
 describe.sequential("registry", () => {
   describe.sequential("registerCountry", () => {
@@ -53,7 +53,7 @@ describe.sequential("registry", () => {
 
     it("should throw an error if the country is not registered", () => {
       expect(() => getCountryData("XX" as CountryCode)).toThrowError(
-        new CountryMissingError("XX")
+        new CountryMissingError("XX"),
       );
     });
   });

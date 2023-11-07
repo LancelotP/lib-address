@@ -1,16 +1,16 @@
+import type { CountryCode } from "./codes";
+import { codes as countryCodes } from "./codes";
+import type { LibAddressError } from "./errors/base.error";
+import { InvalidStateError } from "./errors/invalid-state.error";
+import {
+  InvalidZipError,
+  InvalidZipSubRegionError,
+} from "./errors/invalid-zip.error";
 import { MissingFieldError } from "./errors/missing-field.error";
 import { AddressValidationError } from "./errors/missing-fields.error";
 import { getCountryData } from "./registry";
 import type { Address, AddressInput } from "./types";
 import { convertAbbrStringToObject } from "./utils";
-import type { CountryCode} from "./codes";
-import { codes as countryCodes } from "./codes";
-import {
-  InvalidZipError,
-  InvalidZipSubRegionError,
-} from "./errors/invalid-zip.error";
-import type { LibAddressError } from "./errors/base.error";
-import { InvalidStateError } from "./errors/invalid-state.error";
 
 /**
  * @description Checks if a string is a valid country code (ISO 3166-1 alpha-2)
@@ -29,7 +29,7 @@ export function isValidCountryCode(value: string): value is CountryCode {
  */
 export function isValidCountrySubdivisionCode(
   country: CountryCode,
-  value: string
+  value: string,
 ) {
   const sanitizedValue = value.toUpperCase().trim();
   const sanitizedCountry = country.toUpperCase().trim();
@@ -47,7 +47,7 @@ export function isValidCountrySubdivisionCode(
  * @throws CountryMissingError if the country data is not found
  */
 export function validateAddress(
-  address: AddressInput
+  address: AddressInput,
 ): asserts address is Address {
   const data = getCountryData(address.country);
   const fields = getCountryFields(address.country);
@@ -76,7 +76,7 @@ export function validateAddress(
 
       if (!subRegionRegex.test(address.zip?.trim() ?? "")) {
         errors.push(
-          new InvalidZipSubRegionError(regex.source, subRegionRegex.source)
+          new InvalidZipSubRegionError(regex.source, subRegionRegex.source),
         );
       }
     }
