@@ -1,0 +1,211 @@
+{
+  "id": "data/CO",
+  "key": "CO",
+  "name": "COLOMBIA",
+  "fmt": "%N%n%O%n%A%n%D%n%C, %S, %Z",
+  "zip": "\\d{6}",
+  "zipex": "111221,130001,760011",
+  "lang": "es",
+  "require": "AS",
+  "state_name_type": "department",
+  "sub_regions": [
+    {
+      "key": "AMA",
+      "name": {
+        "default": "Amazonas"
+      }
+    },
+    {
+      "key": "ANT",
+      "name": {
+        "default": "Antioquia"
+      }
+    },
+    {
+      "key": "ARA",
+      "name": {
+        "default": "Arauca"
+      }
+    },
+    {
+      "key": "ATL",
+      "name": {
+        "default": "Atlántico"
+      }
+    },
+    {
+      "key": "DC",
+      "name": {
+        "default": "Bogotá"
+      }
+    },
+    {
+      "key": "BOL",
+      "name": {
+        "default": "Bolívar"
+      }
+    },
+    {
+      "key": "BOY",
+      "name": {
+        "default": "Boyacá"
+      }
+    },
+    {
+      "key": "CAL",
+      "name": {
+        "default": "Caldas"
+      }
+    },
+    {
+      "key": "CAQ",
+      "name": {
+        "default": "Caquetá"
+      }
+    },
+    {
+      "key": "CAS",
+      "name": {
+        "default": "Casanare"
+      }
+    },
+    {
+      "key": "CAU",
+      "name": {
+        "default": "Cauca"
+      }
+    },
+    {
+      "key": "CES",
+      "name": {
+        "default": "Cesar"
+      }
+    },
+    {
+      "key": "CHO",
+      "name": {
+        "default": "Chocó"
+      }
+    },
+    {
+      "key": "COR",
+      "name": {
+        "default": "Córdoba"
+      }
+    },
+    {
+      "key": "CUN",
+      "name": {
+        "default": "Cundinamarca"
+      }
+    },
+    {
+      "key": "GUA",
+      "name": {
+        "default": "Guainía"
+      }
+    },
+    {
+      "key": "GUV",
+      "name": {
+        "default": "Guaviare"
+      }
+    },
+    {
+      "key": "HUI",
+      "name": {
+        "default": "Huila"
+      }
+    },
+    {
+      "key": "LAG",
+      "name": {
+        "default": "La Guajira"
+      }
+    },
+    {
+      "key": "MAG",
+      "name": {
+        "default": "Magdalena"
+      }
+    },
+    {
+      "key": "MET",
+      "name": {
+        "default": "Meta"
+      }
+    },
+    {
+      "key": "NAR",
+      "name": {
+        "default": "Nariño"
+      }
+    },
+    {
+      "key": "NSA",
+      "name": {
+        "default": "Norte de Santander"
+      }
+    },
+    {
+      "key": "PUT",
+      "name": {
+        "default": "Putumayo"
+      }
+    },
+    {
+      "key": "QUI",
+      "name": {
+        "default": "Quindío"
+      }
+    },
+    {
+      "key": "RIS",
+      "name": {
+        "default": "Risaralda"
+      }
+    },
+    {
+      "key": "SAP",
+      "name": {
+        "default": "San Andrés y Providencia"
+      }
+    },
+    {
+      "key": "SAN",
+      "name": {
+        "default": "Santander"
+      }
+    },
+    {
+      "key": "SUC",
+      "name": {
+        "default": "Sucre"
+      }
+    },
+    {
+      "key": "TOL",
+      "name": {
+        "default": "Tolima"
+      }
+    },
+    {
+      "key": "VAC",
+      "name": {
+        "default": "Valle del Cauca"
+      }
+    },
+    {
+      "key": "VAU",
+      "name": {
+        "default": "Vaupés"
+      }
+    },
+    {
+      "key": "VID",
+      "name": {
+        "default": "Vichada"
+      }
+    }
+  ]
+}

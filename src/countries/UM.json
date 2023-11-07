@@ -1,0 +1,12 @@
+{
+  "id": "data/UM",
+  "key": "UM",
+  "name": "UNITED STATES MINOR OUTLYING ISLANDS",
+  "fmt": "%N%n%O%n%A%n%C %S %Z",
+  "zip": "96898",
+  "zipex": "96898",
+  "upper": "ACNOS",
+  "require": "ACS",
+  "state_name_type": "state",
+  "zip_name_type": "zip"
+}

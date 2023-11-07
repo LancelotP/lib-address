@@ -1,0 +1,8 @@
+{
+  "id": "data/GE",
+  "key": "GE",
+  "name": "GEORGIA",
+  "fmt": "%N%n%O%n%A%n%Z %C",
+  "zip": "\\d{4}",
+  "zipex": "0101"
+}

@@ -1,0 +1,10 @@
+{
+  "id": "data/GF",
+  "key": "GF",
+  "name": "FRENCH GUIANA",
+  "fmt": "%O%n%N%n%A%n%Z %C %X",
+  "zip": "9[78]3\\d{2}",
+  "zipex": "97300",
+  "upper": "ACX",
+  "require": "ACZ"
+}

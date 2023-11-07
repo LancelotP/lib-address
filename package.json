@@ -1,0 +1,55 @@
+{
+  "private": true,
+  "name": "lib-address",
+  "version": "0.1.0",
+  "license": "MIT",
+  "type": "module",
+  "engines": {
+    "node": ">=18.16.1"
+  },
+  "author": {
+    "email": "lancelot@prigent.dev",
+    "name": "Lancelot Prigent"
+  },
+  "keywords": [
+    "address",
+    "metadata",
+    "country",
+    "formatter",
+    "validator",
+    "iso",
+    "iso 3166-1",
+    "iso 3166-2"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "test": "vitest",
+    "coverage": "vitest run --coverage",
+    "scripts:download": "ts-node-esm -P tsconfig.scripts.json scripts/download-metadata.ts"
+  },
+  "exports": {
+    ".": {
+      "browser": "./dist/entry-browser.mjs",
+      "import": "./dist/entry-node.mjs",
+      "require": "./dist/entry-node.cjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "devDependencies": {
+    "@types/node": "^20.8.10",
+    "@vitest/coverage-v8": "^0.34.6",
+    "axios": "^1.6.0",
+    "axios-retry": "^3.8.1",
+    "rollup-plugin-visualizer": "^5.9.2",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2",
+    "vite": "^4.5.0",
+    "vite-plugin-dts": "^3.6.3",
+    "vite-plugin-static-copy": "^0.17.0",
+    "vitest": "^0.34.6"
+  }
+}

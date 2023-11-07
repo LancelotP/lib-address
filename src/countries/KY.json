@@ -1,0 +1,31 @@
+{
+  "id": "data/KY",
+  "key": "KY",
+  "name": "CAYMAN ISLANDS",
+  "fmt": "%N%n%O%n%A%n%S %Z",
+  "zip": "KY\\d-\\d{4}",
+  "zipex": "KY1-1100,KY1-1702,KY2-2101",
+  "lang": "en",
+  "require": "AS",
+  "state_name_type": "island",
+  "sub_regions": [
+    {
+      "key": "Cayman Brac",
+      "name": {
+        "default": "Cayman Brac"
+      }
+    },
+    {
+      "key": "Grand Cayman",
+      "name": {
+        "default": "Grand Cayman"
+      }
+    },
+    {
+      "key": "Little Cayman",
+      "name": {
+        "default": "Little Cayman"
+      }
+    }
+  ]
+}

@@ -1,0 +1,2471 @@
+{
+  "id": "data/KR",
+  "key": "KR",
+  "name": "SOUTH KOREA",
+  "fmt": "%S %C%D%n%A%n%O%n%N%n%Z",
+  "lfmt": "%N%n%O%n%A%n%D%n%C%n%S%n%Z",
+  "zip": "\\d{5}",
+  "zipex": "03051",
+  "lang": "ko",
+  "upper": "Z",
+  "require": "ACSZ",
+  "state_name_type": "do_si",
+  "sublocality_name_type": "district",
+  "sub_regions": [
+    {
+      "key": "42",
+      "name": {
+        "default": "강원",
+        "latin": "Gangwon-do"
+      },
+      "zip": "2[456]\\d{2}",
+      "zipex": "25627",
+      "sub_regions": [
+        {
+          "key": "강릉시",
+          "name": {
+            "default": "강릉시",
+            "latin": "Gangneung-si"
+          },
+          "zip": "25[4-6]"
+        },
+        {
+          "key": "고성군",
+          "name": {
+            "default": "고성군",
+            "latin": "Goseong-gun"
+          },
+          "zip": "247"
+        },
+        {
+          "key": "동해시",
+          "name": {
+            "default": "동해시",
+            "latin": "Donghae-si"
+          },
+          "zip": "25[78]"
+        },
+        {
+          "key": "삼척시",
+          "name": {
+            "default": "삼척시",
+            "latin": "Samcheok-si"
+          },
+          "zip": "259"
+        },
+        {
+          "key": "속초시",
+          "name": {
+            "default": "속초시",
+            "latin": "Sokcho-si"
+          },
+          "zip": "24[89]"
+        },
+        {
+          "key": "양구군",
+          "name": {
+            "default": "양구군",
+            "latin": "Yanggu-gun"
+          },
+          "zip": "245"
+        },
+        {
+          "key": "양양군",
+          "name": {
+            "default": "양양군",
+            "latin": "Yangyang-gun"
+          },
+          "zip": "250"
+        },
+        {
+          "key": "영월군",
+          "name": {
+            "default": "영월군",
+            "latin": "Yeongwol-gun"
+          },
+          "zip": "262"
+        },
+        {
+          "key": "원주시",
+          "name": {
+            "default": "원주시",
+            "latin": "Wonju-si"
+          },
+          "zip": "26[3-5]"
+        },
+        {
+          "key": "인제군",
+          "name": {
+            "default": "인제군",
+            "latin": "Inje-gun"
+          },
+          "zip": "246"
+        },
+        {
+          "key": "정선군",
+          "name": {
+            "default": "정선군",
+            "latin": "Jeongseon-gun"
+          },
+          "zip": "261"
+        },
+        {
+          "key": "철원군",
+          "name": {
+            "default": "철원군",
+            "latin": "Cheorwon-gun"
+          },
+          "zip": "240"
+        },
+        {
+          "key": "춘천시",
+          "name": {
+            "default": "춘천시",
+            "latin": "Chuncheon-si"
+          },
+          "zip": "24[2-4]"
+        },
+        {
+          "key": "태백시",
+          "name": {
+            "default": "태백시",
+            "latin": "Taebaek-si"
+          },
+          "zip": "260"
+        },
+        {
+          "key": "평창군",
+          "name": {
+            "default": "평창군",
+            "latin": "Pyeongchang-gun"
+          },
+          "zip": "253"
+        },
+        {
+          "key": "홍천군",
+          "name": {
+            "default": "홍천군",
+            "latin": "Hongcheon-gun"
+          },
+          "zip": "251"
+        },
+        {
+          "key": "화천군",
+          "name": {
+            "default": "화천군",
+            "latin": "Hwacheon-gun"
+          },
+          "zip": "241"
+        },
+        {
+          "key": "횡성군",
+          "name": {
+            "default": "횡성군",
+            "latin": "Hoengseong-gun"
+          },
+          "zip": "252"
+        }
+      ]
+    },
+    {
+      "key": "41",
+      "name": {
+        "default": "경기",
+        "latin": "Gyeonggi-do"
+      },
+      "zip": "1[0-8]\\d{2}",
+      "zipex": "12410",
+      "sub_regions": [
+        {
+          "key": "가평군",
+          "name": {
+            "default": "가평군",
+            "latin": "Gapyeong-gun"
+          },
+          "zip": "124"
+        },
+        {
+          "key": "고양시",
+          "name": {
+            "default": "고양시",
+            "latin": "Goyang-si"
+          },
+          "zip": "10[2-5]",
+          "sub_regions": [
+            {
+              "key": "덕양구",
+              "name": {
+                "default": "덕양구",
+                "latin": "Deogyang-gu"
+              },
+              "zip": "10[245]"
+            },
+            {
+              "key": "일산동구",
+              "name": {
+                "default": "일산동구",
+                "latin": "Ilsandong-gu"
+              },
+              "zip": "10[2-4]"
+            },
+            {
+              "key": "일산서구",
+              "name": {
+                "default": "일산서구",
+                "latin": "Ilsanseo-gu"
+              },
+              "zip": "10[2-4]"
+            }
+          ]
+        },
+        {
+          "key": "과천시",
+          "name": {
+            "default": "과천시",
+            "latin": "Gwacheon-si"
+          },
+          "zip": "138"
+        },
+        {
+          "key": "광명시",
+          "name": {
+            "default": "광명시",
+            "latin": "Gwangmyeong-si"
+          },
+          "zip": "14[23]"
+        },
+        {
+          "key": "광주시",
+          "name": {
+            "default": "광주시",
+            "latin": "Gwangju-si"
+          },
+          "zip": "12[78]"
+        },
+        {
+          "key": "구리시",
+          "name": {
+            "default": "구리시",
+            "latin": "Guri-si"
+          },
+          "zip": "119"
+        },
+        {
+          "key": "군포시",
+          "name": {
+            "default": "군포시",
+            "latin": "Gunpo-si"
+          },
+          "zip": "158"
+        },
+        {
+          "key": "김포시",
+          "name": {
+            "default": "김포시",
+            "latin": "Gimpo-si"
+          },
+          "zip": "10[01]"
+        },
+        {
+          "key": "남양주시",
+          "name": {
+            "default": "남양주시",
+            "latin": "Namyangju-si"
+          },
+          "zip": "12[0-3]"
+        },
+        {
+          "key": "동두천시",
+          "name": {
+            "default": "동두천시",
+            "latin": "Dongducheon-si"
+          },
+          "zip": "113"
+        },
+        {
+          "key": "부천시",
+          "name": {
+            "default": "부천시",
+            "latin": "Bucheon-si"
+          },
+          "zip": "14[4-7]",
+          "sub_regions": [
+            {
+              "key": "소사구",
+              "name": {
+                "default": "소사구",
+                "latin": "Sosa-gu"
+              },
+              "zip": "14[67]"
+            },
+            {
+              "key": "오정구",
+              "name": {
+                "default": "오정구",
+                "latin": "Ojeong-gu"
+              },
+              "zip": "14[45]"
+            },
+            {
+              "key": "원미구",
+              "name": {
+                "default": "원미구",
+                "latin": "Wonmi-gu"
+              },
+              "zip": "14[456]"
+            }
+          ]
+        },
+        {
+          "key": "성남시",
+          "name": {
+            "default": "성남시",
+            "latin": "Seongnam-si"
+          },
+          "zip": "13[1-6]",
+          "sub_regions": [
+            {
+              "key": "분당구",
+              "name": {
+                "default": "분당구",
+                "latin": "Bundang-gu"
+              },
+              "zip": "13[3-6]"
+            },
+            {
+              "key": "수정구",
+              "name": {
+                "default": "수정구",
+                "latin": "Sujeong-gu"
+              },
+              "zip": "13[1-46]"
+            },
+            {
+              "key": "중원구",
+              "name": {
+                "default": "중원구",
+                "latin": "Jungwon-gu"
+              },
+              "zip": "13[1-4]"
+            }
+          ]
+        },
+        {
+          "key": "수원시",
+          "name": {
+            "default": "수원시",
+            "latin": "Suwon-si"
+          },
+          "zip": "16[2-7]",
+          "sub_regions": [
+            {
+              "key": "권선구",
+              "name": {
+                "default": "권선구",
+                "latin": "Gwonseon-gu"
+              },
+              "zip": "16[3-6]"
+            },
+            {
+              "key": "영통구",
+              "name": {
+                "default": "영통구",
+                "latin": "Yeongtong-gu"
+              },
+              "zip": "16[245-7]"
+            },
+            {
+              "key": "장안구",
+              "name": {
+                "default": "장안구",
+                "latin": "Jangan-gu"
+              },
+              "zip": "16[2-4]"
+            },
+            {
+              "key": "팔달구",
+              "name": {
+                "default": "팔달구",
+                "latin": "Paldal-gu"
+              },
+              "zip": "16[2-6]"
+            }
+          ]
+        },
+        {
+          "key": "시흥시",
+          "name": {
+            "default": "시흥시",
+            "latin": "Siheung-si"
+          },
+          "zip": "1(?:49|5[01])"
+        },
+        {
+          "key": "안산시",
+          "name": {
+            "default": "안산시",
+            "latin": "Ansan-si"
+          },
+          "zip": "15[2-6]",
+          "sub_regions": [
+            {
+              "key": "단원구",
+              "name": {
+                "default": "단원구",
+                "latin": "Danwon-gu"
+              },
+              "zip": "15[2-6]"
+            },
+            {
+              "key": "상록구",
+              "name": {
+                "default": "상록구",
+                "latin": "Sangnok-gu"
+              },
+              "zip": "15[2-6]"
+            }
+          ]
+        },
+        {
+          "key": "안성시",
+          "name": {
+            "default": "안성시",
+            "latin": "Anseong-si"
+          },
+          "zip": "17[56]"
+        },
+        {
+          "key": "안양시",
+          "name": {
+            "default": "안양시",
+            "latin": "Anyang-si"
+          },
+          "zip": "1(?:39|4[01])",
+          "sub_regions": [
+            {
+              "key": "동안구",
+              "name": {
+                "default": "동안구",
+                "latin": "Dongan-gu"
+              },
+              "zip": "1(?:39|4[01])"
+            },
+            {
+              "key": "만안구",
+              "name": {
+                "default": "만안구",
+                "latin": "Manan-gu"
+              },
+              "zip": "1(?:39|40)"
+            }
+          ]
+        },
+        {
+          "key": "양주시",
+          "name": {
+            "default": "양주시",
+            "latin": "Yangju-si"
+          },
+          "zip": "11[45]"
+        },
+        {
+          "key": "양평군",
+          "name": {
+            "default": "양평군",
+            "latin": "Yangpyeong-gun"
+          },
+          "zip": "125"
+        },
+        {
+          "key": "여주시",
+          "name": {
+            "default": "여주시",
+            "latin": "Yeoju-si"
+          },
+          "zip": "126"
+        },
+        {
+          "key": "연천군",
+          "name": {
+            "default": "연천군",
+            "latin": "Yeoncheon-gun"
+          },
+          "zip": "110"
+        },
+        {
+          "key": "오산시",
+          "name": {
+            "default": "오산시",
+            "latin": "Osan-si"
+          },
+          "zip": "181"
+        },
+        {
+          "key": "용인시",
+          "name": {
+            "default": "용인시",
+            "latin": "Yongin-si"
+          },
+          "zip": "1(?:6[89]|7[01])",
+          "sub_regions": [
+            {
+              "key": "기흥구",
+              "name": {
+                "default": "기흥구",
+                "latin": "Giheung-gu"
+              },
+              "zip": "1(?:6[89]|7[01])"
+            },
+            {
+              "key": "수지구",
+              "name": {
+                "default": "수지구",
+                "latin": "Suji-gu"
+              },
+              "zip": "16[89]"
+            },
+            {
+              "key": "처인구",
+              "name": {
+                "default": "처인구",
+                "latin": "Cheoin-gu"
+              },
+              "zip": "1(?:6[89]|7[01])"
+            }
+          ]
+        },
+        {
+          "key": "의왕시",
+          "name": {
+            "default": "의왕시",
+            "latin": "Uiwang-si"
+          },
+          "zip": "16[01]"
+        },
+        {
+          "key": "의정부시",
+          "name": {
+            "default": "의정부시",
+            "latin": "Uijeongbu-si"
+          },
+          "zip": "11[6-8]"
+        },
+        {
+          "key": "이천시",
+          "name": {
+            "default": "이천시",
+            "latin": "Icheon-si"
+          },
+          "zip": "17[34]"
+        },
+        {
+          "key": "파주시",
+          "name": {
+            "default": "파주시",
+            "latin": "Paju-si"
+          },
+          "zip": "10[89]"
+        },
+        {
+          "key": "평택시",
+          "name": {
+            "default": "평택시",
+            "latin": "Pyeongtaek-si"
+          },
+          "zip": "1(?:7[7-9]|80)"
+        },
+        {
+          "key": "포천시",
+          "name": {
+            "default": "포천시",
+            "latin": "Pocheon-si"
+          },
+          "zip": "111"
+        },
+        {
+          "key": "하남시",
+          "name": {
+            "default": "하남시",
+            "latin": "Hanam-si"
+          },
+          "zip": "1(?:29|30)"
+        },
+        {
+          "key": "화성시",
+          "name": {
+            "default": "화성시",
+            "latin": "Hwaseong-si"
+          },
+          "zip": "18[2-6]"
+        }
+      ]
+    },
+    {
+      "key": "48",
+      "name": {
+        "default": "경남",
+        "latin": "Gyeongsangnam-do"
+      },
+      "zip": "5[0-3]\\d{2}",
+      "zipex": "53286",
+      "sub_regions": [
+        {
+          "key": "거제시",
+          "name": {
+            "default": "거제시",
+            "latin": "Geoje-si"
+          },
+          "zip": "53[23]"
+        },
+        {
+          "key": "거창군",
+          "name": {
+            "default": "거창군",
+            "latin": "Geochang-gun"
+          },
+          "zip": "501"
+        },
+        {
+          "key": "고성군",
+          "name": {
+            "default": "고성군",
+            "latin": "Goseong-gun"
+          },
+          "zip": "529"
+        },
+        {
+          "key": "김해시",
+          "name": {
+            "default": "김해시",
+            "latin": "Gimhae-si"
+          },
+          "zip": "5(?:0[89]|10)"
+        },
+        {
+          "key": "남해군",
+          "name": {
+            "default": "남해군",
+            "latin": "Namhae-gun"
+          },
+          "zip": "524"
+        },
+        {
+          "key": "밀양시",
+          "name": {
+            "default": "밀양시",
+            "latin": "Miryang-si"
+          },
+          "zip": "504"
+        },
+        {
+          "key": "사천시",
+          "name": {
+            "default": "사천시",
+            "latin": "Sacheon-si"
+          },
+          "zip": "525"
+        },
+        {
+          "key": "산청군",
+          "name": {
+            "default": "산청군",
+            "latin": "Sancheong-gun"
+          },
+          "zip": "522"
+        },
+        {
+          "key": "양산시",
+          "name": {
+            "default": "양산시",
+            "latin": "Yangsan-si"
+          },
+          "zip": "50[56]"
+        },
+        {
+          "key": "의령군",
+          "name": {
+            "default": "의령군",
+            "latin": "Uiryeong-gun"
+          },
+          "zip": "521"
+        },
+        {
+          "key": "진주시",
+          "name": {
+            "default": "진주시",
+            "latin": "Jinju-si"
+          },
+          "zip": "52[6-8]"
+        },
+        {
+          "key": "창녕군",
+          "name": {
+            "default": "창녕군",
+            "latin": "Changnyeong-gun"
+          },
+          "zip": "503"
+        },
+        {
+          "key": "창원시",
+          "name": {
+            "default": "창원시",
+            "latin": "Changwon-si"
+          },
+          "zip": "51[2-7]",
+          "sub_regions": [
+            {
+              "key": "마산합포구",
+              "name": {
+                "default": "마산합포구",
+                "latin": "Masanhappo-gu"
+              },
+              "zip": "51[237]"
+            },
+            {
+              "key": "마산회원구",
+              "name": {
+                "default": "마산회원구",
+                "latin": "Masanhoewon-gu"
+              },
+              "zip": "51[23]"
+            },
+            {
+              "key": "성산구",
+              "name": {
+                "default": "성산구",
+                "latin": "Seongsan-gu"
+              },
+              "zip": "51[457]"
+            },
+            {
+              "key": "의창구",
+              "name": {
+                "default": "의창구",
+                "latin": "Uichang-gu"
+              },
+              "zip": "51[1-4]"
+            },
+            {
+              "key": "진해구",
+              "name": {
+                "default": "진해구",
+                "latin": "Jinhae-gu"
+              },
+              "zip": "51[5-7]"
+            }
+          ]
+        },
+        {
+          "key": "통영시",
+          "name": {
+            "default": "통영시",
+            "latin": "Tongyeong-si"
+          },
+          "zip": "53[01]"
+        },
+        {
+          "key": "하동군",
+          "name": {
+            "default": "하동군",
+            "latin": "Hadong-gun"
+          },
+          "zip": "523"
+        },
+        {
+          "key": "함안군",
+          "name": {
+            "default": "함안군",
+            "latin": "Haman-gun"
+          },
+          "zip": "520"
+        },
+        {
+          "key": "함양군",
+          "name": {
+            "default": "함양군",
+            "latin": "Hamyang-gun"
+          },
+          "zip": "500"
+        },
+        {
+          "key": "합천군",
+          "name": {
+            "default": "합천군",
+            "latin": "Hapcheon-gun"
+          },
+          "zip": "502"
+        }
+      ]
+    },
+    {
+      "key": "47",
+      "name": {
+        "default": "경북",
+        "latin": "Gyeongsangbuk-do"
+      },
+      "zip": "(?:3[6-9]|40)\\d{2}",
+      "zipex": "38540",
+      "sub_regions": [
+        {
+          "key": "경산시",
+          "name": {
+            "default": "경산시",
+            "latin": "Gyeongsan-si"
+          },
+          "zip": "38[4-6]"
+        },
+        {
+          "key": "경주시",
+          "name": {
+            "default": "경주시",
+            "latin": "Gyeongju-si"
+          },
+          "zip": "38[0-2]"
+        },
+        {
+          "key": "고령군",
+          "name": {
+            "default": "고령군",
+            "latin": "Goryeong-gun"
+          },
+          "zip": "401"
+        },
+        {
+          "key": "구미시",
+          "name": {
+            "default": "구미시",
+            "latin": "Gumi-si"
+          },
+          "zip": "39[1-4]"
+        },
+        {
+          "key": "군위군",
+          "name": {
+            "default": "군위군",
+            "latin": "Gunwi-gun"
+          },
+          "zip": "390"
+        },
+        {
+          "key": "김천시",
+          "name": {
+            "default": "김천시",
+            "latin": "Gimcheon-si"
+          },
+          "zip": "39[56]"
+        },
+        {
+          "key": "문경시",
+          "name": {
+            "default": "문경시",
+            "latin": "Mungyeong-si"
+          },
+          "zip": "3(?:69|70)"
+        },
+        {
+          "key": "봉화군",
+          "name": {
+            "default": "봉화군",
+            "latin": "Bonghwa-gun"
+          },
+          "zip": "362"
+        },
+        {
+          "key": "상주시",
+          "name": {
+            "default": "상주시",
+            "latin": "Sangju-si"
+          },
+          "zip": "37[12]"
+        },
+        {
+          "key": "성주군",
+          "name": {
+            "default": "성주군",
+            "latin": "Seongju-gun"
+          },
+          "zip": "400"
+        },
+        {
+          "key": "안동시",
+          "name": {
+            "default": "안동시",
+            "latin": "Andong-si"
+          },
+          "zip": "36[67]"
+        },
+        {
+          "key": "영덕군",
+          "name": {
+            "default": "영덕군",
+            "latin": "Yeongdeok-gun"
+          },
+          "zip": "364"
+        },
+        {
+          "key": "영양군",
+          "name": {
+            "default": "영양군",
+            "latin": "Yeongyang-gun"
+          },
+          "zip": "365"
+        },
+        {
+          "key": "영주시",
+          "name": {
+            "default": "영주시",
+            "latin": "Yeongju-si"
+          },
+          "zip": "36[01]"
+        },
+        {
+          "key": "영천시",
+          "name": {
+            "default": "영천시",
+            "latin": "Yeongcheon-si"
+          },
+          "zip": "38[89]"
+        },
+        {
+          "key": "예천군",
+          "name": {
+            "default": "예천군",
+            "latin": "Yecheon-gun"
+          },
+          "zip": "368"
+        },
+        {
+          "key": "울릉군",
+          "name": {
+            "default": "울릉군",
+            "latin": "Ulleung-gun"
+          },
+          "zip": "402"
+        },
+        {
+          "key": "울진군",
+          "name": {
+            "default": "울진군",
+            "latin": "Uljin-gun"
+          },
+          "zip": "363"
+        },
+        {
+          "key": "의성군",
+          "name": {
+            "default": "의성군",
+            "latin": "Uiseong-gun"
+          },
+          "zip": "373"
+        },
+        {
+          "key": "청도군",
+          "name": {
+            "default": "청도군",
+            "latin": "Cheongdo-gun"
+          },
+          "zip": "383"
+        },
+        {
+          "key": "청송군",
+          "name": {
+            "default": "청송군",
+            "latin": "Cheongsong-gun"
+          },
+          "zip": "374"
+        },
+        {
+          "key": "칠곡군",
+          "name": {
+            "default": "칠곡군",
+            "latin": "Chilgok-gun"
+          },
+          "zip": "39[89]"
+        },
+        {
+          "key": "포항시",
+          "name": {
+            "default": "포항시",
+            "latin": "Pohang-si"
+          },
+          "zip": "37[5-9]",
+          "sub_regions": [
+            {
+              "key": "남구",
+              "name": {
+                "default": "남구",
+                "latin": "Nam-gu"
+              },
+              "zip": "37[6-9]"
+            },
+            {
+              "key": "북구",
+              "name": {
+                "default": "북구",
+                "latin": "Buk-gu"
+              },
+              "zip": "37[5-79]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "29",
+      "name": {
+        "default": "광주",
+        "latin": "Gwangju"
+      },
+      "zip": "6[12]\\d{2}",
+      "zipex": "62394",
+      "sub_regions": [
+        {
+          "key": "광산구",
+          "name": {
+            "default": "광산구",
+            "latin": "Gwangsan-gu"
+          },
+          "zip": "62[2-4]"
+        },
+        {
+          "key": "남구",
+          "name": {
+            "default": "남구",
+            "latin": "Nam-gu"
+          },
+          "zip": "61[67]"
+        },
+        {
+          "key": "동구",
+          "name": {
+            "default": "동구",
+            "latin": "Dong-gu"
+          },
+          "zip": "61[45]"
+        },
+        {
+          "key": "북구",
+          "name": {
+            "default": "북구",
+            "latin": "Buk-gu"
+          },
+          "zip": "61[0-2]"
+        },
+        {
+          "key": "서구",
+          "name": {
+            "default": "서구",
+            "latin": "Seo-gu"
+          },
+          "zip": "6(?:19|20)"
+        }
+      ]
+    },
+    {
+      "key": "27",
+      "name": {
+        "default": "대구",
+        "latin": "Daegu"
+      },
+      "zip": "4[123]\\d{2}",
+      "zipex": "42456",
+      "sub_regions": [
+        {
+          "key": "남구",
+          "name": {
+            "default": "남구",
+            "latin": "Nam-gu"
+          },
+          "zip": "42[45]"
+        },
+        {
+          "key": "달서구",
+          "name": {
+            "default": "달서구",
+            "latin": "Dalseo-gu"
+          },
+          "zip": "42[678]"
+        },
+        {
+          "key": "달성군",
+          "name": {
+            "default": "달성군",
+            "latin": "Dalseong-gun"
+          },
+          "zip": "4(?:29|30)"
+        },
+        {
+          "key": "동구",
+          "name": {
+            "default": "동구",
+            "latin": "Dong-gu"
+          },
+          "zip": "41[0-2]"
+        },
+        {
+          "key": "북구",
+          "name": {
+            "default": "북구",
+            "latin": "Buk-gu"
+          },
+          "zip": "41[45]"
+        },
+        {
+          "key": "서구",
+          "name": {
+            "default": "서구",
+            "latin": "Seo-gu"
+          },
+          "zip": "41[78]"
+        },
+        {
+          "key": "수성구",
+          "name": {
+            "default": "수성구",
+            "latin": "Suseong-gu"
+          },
+          "zip": "42[0-2]"
+        },
+        {
+          "key": "중구",
+          "name": {
+            "default": "중구",
+            "latin": "Jung-gu"
+          },
+          "zip": "419"
+        }
+      ]
+    },
+    {
+      "key": "30",
+      "name": {
+        "default": "대전",
+        "latin": "Daejeon"
+      },
+      "zip": "3[45]\\d{2}",
+      "zipex": "34316",
+      "sub_regions": [
+        {
+          "key": "대덕구",
+          "name": {
+            "default": "대덕구",
+            "latin": "Daedeok-gu"
+          },
+          "zip": "34[34]"
+        },
+        {
+          "key": "동구",
+          "name": {
+            "default": "동구",
+            "latin": "Dong-gu"
+          },
+          "zip": "34[5-7]"
+        },
+        {
+          "key": "서구",
+          "name": {
+            "default": "서구",
+            "latin": "Seo-gu"
+          },
+          "zip": "35[2-4]"
+        },
+        {
+          "key": "유성구",
+          "name": {
+            "default": "유성구",
+            "latin": "Yuseong-gu"
+          },
+          "zip": "34[0-2]"
+        },
+        {
+          "key": "중구",
+          "name": {
+            "default": "중구",
+            "latin": "Jung-gu"
+          },
+          "zip": "3(?:4[89]|50)"
+        }
+      ]
+    },
+    {
+      "key": "26",
+      "name": {
+        "default": "부산",
+        "latin": "Busan"
+      },
+      "zip": "4[6-9]\\d{2}",
+      "zipex": "46706",
+      "sub_regions": [
+        {
+          "key": "강서구",
+          "name": {
+            "default": "강서구",
+            "latin": "Gangseo-gu"
+          },
+          "zip": "467"
+        },
+        {
+          "key": "금정구",
+          "name": {
+            "default": "금정구",
+            "latin": "Geumjeong-gu"
+          },
+          "zip": "46[23]"
+        },
+        {
+          "key": "기장군",
+          "name": {
+            "default": "기장군",
+            "latin": "Gijang-gun"
+          },
+          "zip": "460"
+        },
+        {
+          "key": "남구",
+          "name": {
+            "default": "남구",
+            "latin": "Nam-gu"
+          },
+          "zip": "48[45]"
+        },
+        {
+          "key": "동구",
+          "name": {
+            "default": "동구",
+            "latin": "Dong-gu"
+          },
+          "zip": "48[78]"
+        },
+        {
+          "key": "동래구",
+          "name": {
+            "default": "동래구",
+            "latin": "Dongnae-gu"
+          },
+          "zip": "47[789]"
+        },
+        {
+          "key": "부산진구",
+          "name": {
+            "default": "부산진구",
+            "latin": "Busanjin-gu"
+          },
+          "zip": "47[123]"
+        },
+        {
+          "key": "북구",
+          "name": {
+            "default": "북구",
+            "latin": "Buk-gu"
+          },
+          "zip": "46[56]"
+        },
+        {
+          "key": "사상구",
+          "name": {
+            "default": "사상구",
+            "latin": "Sasang-gu"
+          },
+          "zip": "4(?:69|70)"
+        },
+        {
+          "key": "사하구",
+          "name": {
+            "default": "사하구",
+            "latin": "Saha-gu"
+          },
+          "zip": "49[345]"
+        },
+        {
+          "key": "서구",
+          "name": {
+            "default": "서구",
+            "latin": "Seo-gu"
+          },
+          "zip": "492"
+        },
+        {
+          "key": "수영구",
+          "name": {
+            "default": "수영구",
+            "latin": "Suyeong-gu"
+          },
+          "zip": "48[23]"
+        },
+        {
+          "key": "연제구",
+          "name": {
+            "default": "연제구",
+            "latin": "Yeonje-gu"
+          },
+          "zip": "47[56]"
+        },
+        {
+          "key": "영도구",
+          "name": {
+            "default": "영도구",
+            "latin": "Yeongdo-gu"
+          },
+          "zip": "49[01]"
+        },
+        {
+          "key": "중구",
+          "name": {
+            "default": "중구",
+            "latin": "Jung-gu"
+          },
+          "zip": "489"
+        },
+        {
+          "key": "해운대구",
+          "name": {
+            "default": "해운대구",
+            "latin": "Haeundae-gu"
+          },
+          "zip": "48[01]"
+        }
+      ]
+    },
+    {
+      "key": "11",
+      "name": {
+        "default": "서울",
+        "latin": "Seoul"
+      },
+      "zip": "0[1-8]\\d{2}",
+      "zipex": "06321",
+      "sub_regions": [
+        {
+          "key": "강남구",
+          "name": {
+            "default": "강남구",
+            "latin": "Gangnam-gu"
+          },
+          "zip": "06[0-3]"
+        },
+        {
+          "key": "강동구",
+          "name": {
+            "default": "강동구",
+            "latin": "Gangdong-gu"
+          },
+          "zip": "05[2-4]"
+        },
+        {
+          "key": "강북구",
+          "name": {
+            "default": "강북구",
+            "latin": "Gangbuk-gu"
+          },
+          "zip": "01[0-2]"
+        },
+        {
+          "key": "강서구",
+          "name": {
+            "default": "강서구",
+            "latin": "Gangseo-gu"
+          },
+          "zip": "07[5-8]"
+        },
+        {
+          "key": "관악구",
+          "name": {
+            "default": "관악구",
+            "latin": "Gwanak-gu"
+          },
+          "zip": "08[78]"
+        },
+        {
+          "key": "광진구",
+          "name": {
+            "default": "광진구",
+            "latin": "Gwangjin-gu"
+          },
+          "zip": "0(?:49|5[01])"
+        },
+        {
+          "key": "구로구",
+          "name": {
+            "default": "구로구",
+            "latin": "Guro-gu"
+          },
+          "zip": "08[23]"
+        },
+        {
+          "key": "금천구",
+          "name": {
+            "default": "금천구",
+            "latin": "Geumcheon-gu"
+          },
+          "zip": "08[56]"
+        },
+        {
+          "key": "노원구",
+          "name": {
+            "default": "노원구",
+            "latin": "Nowon-gu"
+          },
+          "zip": "01[6-9]"
+        },
+        {
+          "key": "도봉구",
+          "name": {
+            "default": "도봉구",
+            "latin": "Dobong-gu"
+          },
+          "zip": "01[34]"
+        },
+        {
+          "key": "동대문구",
+          "name": {
+            "default": "동대문구",
+            "latin": "Dongdaemun-gu"
+          },
+          "zip": "02[4-6]"
+        },
+        {
+          "key": "동작구",
+          "name": {
+            "default": "동작구",
+            "latin": "Dongjak-gu"
+          },
+          "zip": "0(?:69|70)"
+        },
+        {
+          "key": "마포구",
+          "name": {
+            "default": "마포구",
+            "latin": "Mapo-gu"
+          },
+          "zip": "0(?:39|4[0-2])"
+        },
+        {
+          "key": "서대문구",
+          "name": {
+            "default": "서대문구",
+            "latin": "Seodaemun-gu"
+          },
+          "zip": "03[67]"
+        },
+        {
+          "key": "서초구",
+          "name": {
+            "default": "서초구",
+            "latin": "Seocho-gu"
+          },
+          "zip": "06[5-8]"
+        },
+        {
+          "key": "성동구",
+          "name": {
+            "default": "성동구",
+            "latin": "Seongdong-gu"
+          },
+          "zip": "04[78]"
+        },
+        {
+          "key": "성북구",
+          "name": {
+            "default": "성북구",
+            "latin": "Seongbuk-gu"
+          },
+          "zip": "02[78]"
+        },
+        {
+          "key": "송파구",
+          "name": {
+            "default": "송파구",
+            "latin": "Songpa-gu"
+          },
+          "zip": "05[5-8]"
+        },
+        {
+          "key": "양천구",
+          "name": {
+            "default": "양천구",
+            "latin": "Yangcheon-gu"
+          },
+          "zip": "0(?:7[89]|8[01])"
+        },
+        {
+          "key": "영등포구",
+          "name": {
+            "default": "영등포구",
+            "latin": "Yeongdeungpo-gu"
+          },
+          "zip": "07[2-4]"
+        },
+        {
+          "key": "용산구",
+          "name": {
+            "default": "용산구",
+            "latin": "Yongsan-gu"
+          },
+          "zip": "04[34]"
+        },
+        {
+          "key": "은평구",
+          "name": {
+            "default": "은평구",
+            "latin": "Eunpyeong-gu"
+          },
+          "zip": "03[3-5]"
+        },
+        {
+          "key": "종로구",
+          "name": {
+            "default": "종로구",
+            "latin": "Jongno-gu"
+          },
+          "zip": "03[01]"
+        },
+        {
+          "key": "중구",
+          "name": {
+            "default": "중구",
+            "latin": "Jung-gu"
+          },
+          "zip": "04[56]|100"
+        },
+        {
+          "key": "중랑구",
+          "name": {
+            "default": "중랑구",
+            "latin": "Jungnang-gu"
+          },
+          "zip": "02[0-2]"
+        }
+      ]
+    },
+    {
+      "key": "50",
+      "name": {
+        "default": "세종",
+        "latin": "Sejong"
+      },
+      "zip": "30[01]\\d",
+      "zipex": "30065",
+      "sub_regions": [
+        {
+          "key": "고운동",
+          "name": {
+            "default": "고운동",
+            "latin": "Goun-dong"
+          }
+        },
+        {
+          "key": "금남면",
+          "name": {
+            "default": "금남면",
+            "latin": "Geumnam-myeon"
+          }
+        },
+        {
+          "key": "다정동",
+          "name": {
+            "default": "다정동",
+            "latin": "Dajeong-dong"
+          }
+        },
+        {
+          "key": "대평동",
+          "name": {
+            "default": "대평동",
+            "latin": "Daepyeong-dong"
+          }
+        },
+        {
+          "key": "도담동",
+          "name": {
+            "default": "도담동",
+            "latin": "Dodam-dong"
+          }
+        },
+        {
+          "key": "보람동",
+          "name": {
+            "default": "보람동",
+            "latin": "Boram-dong"
+          }
+        },
+        {
+          "key": "부강면",
+          "name": {
+            "default": "부강면",
+            "latin": "Bugang-myeon"
+          }
+        },
+        {
+          "key": "새롬동",
+          "name": {
+            "default": "새롬동",
+            "latin": "Saerom-dong"
+          }
+        },
+        {
+          "key": "소담동",
+          "name": {
+            "default": "소담동",
+            "latin": "Sodam-dong"
+          }
+        },
+        {
+          "key": "소정면",
+          "name": {
+            "default": "소정면",
+            "latin": "Sojeong-myeon"
+          }
+        },
+        {
+          "key": "아름동",
+          "name": {
+            "default": "아름동",
+            "latin": "Areum-dong"
+          }
+        },
+        {
+          "key": "연기면",
+          "name": {
+            "default": "연기면",
+            "latin": "Yeongi-myeon"
+          }
+        },
+        {
+          "key": "연동면",
+          "name": {
+            "default": "연동면",
+            "latin": "Yeondong-myeon"
+          }
+        },
+        {
+          "key": "연서면",
+          "name": {
+            "default": "연서면",
+            "latin": "Yeonseo-myeon"
+          }
+        },
+        {
+          "key": "장군면",
+          "name": {
+            "default": "장군면",
+            "latin": "Janggun-myeon"
+          }
+        },
+        {
+          "key": "전동면",
+          "name": {
+            "default": "전동면",
+            "latin": "Jeondong-myeon"
+          }
+        },
+        {
+          "key": "전의면",
+          "name": {
+            "default": "전의면",
+            "latin": "Jeonui-myeon"
+          }
+        },
+        {
+          "key": "조치원읍",
+          "name": {
+            "default": "조치원읍",
+            "latin": "Jochiwon-eup"
+          }
+        },
+        {
+          "key": "종촌동",
+          "name": {
+            "default": "종촌동",
+            "latin": "Jongchon-dong"
+          }
+        },
+        {
+          "key": "한솔동",
+          "name": {
+            "default": "한솔동",
+            "latin": "Hansol-dong"
+          }
+        }
+      ]
+    },
+    {
+      "key": "31",
+      "name": {
+        "default": "울산",
+        "latin": "Ulsan"
+      },
+      "zip": "4[45]\\d{2}",
+      "zipex": "44782",
+      "sub_regions": [
+        {
+          "key": "남구",
+          "name": {
+            "default": "남구",
+            "latin": "Nam-gu"
+          },
+          "zip": "44[67]"
+        },
+        {
+          "key": "동구",
+          "name": {
+            "default": "동구",
+            "latin": "Dong-gu"
+          },
+          "zip": "44[01]"
+        },
+        {
+          "key": "북구",
+          "name": {
+            "default": "북구",
+            "latin": "Buk-gu"
+          },
+          "zip": "442"
+        },
+        {
+          "key": "울주군",
+          "name": {
+            "default": "울주군",
+            "latin": "Ulju-gun"
+          },
+          "zip": "4(?:49|50)"
+        },
+        {
+          "key": "중구",
+          "name": {
+            "default": "중구",
+            "latin": "Jung-gu"
+          },
+          "zip": "44[45]"
+        }
+      ]
+    },
+    {
+      "key": "28",
+      "name": {
+        "default": "인천",
+        "latin": "Incheon"
+      },
+      "zip": "2[1-3]\\d{2}",
+      "zipex": "23024",
+      "sub_regions": [
+        {
+          "key": "강화군",
+          "name": {
+            "default": "강화군",
+            "latin": "Ganghwa-gun"
+          },
+          "zip": "230"
+        },
+        {
+          "key": "계양구",
+          "name": {
+            "default": "계양구",
+            "latin": "Gyeyang-gu"
+          },
+          "zip": "21[01]"
+        },
+        {
+          "key": "남구",
+          "name": {
+            "default": "남구",
+            "latin": "Nam-gu"
+          },
+          "zip": "22[12]"
+        },
+        {
+          "key": "남동구",
+          "name": {
+            "default": "남동구",
+            "latin": "Namdong-gu"
+          },
+          "zip": "21[5-7]"
+        },
+        {
+          "key": "동구",
+          "name": {
+            "default": "동구",
+            "latin": "Dong-gu"
+          },
+          "zip": "225"
+        },
+        {
+          "key": "부평구",
+          "name": {
+            "default": "부평구",
+            "latin": "Bupyeong-gu"
+          },
+          "zip": "21[34]"
+        },
+        {
+          "key": "서구",
+          "name": {
+            "default": "서구",
+            "latin": "Seo-gu"
+          },
+          "zip": "22[6-8]"
+        },
+        {
+          "key": "연수구",
+          "name": {
+            "default": "연수구",
+            "latin": "Yeonsu-gu"
+          },
+          "zip": "2(?:19|20)"
+        },
+        {
+          "key": "옹진군",
+          "name": {
+            "default": "옹진군",
+            "latin": "Ongjin-gun"
+          },
+          "zip": "231"
+        },
+        {
+          "key": "중구",
+          "name": {
+            "default": "중구",
+            "latin": "Jung-gu"
+          },
+          "zip": "22[34]"
+        }
+      ]
+    },
+    {
+      "key": "46",
+      "name": {
+        "default": "전남",
+        "latin": "Jeollanam-do"
+      },
+      "zip": "5[7-9]\\d{2}",
+      "zipex": "59222",
+      "sub_regions": [
+        {
+          "key": "강진군",
+          "name": {
+            "default": "강진군",
+            "latin": "Gangjin-gun"
+          },
+          "zip": "592"
+        },
+        {
+          "key": "고흥군",
+          "name": {
+            "default": "고흥군",
+            "latin": "Goheung-gun"
+          },
+          "zip": "595"
+        },
+        {
+          "key": "곡성군",
+          "name": {
+            "default": "곡성군",
+            "latin": "Gokseong-gun"
+          },
+          "zip": "575"
+        },
+        {
+          "key": "광양시",
+          "name": {
+            "default": "광양시",
+            "latin": "Gwangyang-si"
+          },
+          "zip": "57[78]"
+        },
+        {
+          "key": "구례군",
+          "name": {
+            "default": "구례군",
+            "latin": "Gurye-gun"
+          },
+          "zip": "576"
+        },
+        {
+          "key": "나주시",
+          "name": {
+            "default": "나주시",
+            "latin": "Naju-si"
+          },
+          "zip": "58[23]"
+        },
+        {
+          "key": "담양군",
+          "name": {
+            "default": "담양군",
+            "latin": "Damyang-gun"
+          },
+          "zip": "573"
+        },
+        {
+          "key": "목포시",
+          "name": {
+            "default": "목포시",
+            "latin": "Mokpo-si"
+          },
+          "zip": "58[67]"
+        },
+        {
+          "key": "무안군",
+          "name": {
+            "default": "무안군",
+            "latin": "Muan-gun"
+          },
+          "zip": "585"
+        },
+        {
+          "key": "보성군",
+          "name": {
+            "default": "보성군",
+            "latin": "Boseong-gun"
+          },
+          "zip": "594"
+        },
+        {
+          "key": "순천시",
+          "name": {
+            "default": "순천시",
+            "latin": "Suncheon-si"
+          },
+          "zip": "5(?:79|80)"
+        },
+        {
+          "key": "신안군",
+          "name": {
+            "default": "신안군",
+            "latin": "Sinan-gun"
+          },
+          "zip": "588"
+        },
+        {
+          "key": "여수시",
+          "name": {
+            "default": "여수시",
+            "latin": "Yeosu-si"
+          },
+          "zip": "59[67]"
+        },
+        {
+          "key": "영광군",
+          "name": {
+            "default": "영광군",
+            "latin": "Yeonggwang-gun"
+          },
+          "zip": "570"
+        },
+        {
+          "key": "영암군",
+          "name": {
+            "default": "영암군",
+            "latin": "Yeongam-gun"
+          },
+          "zip": "584"
+        },
+        {
+          "key": "완도군",
+          "name": {
+            "default": "완도군",
+            "latin": "Wando-gun"
+          },
+          "zip": "591"
+        },
+        {
+          "key": "장성군",
+          "name": {
+            "default": "장성군",
+            "latin": "Jangseong-gun"
+          },
+          "zip": "572"
+        },
+        {
+          "key": "장흥군",
+          "name": {
+            "default": "장흥군",
+            "latin": "Jangheung-gun"
+          },
+          "zip": "593"
+        },
+        {
+          "key": "진도군",
+          "name": {
+            "default": "진도군",
+            "latin": "Jindo-gun"
+          },
+          "zip": "589"
+        },
+        {
+          "key": "함평군",
+          "name": {
+            "default": "함평군",
+            "latin": "Hampyeong-gun"
+          },
+          "zip": "571"
+        },
+        {
+          "key": "해남군",
+          "name": {
+            "default": "해남군",
+            "latin": "Haenam-gun"
+          },
+          "zip": "590"
+        },
+        {
+          "key": "화순군",
+          "name": {
+            "default": "화순군",
+            "latin": "Hwasun-gun"
+          },
+          "zip": "581"
+        }
+      ]
+    },
+    {
+      "key": "45",
+      "name": {
+        "default": "전북",
+        "latin": "Jeollabuk-do"
+      },
+      "zip": "5[4-6]\\d{2}",
+      "zipex": "56445",
+      "sub_regions": [
+        {
+          "key": "고창군",
+          "name": {
+            "default": "고창군",
+            "latin": "Gochang-gun"
+          },
+          "zip": "564"
+        },
+        {
+          "key": "군산시",
+          "name": {
+            "default": "군산시",
+            "latin": "Gunsan-si"
+          },
+          "zip": "54[01]"
+        },
+        {
+          "key": "김제시",
+          "name": {
+            "default": "김제시",
+            "latin": "Gimje-si"
+          },
+          "zip": "54[34]"
+        },
+        {
+          "key": "남원시",
+          "name": {
+            "default": "남원시",
+            "latin": "Namwon-si"
+          },
+          "zip": "55[78]"
+        },
+        {
+          "key": "무주군",
+          "name": {
+            "default": "무주군",
+            "latin": "Muju-gun"
+          },
+          "zip": "555"
+        },
+        {
+          "key": "부안군",
+          "name": {
+            "default": "부안군",
+            "latin": "Buan-gun"
+          },
+          "zip": "563"
+        },
+        {
+          "key": "순창군",
+          "name": {
+            "default": "순창군",
+            "latin": "Sunchang-gun"
+          },
+          "zip": "560"
+        },
+        {
+          "key": "완주군",
+          "name": {
+            "default": "완주군",
+            "latin": "Wanju-gun"
+          },
+          "zip": "553"
+        },
+        {
+          "key": "익산시",
+          "name": {
+            "default": "익산시",
+            "latin": "Iksan-si"
+          },
+          "zip": "54[56]"
+        },
+        {
+          "key": "임실군",
+          "name": {
+            "default": "임실군",
+            "latin": "Imsil-gun"
+          },
+          "zip": "559"
+        },
+        {
+          "key": "장수군",
+          "name": {
+            "default": "장수군",
+            "latin": "Jangsu-gun"
+          },
+          "zip": "556"
+        },
+        {
+          "key": "전주시",
+          "name": {
+            "default": "전주시",
+            "latin": "Jeonju-si"
+          },
+          "zip": "5(?:4[89]|5[01])",
+          "sub_regions": [
+            {
+              "key": "덕진구",
+              "name": {
+                "default": "덕진구",
+                "latin": "Deokjin-gu"
+              },
+              "zip": "5(?:4[89]|50)"
+            },
+            {
+              "key": "완산구",
+              "name": {
+                "default": "완산구",
+                "latin": "Wansan-gu"
+              },
+              "zip": "5(?:4[89]|5[01])"
+            }
+          ]
+        },
+        {
+          "key": "정읍시",
+          "name": {
+            "default": "정읍시",
+            "latin": "Jeongeup-si"
+          },
+          "zip": "56[12]"
+        },
+        {
+          "key": "진안군",
+          "name": {
+            "default": "진안군",
+            "latin": "Jinan-gun"
+          },
+          "zip": "554"
+        }
+      ]
+    },
+    {
+      "key": "49",
+      "name": {
+        "default": "제주",
+        "latin": "Jeju-do"
+      },
+      "zip": "63[0-356]\\d",
+      "zipex": "63563",
+      "sub_regions": [
+        {
+          "key": "서귀포시",
+          "name": {
+            "default": "서귀포시",
+            "latin": "Seogwipo-si"
+          },
+          "zip": "63[56]"
+        },
+        {
+          "key": "제주시",
+          "name": {
+            "default": "제주시",
+            "latin": "Jeju-si"
+          },
+          "zip": "63[0-3]"
+        }
+      ]
+    },
+    {
+      "key": "44",
+      "name": {
+        "default": "충남",
+        "latin": "Chungcheongnam-do"
+      },
+      "zip": "3[1-3]\\d{2}",
+      "zipex": "32832",
+      "sub_regions": [
+        {
+          "key": "계룡시",
+          "name": {
+            "default": "계룡시",
+            "latin": "Gyeryong-si"
+          },
+          "zip": "328"
+        },
+        {
+          "key": "공주시",
+          "name": {
+            "default": "공주시",
+            "latin": "Gongju-si"
+          },
+          "zip": "32[56]"
+        },
+        {
+          "key": "금산군",
+          "name": {
+            "default": "금산군",
+            "latin": "Geumsan-gun"
+          },
+          "zip": "327"
+        },
+        {
+          "key": "논산시",
+          "name": {
+            "default": "논산시",
+            "latin": "Nonsan-si"
+          },
+          "zip": "3(?:29|30)"
+        },
+        {
+          "key": "당진시",
+          "name": {
+            "default": "당진시",
+            "latin": "Dangjin-si"
+          },
+          "zip": "31[78]"
+        },
+        {
+          "key": "보령시",
+          "name": {
+            "default": "보령시",
+            "latin": "Boryeong-si"
+          },
+          "zip": "33[45]"
+        },
+        {
+          "key": "부여군",
+          "name": {
+            "default": "부여군",
+            "latin": "Buyeo-gun"
+          },
+          "zip": "33[12]"
+        },
+        {
+          "key": "서산시",
+          "name": {
+            "default": "서산시",
+            "latin": "Seosan-si"
+          },
+          "zip": "3(?:19|20)"
+        },
+        {
+          "key": "서천군",
+          "name": {
+            "default": "서천군",
+            "latin": "Seocheon-gun"
+          },
+          "zip": "336"
+        },
+        {
+          "key": "아산시",
+          "name": {
+            "default": "아산시",
+            "latin": "Asan-si"
+          },
+          "zip": "31[45]"
+        },
+        {
+          "key": "예산군",
+          "name": {
+            "default": "예산군",
+            "latin": "Yesan-gun"
+          },
+          "zip": "324"
+        },
+        {
+          "key": "천안시",
+          "name": {
+            "default": "천안시",
+            "latin": "Cheonan-si"
+          },
+          "zip": "31[0-2]",
+          "sub_regions": [
+            {
+              "key": "동남구",
+              "name": {
+                "default": "동남구",
+                "latin": "Dongnam-gu"
+              },
+              "zip": "31[0-2]"
+            },
+            {
+              "key": "서북구",
+              "name": {
+                "default": "서북구",
+                "latin": "Seobuk-gu"
+              },
+              "zip": "31[01]"
+            }
+          ]
+        },
+        {
+          "key": "청양군",
+          "name": {
+            "default": "청양군",
+            "latin": "Cheongyang-gun"
+          },
+          "zip": "333"
+        },
+        {
+          "key": "태안군",
+          "name": {
+            "default": "태안군",
+            "latin": "Taean-gun"
+          },
+          "zip": "321"
+        },
+        {
+          "key": "홍성군",
+          "name": {
+            "default": "홍성군",
+            "latin": "Hongseong-gun"
+          },
+          "zip": "322"
+        }
+      ]
+    },
+    {
+      "key": "43",
+      "name": {
+        "default": "충북",
+        "latin": "Chungcheongbuk-do"
+      },
+      "zip": "2[789]\\d{2}",
+      "zipex": "28006",
+      "sub_regions": [
+        {
+          "key": "괴산군",
+          "name": {
+            "default": "괴산군",
+            "latin": "Goesan-gun"
+          },
+          "zip": "280"
+        },
+        {
+          "key": "단양군",
+          "name": {
+            "default": "단양군",
+            "latin": "Danyang-gun"
+          },
+          "zip": "270"
+        },
+        {
+          "key": "보은군",
+          "name": {
+            "default": "보은군",
+            "latin": "Boeun-gun"
+          },
+          "zip": "289"
+        },
+        {
+          "key": "영동군",
+          "name": {
+            "default": "영동군",
+            "latin": "Yeongdong-gun"
+          },
+          "zip": "291"
+        },
+        {
+          "key": "옥천군",
+          "name": {
+            "default": "옥천군",
+            "latin": "Okcheon-gun"
+          },
+          "zip": "290"
+        },
+        {
+          "key": "음성군",
+          "name": {
+            "default": "음성군",
+            "latin": "Eumseong-gun"
+          },
+          "zip": "27[67]"
+        },
+        {
+          "key": "제천시",
+          "name": {
+            "default": "제천시",
+            "latin": "Jecheon-si"
+          },
+          "zip": "27[12]"
+        },
+        {
+          "key": "증평군",
+          "name": {
+            "default": "증평군",
+            "latin": "Jeungpyeong-gun"
+          },
+          "zip": "279"
+        },
+        {
+          "key": "진천군",
+          "name": {
+            "default": "진천군",
+            "latin": "Jincheon-gun"
+          },
+          "zip": "278"
+        },
+        {
+          "key": "청주시",
+          "name": {
+            "default": "청주시",
+            "latin": "Cheongju-si"
+          },
+          "zip": "28[0-9]",
+          "sub_regions": [
+            {
+              "key": "상당구",
+              "name": {
+                "default": "상당구",
+                "latin": "Sangdang-gu"
+              },
+              "zip": "28[1-3578]"
+            },
+            {
+              "key": "서원구",
+              "name": {
+                "default": "서원구",
+                "latin": "Seowon-gu"
+              },
+              "zip": "28[1-35-8]"
+            },
+            {
+              "key": "청원구",
+              "name": {
+                "default": "청원구",
+                "latin": "Cheongwon-gu"
+              },
+              "zip": "28[13-5]"
+            },
+            {
+              "key": "흥덕구",
+              "name": {
+                "default": "흥덕구",
+                "latin": "Heungdeok-gu"
+              },
+              "zip": "28[1-6]"
+            }
+          ]
+        },
+        {
+          "key": "충주시",
+          "name": {
+            "default": "충주시",
+            "latin": "Chungju-si"
+          },
+          "zip": "27[3-5]"
+        }
+      ]
+    }
+  ]
+}

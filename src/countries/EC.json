@@ -1,0 +1,9 @@
+{
+  "id": "data/EC",
+  "key": "EC",
+  "name": "ECUADOR",
+  "fmt": "%N%n%O%n%A%n%Z%n%C",
+  "zip": "\\d{6}",
+  "zipex": "090105,092301",
+  "upper": "CZ"
+}

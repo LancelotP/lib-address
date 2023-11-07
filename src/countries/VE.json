@@ -1,0 +1,164 @@
+{
+  "id": "data/VE",
+  "key": "VE",
+  "name": "VENEZUELA",
+  "fmt": "%N%n%O%n%A%n%C %Z, %S",
+  "zip": "\\d{4}",
+  "zipex": "1010,3001,8011,1020",
+  "lang": "es",
+  "upper": "CS",
+  "require": "ACS",
+  "state_name_type": "state",
+  "sub_regions": [
+    {
+      "key": "Z",
+      "name": {
+        "default": "Amazonas"
+      }
+    },
+    {
+      "key": "B",
+      "name": {
+        "default": "Anzoátegui"
+      }
+    },
+    {
+      "key": "C",
+      "name": {
+        "default": "Apure"
+      }
+    },
+    {
+      "key": "D",
+      "name": {
+        "default": "Aragua"
+      }
+    },
+    {
+      "key": "E",
+      "name": {
+        "default": "Barinas"
+      }
+    },
+    {
+      "key": "F",
+      "name": {
+        "default": "Bolívar"
+      }
+    },
+    {
+      "key": "G",
+      "name": {
+        "default": "Carabobo"
+      }
+    },
+    {
+      "key": "H",
+      "name": {
+        "default": "Cojedes"
+      }
+    },
+    {
+      "key": "Y",
+      "name": {
+        "default": "Delta Amacuro"
+      }
+    },
+    {
+      "key": "W",
+      "name": {
+        "default": "Dependencias Federales"
+      }
+    },
+    {
+      "key": "A",
+      "name": {
+        "default": "Distrito Federal"
+      }
+    },
+    {
+      "key": "I",
+      "name": {
+        "default": "Falcón"
+      }
+    },
+    {
+      "key": "J",
+      "name": {
+        "default": "Guárico"
+      }
+    },
+    {
+      "key": "K",
+      "name": {
+        "default": "Lara"
+      }
+    },
+    {
+      "key": "L",
+      "name": {
+        "default": "Mérida"
+      }
+    },
+    {
+      "key": "M",
+      "name": {
+        "default": "Miranda"
+      }
+    },
+    {
+      "key": "N",
+      "name": {
+        "default": "Monagas"
+      }
+    },
+    {
+      "key": "O",
+      "name": {
+        "default": "Nueva Esparta"
+      }
+    },
+    {
+      "key": "P",
+      "name": {
+        "default": "Portuguesa"
+      }
+    },
+    {
+      "key": "R",
+      "name": {
+        "default": "Sucre"
+      }
+    },
+    {
+      "key": "S",
+      "name": {
+        "default": "Táchira"
+      }
+    },
+    {
+      "key": "T",
+      "name": {
+        "default": "Trujillo"
+      }
+    },
+    {
+      "key": "X",
+      "name": {
+        "default": "Vargas"
+      }
+    },
+    {
+      "key": "U",
+      "name": {
+        "default": "Yaracuy"
+      }
+    },
+    {
+      "key": "V",
+      "name": {
+        "default": "Zulia"
+      }
+    }
+  ]
+}

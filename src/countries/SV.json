@@ -1,0 +1,125 @@
+{
+  "id": "data/SV",
+  "key": "SV",
+  "name": "EL SALVADOR",
+  "fmt": "%N%n%O%n%A%n%Z-%C%n%S",
+  "zip": "CP [1-3][1-7][0-2]\\d",
+  "zipex": "CP 1101",
+  "lang": "es",
+  "upper": "CSZ",
+  "require": "ACS",
+  "sub_regions": [
+    {
+      "key": "AH",
+      "name": {
+        "default": "Ahuachapán"
+      },
+      "zip": "CP 21",
+      "zipex": "CP 2101"
+    },
+    {
+      "key": "CA",
+      "name": {
+        "default": "Cabañas"
+      },
+      "zip": "CP 12",
+      "zipex": "CP 1201"
+    },
+    {
+      "key": "CH",
+      "name": {
+        "default": "Chalatenango"
+      },
+      "zip": "CP 13",
+      "zipex": "CP 1301"
+    },
+    {
+      "key": "CU",
+      "name": {
+        "default": "Cuscatlán"
+      },
+      "zip": "CP 14",
+      "zipex": "CP 1401"
+    },
+    {
+      "key": "LI",
+      "name": {
+        "default": "La Libertad"
+      },
+      "zip": "CP 15",
+      "zipex": "CP 1501"
+    },
+    {
+      "key": "PA",
+      "name": {
+        "default": "La Paz"
+      },
+      "zip": "CP 16",
+      "zipex": "CP 1601"
+    },
+    {
+      "key": "UN",
+      "name": {
+        "default": "La Unión"
+      },
+      "zip": "CP 31",
+      "zipex": "CP 3101"
+    },
+    {
+      "key": "MO",
+      "name": {
+        "default": "Morazán"
+      },
+      "zip": "CP 32",
+      "zipex": "CP 3201"
+    },
+    {
+      "key": "SM",
+      "name": {
+        "default": "San Miguel"
+      },
+      "zip": "CP 33",
+      "zipex": "CP 3301"
+    },
+    {
+      "key": "SS",
+      "name": {
+        "default": "San Salvador"
+      },
+      "zip": "CP 11",
+      "zipex": "CP 1101"
+    },
+    {
+      "key": "SV",
+      "name": {
+        "default": "San Vicente"
+      },
+      "zip": "CP 17",
+      "zipex": "CP 1701"
+    },
+    {
+      "key": "SA",
+      "name": {
+        "default": "Santa Ana"
+      },
+      "zip": "CP 22",
+      "zipex": "CP 2201"
+    },
+    {
+      "key": "SO",
+      "name": {
+        "default": "Sonsonate"
+      },
+      "zip": "CP 23",
+      "zipex": "CP 2301"
+    },
+    {
+      "key": "US",
+      "name": {
+        "default": "Usulután"
+      },
+      "zip": "CP 34",
+      "zipex": "CP 3401"
+    }
+  ]
+}

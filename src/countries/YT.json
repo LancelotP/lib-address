@@ -1,0 +1,10 @@
+{
+  "id": "data/YT",
+  "key": "YT",
+  "name": "MAYOTTE",
+  "fmt": "%O%n%N%n%A%n%Z %C %X",
+  "zip": "976\\d{2}",
+  "zipex": "97600",
+  "upper": "ACX",
+  "require": "ACZ"
+}

@@ -1,0 +1,117 @@
+{
+  "id": "data/CA",
+  "key": "CA",
+  "name": "CANADA",
+  "fmt": "%N%n%O%n%A%n%C %S %Z",
+  "zip": "[ABCEGHJKLMNPRSTVXY]\\d[ABCEGHJ-NPRSTV-Z] ?\\d[ABCEGHJ-NPRSTV-Z]\\d",
+  "zipex": "H3Z 2Y7,V8X 3X4,T0L 1K0,T0H 1A0,K1A 0B1",
+  "lang": "en",
+  "upper": "ACNOSZ",
+  "require": "ACSZ",
+  "sub_regions": [
+    {
+      "key": "AB",
+      "name": {
+        "default": "Alberta",
+        "fr": "Alberta"
+      },
+      "zip": "T"
+    },
+    {
+      "key": "BC",
+      "name": {
+        "default": "British Columbia",
+        "fr": "Colombie-Britannique"
+      },
+      "zip": "V"
+    },
+    {
+      "key": "MB",
+      "name": {
+        "default": "Manitoba",
+        "fr": "Manitoba"
+      },
+      "zip": "R"
+    },
+    {
+      "key": "NB",
+      "name": {
+        "default": "New Brunswick",
+        "fr": "Nouveau-Brunswick"
+      },
+      "zip": "E"
+    },
+    {
+      "key": "NL",
+      "name": {
+        "default": "Newfoundland and Labrador",
+        "fr": "Terre-Neuve-et-Labrador"
+      },
+      "zip": "A"
+    },
+    {
+      "key": "NT",
+      "name": {
+        "default": "Northwest Territories",
+        "fr": "Territoires du Nord-Ouest"
+      },
+      "zip": "X0E|X0G|X1A"
+    },
+    {
+      "key": "NS",
+      "name": {
+        "default": "Nova Scotia",
+        "fr": "Nouvelle-Écosse"
+      },
+      "zip": "B"
+    },
+    {
+      "key": "NU",
+      "name": {
+        "default": "Nunavut",
+        "fr": "Nunavut"
+      },
+      "zip": "X0A|X0B|X0C"
+    },
+    {
+      "key": "ON",
+      "name": {
+        "default": "Ontario",
+        "fr": "Ontario"
+      },
+      "zip": "K|L|M|N|P"
+    },
+    {
+      "key": "PE",
+      "name": {
+        "default": "Prince Edward Island",
+        "fr": "Île-du-Prince-Édouard"
+      },
+      "zip": "C"
+    },
+    {
+      "key": "QC",
+      "name": {
+        "default": "Quebec",
+        "fr": "Québec"
+      },
+      "zip": "G|H|J|K1A"
+    },
+    {
+      "key": "SK",
+      "name": {
+        "default": "Saskatchewan",
+        "fr": "Saskatchewan"
+      },
+      "zip": "S|R8A"
+    },
+    {
+      "key": "YT",
+      "name": {
+        "default": "Yukon",
+        "fr": "Yukon"
+      },
+      "zip": "Y"
+    }
+  ]
+}

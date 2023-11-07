@@ -1,0 +1,95 @@
+{
+  "id": "data/NR",
+  "key": "NR",
+  "name": "NAURU CENTRAL PACIFIC",
+  "fmt": "%N%n%O%n%A%n%S",
+  "lang": "en",
+  "require": "AS",
+  "state_name_type": "district",
+  "sub_regions": [
+    {
+      "key": "01",
+      "name": {
+        "default": "Aiwo District"
+      }
+    },
+    {
+      "key": "02",
+      "name": {
+        "default": "Anabar District"
+      }
+    },
+    {
+      "key": "03",
+      "name": {
+        "default": "Anetan District"
+      }
+    },
+    {
+      "key": "04",
+      "name": {
+        "default": "Anibare District"
+      }
+    },
+    {
+      "key": "05",
+      "name": {
+        "default": "Baiti District"
+      }
+    },
+    {
+      "key": "06",
+      "name": {
+        "default": "Boe District"
+      }
+    },
+    {
+      "key": "07",
+      "name": {
+        "default": "Buada District"
+      }
+    },
+    {
+      "key": "08",
+      "name": {
+        "default": "Denigomodu District"
+      }
+    },
+    {
+      "key": "09",
+      "name": {
+        "default": "Ewa District"
+      }
+    },
+    {
+      "key": "10",
+      "name": {
+        "default": "Ijuw District"
+      }
+    },
+    {
+      "key": "11",
+      "name": {
+        "default": "Meneng District"
+      }
+    },
+    {
+      "key": "12",
+      "name": {
+        "default": "Nibok District"
+      }
+    },
+    {
+      "key": "13",
+      "name": {
+        "default": "Uaboe District"
+      }
+    },
+    {
+      "key": "14",
+      "name": {
+        "default": "Yaren District"
+      }
+    }
+  ]
+}

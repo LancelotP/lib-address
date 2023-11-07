@@ -1,0 +1,10 @@
+{
+  "id": "data/LU",
+  "key": "LU",
+  "name": "LUXEMBOURG",
+  "fmt": "%O%n%N%n%A%nL-%Z %C",
+  "zip": "\\d{4}",
+  "zipex": "4750,2998",
+  "postprefix": "L-",
+  "require": "ACZ"
+}

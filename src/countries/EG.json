@@ -1,0 +1,255 @@
+{
+  "id": "data/EG",
+  "key": "EG",
+  "name": "EGYPT",
+  "fmt": "%N%n%O%n%A%n%C%n%S%n%Z",
+  "lfmt": "%N%n%O%n%A%n%C%n%S%n%Z",
+  "zip": "\\d{5}",
+  "zipex": "12411,11599",
+  "lang": "ar",
+  "sub_regions": [
+    {
+      "key": "ASN",
+      "name": {
+        "default": "أسوان",
+        "latin": "Aswan Governorate"
+      },
+      "zip": "81",
+      "zipex": "81000"
+    },
+    {
+      "key": "AST",
+      "name": {
+        "default": "أسيوط",
+        "latin": "Asyut Governorate"
+      },
+      "zip": "71",
+      "zipex": "71000"
+    },
+    {
+      "key": "ALX",
+      "name": {
+        "default": "الإسكندرية",
+        "latin": "Alexandria Governorate"
+      },
+      "zip": "2[13]",
+      "zipex": "21000,23000"
+    },
+    {
+      "key": "IS",
+      "name": {
+        "default": "الإسماعيلية",
+        "latin": "Ismailia Governorate"
+      },
+      "zip": "41",
+      "zipex": "41000"
+    },
+    {
+      "key": "LX",
+      "name": {
+        "default": "الأقصر",
+        "latin": "Luxor Governorate"
+      },
+      "zip": "85",
+      "zipex": "85000"
+    },
+    {
+      "key": "BA",
+      "name": {
+        "default": "البحر الأحمر",
+        "latin": "Red Sea Governorate"
+      },
+      "zip": "84",
+      "zipex": "84000"
+    },
+    {
+      "key": "BH",
+      "name": {
+        "default": "البحيرة",
+        "latin": "El Beheira Governorate"
+      },
+      "zip": "22",
+      "zipex": "22000"
+    },
+    {
+      "key": "GZ",
+      "name": {
+        "default": "الجيزة",
+        "latin": "Giza Governorate"
+      },
+      "zip": "12",
+      "zipex": "12000"
+    },
+    {
+      "key": "DK",
+      "name": {
+        "default": "الدقهلية",
+        "latin": "Dakahlia Governorate"
+      },
+      "zip": "35",
+      "zipex": "35000"
+    },
+    {
+      "key": "SUZ",
+      "name": {
+        "default": "السويس",
+        "latin": "Suez Governorate"
+      },
+      "zip": "43",
+      "zipex": "43000"
+    },
+    {
+      "key": "SHR",
+      "name": {
+        "default": "الشرقية",
+        "latin": "Ash Sharqia Governorate"
+      },
+      "zip": "44",
+      "zipex": "44000"
+    },
+    {
+      "key": "GH",
+      "name": {
+        "default": "الغربية",
+        "latin": "Gharbia Governorate"
+      },
+      "zip": "31",
+      "zipex": "31000"
+    },
+    {
+      "key": "FYM",
+      "name": {
+        "default": "الفيوم",
+        "latin": "Faiyum Governorate"
+      },
+      "zip": "63",
+      "zipex": "63000"
+    },
+    {
+      "key": "C",
+      "name": {
+        "default": "القاهرة",
+        "latin": "Cairo Governorate"
+      },
+      "zip": "11",
+      "zipex": "11000"
+    },
+    {
+      "key": "KB",
+      "name": {
+        "default": "القليوبية",
+        "latin": "Qalyubia Governorate"
+      },
+      "zip": "13",
+      "zipex": "13000"
+    },
+    {
+      "key": "MNF",
+      "name": {
+        "default": "المنوفية",
+        "latin": "Menofia Governorate"
+      },
+      "zip": "32",
+      "zipex": "32000"
+    },
+    {
+      "key": "MN",
+      "name": {
+        "default": "المنيا",
+        "latin": "Menia Governorate"
+      },
+      "zip": "61",
+      "zipex": "61000"
+    },
+    {
+      "key": "WAD",
+      "name": {
+        "default": "الوادي الجديد",
+        "latin": "New Valley Governorate"
+      },
+      "zip": "72",
+      "zipex": "72000"
+    },
+    {
+      "key": "BNS",
+      "name": {
+        "default": "بني سويف",
+        "latin": "Beni Suef Governorate"
+      },
+      "zip": "62",
+      "zipex": "62000"
+    },
+    {
+      "key": "PTS",
+      "name": {
+        "default": "بورسعيد",
+        "latin": "Port Said Governorate"
+      },
+      "zip": "42",
+      "zipex": "42000"
+    },
+    {
+      "key": "JS",
+      "name": {
+        "default": "جنوب سيناء",
+        "latin": "South Sinai Governorate"
+      },
+      "zip": "46",
+      "zipex": "46000"
+    },
+    {
+      "key": "DT",
+      "name": {
+        "default": "دمياط",
+        "latin": "Damietta Governorate"
+      },
+      "zip": "34",
+      "zipex": "34000"
+    },
+    {
+      "key": "SHG",
+      "name": {
+        "default": "سوهاج",
+        "latin": "Sohag Governorate"
+      },
+      "zip": "82",
+      "zipex": "82000"
+    },
+    {
+      "key": "SIN",
+      "name": {
+        "default": "شمال سيناء",
+        "latin": "North Sinai Governorate"
+      },
+      "zip": "45",
+      "zipex": "45000"
+    },
+    {
+      "key": "KN",
+      "name": {
+        "default": "قنا",
+        "latin": "Qena Governorate"
+      },
+      "zip": "83",
+      "zipex": "83000"
+    },
+    {
+      "key": "KFS",
+      "name": {
+        "default": "كفر الشيخ",
+        "latin": "Kafr El Sheikh Governorate"
+      },
+      "zip": "33",
+      "zipex": "33000"
+    },
+    {
+      "key": "MT",
+      "name": {
+        "default": "مطروح",
+        "latin": "Matrouh Governorate"
+      },
+      "zip": "51",
+      "zipex": "51000"
+    }
+  ]
+}

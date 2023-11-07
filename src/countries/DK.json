@@ -1,0 +1,9 @@
+{
+  "id": "data/DK",
+  "key": "DK",
+  "name": "DENMARK",
+  "fmt": "%N%n%O%n%A%n%Z %C",
+  "zip": "\\d{4}",
+  "zipex": "8660,1566",
+  "require": "ACZ"
+}

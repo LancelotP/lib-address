@@ -1,0 +1,10 @@
+{
+  "id": "data/LI",
+  "key": "LI",
+  "name": "LIECHTENSTEIN",
+  "fmt": "%O%n%N%n%A%nFL-%Z %C",
+  "zip": "948[5-9]|949[0-8]",
+  "zipex": "9496,9491,9490,9485",
+  "postprefix": "FL-",
+  "require": "ACZ"
+}

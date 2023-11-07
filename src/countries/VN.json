@@ -1,0 +1,453 @@
+{
+  "id": "data/VN",
+  "key": "VN",
+  "name": "VIET NAM",
+  "fmt": "%N%n%O%n%A%n%C%n%S %Z",
+  "lfmt": "%N%n%O%n%A%n%C%n%S %Z",
+  "zip": "\\d{5}\\d?",
+  "zipex": "70010,55999",
+  "lang": "vi",
+  "sub_regions": [
+    {
+      "key": "44",
+      "name": {
+        "default": "An Giang",
+        "latin": "An Giang Province"
+      }
+    },
+    {
+      "key": "43",
+      "name": {
+        "default": "Bà Rịa–Vũng Tàu",
+        "latin": "Ba Ria-Vung Tau Province"
+      }
+    },
+    {
+      "key": "55",
+      "name": {
+        "default": "Bạc Liêu",
+        "latin": "Bac Lieu Province"
+      }
+    },
+    {
+      "key": "54",
+      "name": {
+        "default": "Bắc Giang",
+        "latin": "Bac Giang Province"
+      }
+    },
+    {
+      "key": "53",
+      "name": {
+        "default": "Bắc Kạn",
+        "latin": "Bac Kan Province"
+      }
+    },
+    {
+      "key": "56",
+      "name": {
+        "default": "Bắc Ninh",
+        "latin": "Bac Ninh Province"
+      }
+    },
+    {
+      "key": "50",
+      "name": {
+        "default": "Bến Tre",
+        "latin": "Ben Tre Province"
+      }
+    },
+    {
+      "key": "57",
+      "name": {
+        "default": "Bình Dương",
+        "latin": "Binh Duong Province"
+      }
+    },
+    {
+      "key": "31",
+      "name": {
+        "default": "Bình Định",
+        "latin": "Binh Dinh Province"
+      }
+    },
+    {
+      "key": "58",
+      "name": {
+        "default": "Bình Phước",
+        "latin": "Binh Phuoc Province"
+      }
+    },
+    {
+      "key": "40",
+      "name": {
+        "default": "Bình Thuận",
+        "latin": "Binh Thuan Province"
+      }
+    },
+    {
+      "key": "59",
+      "name": {
+        "default": "Cà Mau",
+        "latin": "Ca Mau Province"
+      }
+    },
+    {
+      "key": "04",
+      "name": {
+        "default": "Cao Bằng",
+        "latin": "Cao Bang Province"
+      }
+    },
+    {
+      "key": "CT",
+      "name": {
+        "default": "Cần Thơ",
+        "latin": "Can Tho City"
+      }
+    },
+    {
+      "key": "DN",
+      "name": {
+        "default": "Đà Nẵng",
+        "latin": "Da Nang City"
+      }
+    },
+    {
+      "key": "33",
+      "name": {
+        "default": "Đắk Lắk",
+        "latin": "Dak Lak Province"
+      }
+    },
+    {
+      "key": "72",
+      "name": {
+        "default": "Đăk Nông",
+        "latin": "Dak Nong Province"
+      }
+    },
+    {
+      "key": "71",
+      "name": {
+        "default": "Điện Biên",
+        "latin": "Dien Bien Province"
+      }
+    },
+    {
+      "key": "39",
+      "name": {
+        "default": "Đồng Nai",
+        "latin": "Dong Nai Province"
+      }
+    },
+    {
+      "key": "45",
+      "name": {
+        "default": "Đồng Tháp",
+        "latin": "Dong Thap Province"
+      }
+    },
+    {
+      "key": "30",
+      "name": {
+        "default": "Gia Lai",
+        "latin": "Gia Lai Province"
+      }
+    },
+    {
+      "key": "03",
+      "name": {
+        "default": "Hà Giang",
+        "latin": "Ha Giang Province"
+      }
+    },
+    {
+      "key": "63",
+      "name": {
+        "default": "Hà Nam",
+        "latin": "Ha Nam Province"
+      }
+    },
+    {
+      "key": "HN",
+      "name": {
+        "default": "Hà Nội",
+        "latin": "Hanoi City"
+      }
+    },
+    {
+      "key": "23",
+      "name": {
+        "default": "Hà Tĩnh",
+        "latin": "Ha Tinh Province"
+      }
+    },
+    {
+      "key": "61",
+      "name": {
+        "default": "Hải Dương",
+        "latin": "Hai Duong Province"
+      }
+    },
+    {
+      "key": "HP",
+      "name": {
+        "default": "Hải Phòng",
+        "latin": "Haiphong City"
+      }
+    },
+    {
+      "key": "73",
+      "name": {
+        "default": "Hậu Giang",
+        "latin": "Hau Giang Province"
+      }
+    },
+    {
+      "key": "14",
+      "name": {
+        "default": "Hòa Bình",
+        "latin": "Hoa Binh Province"
+      }
+    },
+    {
+      "key": "66",
+      "name": {
+        "default": "Hưng Yên",
+        "latin": "Hung Yen Province"
+      }
+    },
+    {
+      "key": "34",
+      "name": {
+        "default": "Khánh Hòa",
+        "latin": "Khanh Hoa Province"
+      }
+    },
+    {
+      "key": "47",
+      "name": {
+        "default": "Kiên Giang",
+        "latin": "Kien Giang Province"
+      }
+    },
+    {
+      "key": "28",
+      "name": {
+        "default": "Kon Tum",
+        "latin": "Kon Tum Province"
+      }
+    },
+    {
+      "key": "01",
+      "name": {
+        "default": "Lai Châu",
+        "latin": "Lai Chau Province"
+      }
+    },
+    {
+      "key": "09",
+      "name": {
+        "default": "Lạng Sơn",
+        "latin": "Lang Song Province"
+      }
+    },
+    {
+      "key": "02",
+      "name": {
+        "default": "Lào Cai",
+        "latin": "Lao Cai Province"
+      }
+    },
+    {
+      "key": "35",
+      "name": {
+        "default": "Lâm Đồng",
+        "latin": "Lam Dong Province"
+      }
+    },
+    {
+      "key": "41",
+      "name": {
+        "default": "Long An",
+        "latin": "Long An Province"
+      }
+    },
+    {
+      "key": "67",
+      "name": {
+        "default": "Nam Định",
+        "latin": "Nam Dinh Province"
+      }
+    },
+    {
+      "key": "22",
+      "name": {
+        "default": "Nghệ An",
+        "latin": "Nghe An Province"
+      }
+    },
+    {
+      "key": "18",
+      "name": {
+        "default": "Ninh Bình",
+        "latin": "Ninh Binh Province"
+      }
+    },
+    {
+      "key": "36",
+      "name": {
+        "default": "Ninh Thuận",
+        "latin": "Ninh Thuan Province"
+      }
+    },
+    {
+      "key": "68",
+      "name": {
+        "default": "Phú Thọ",
+        "latin": "Phu Tho Province"
+      }
+    },
+    {
+      "key": "32",
+      "name": {
+        "default": "Phú Yên",
+        "latin": "Phu Yen Province"
+      }
+    },
+    {
+      "key": "24",
+      "name": {
+        "default": "Quảng Bình",
+        "latin": "Quang Binh Province"
+      }
+    },
+    {
+      "key": "27",
+      "name": {
+        "default": "Quảng Nam",
+        "latin": "Quang Nam Province"
+      }
+    },
+    {
+      "key": "29",
+      "name": {
+        "default": "Quảng Ngãi",
+        "latin": "Quang Ngai Province"
+      }
+    },
+    {
+      "key": "13",
+      "name": {
+        "default": "Quảng Ninh",
+        "latin": "Quang Ninh Province"
+      }
+    },
+    {
+      "key": "25",
+      "name": {
+        "default": "Quảng Trị",
+        "latin": "Quang Tri Province"
+      }
+    },
+    {
+      "key": "52",
+      "name": {
+        "default": "Sóc Trăng",
+        "latin": "Soc Trang Province"
+      }
+    },
+    {
+      "key": "05",
+      "name": {
+        "default": "Sơn La",
+        "latin": "Son La Province"
+      }
+    },
+    {
+      "key": "37",
+      "name": {
+        "default": "Tây Ninh",
+        "latin": "Tay Ninh Province"
+      }
+    },
+    {
+      "key": "20",
+      "name": {
+        "default": "Thái Bình",
+        "latin": "Thai Binh Province"
+      }
+    },
+    {
+      "key": "69",
+      "name": {
+        "default": "Thái Nguyên",
+        "latin": "Thai Nguyen Province"
+      }
+    },
+    {
+      "key": "21",
+      "name": {
+        "default": "Thanh Hóa",
+        "latin": "Thanh Hoa Province"
+      }
+    },
+    {
+      "key": "SG",
+      "name": {
+        "default": "Thành phố Hồ Chí Minh",
+        "latin": "Ho Chi Minh City"
+      }
+    },
+    {
+      "key": "26",
+      "name": {
+        "default": "Thừa Thiên–Huế",
+        "latin": "Thua Thien-Hue Province"
+      }
+    },
+    {
+      "key": "46",
+      "name": {
+        "default": "Tiền Giang",
+        "latin": "Tien Giang Province"
+      }
+    },
+    {
+      "key": "51",
+      "name": {
+        "default": "Trà Vinh",
+        "latin": "Tra Vinh Province"
+      }
+    },
+    {
+      "key": "07",
+      "name": {
+        "default": "Tuyên Quang",
+        "latin": "Tuyen Quang Province"
+      }
+    },
+    {
+      "key": "49",
+      "name": {
+        "default": "Vĩnh Long",
+        "latin": "Vinh Long Province"
+      }
+    },
+    {
+      "key": "70",
+      "name": {
+        "default": "Vĩnh Phúc",
+        "latin": "Vinh Phuc Province"
+      }
+    },
+    {
+      "key": "06",
+      "name": {
+        "default": "Yên Bái",
+        "latin": "Yen Bai Province"
+      }
+    }
+  ]
+}

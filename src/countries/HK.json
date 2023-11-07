@@ -1,0 +1,782 @@
+{
+  "id": "data/HK",
+  "key": "HK",
+  "name": "HONG KONG",
+  "fmt": "%S%n%C%n%A%n%O%n%N",
+  "lfmt": "%N%n%O%n%A%n%C%n%S",
+  "lang": "zh-Hant",
+  "upper": "S",
+  "locality_name_type": "district",
+  "require": "AS",
+  "state_name_type": "area",
+  "sub_regions": [
+    {
+      "key": "Kowloon",
+      "name": {
+        "default": "九龍"
+      },
+      "sub_regions": [
+        {
+          "key": "Kowloon City",
+          "name": {
+            "default": "九龍城"
+          }
+        },
+        {
+          "key": "Kowloon Tong",
+          "name": {
+            "default": "九龍塘"
+          }
+        },
+        {
+          "key": "Kowloon Bay",
+          "name": {
+            "default": "九龍灣"
+          }
+        },
+        {
+          "key": "Yau Yat Chuen",
+          "name": {
+            "default": "又一村"
+          }
+        },
+        {
+          "key": "To Kwa Wan",
+          "name": {
+            "default": "土瓜灣"
+          }
+        },
+        {
+          "key": "Tai Kok Tsui",
+          "name": {
+            "default": "大角咀"
+          }
+        },
+        {
+          "key": "Ngau Chi Wan",
+          "name": {
+            "default": "牛池灣"
+          }
+        },
+        {
+          "key": "Ngau Tau Kok",
+          "name": {
+            "default": "牛頭角"
+          }
+        },
+        {
+          "key": "Shek Kip Mei",
+          "name": {
+            "default": "石硤尾"
+          }
+        },
+        {
+          "key": "Tsim Sha Tsui",
+          "name": {
+            "default": "尖沙咀"
+          }
+        },
+        {
+          "key": "Jordan",
+          "name": {
+            "default": "佐敦"
+          }
+        },
+        {
+          "key": "Ho Man Tin",
+          "name": {
+            "default": "何文田"
+          }
+        },
+        {
+          "key": "Sau Mau Ping",
+          "name": {
+            "default": "秀茂坪"
+          }
+        },
+        {
+          "key": "Mong Kok",
+          "name": {
+            "default": "旺角"
+          }
+        },
+        {
+          "key": "Yau Ma Tei",
+          "name": {
+            "default": "油麻地"
+          }
+        },
+        {
+          "key": "Yau Tong",
+          "name": {
+            "default": "油塘"
+          }
+        },
+        {
+          "key": "Cheung Sha Wan",
+          "name": {
+            "default": "長沙灣"
+          }
+        },
+        {
+          "key": "Hung Hom",
+          "name": {
+            "default": "紅磡"
+          }
+        },
+        {
+          "key": "Mei Foo",
+          "name": {
+            "default": "美孚"
+          }
+        },
+        {
+          "key": "Cha Kwo Ling",
+          "name": {
+            "default": "茶果嶺"
+          }
+        },
+        {
+          "key": "Lai Chi Kok",
+          "name": {
+            "default": "荔枝角"
+          }
+        },
+        {
+          "key": "Ma Tau Wai",
+          "name": {
+            "default": "馬頭圍"
+          }
+        },
+        {
+          "key": "Choi Hung",
+          "name": {
+            "default": "彩虹"
+          }
+        },
+        {
+          "key": "Sham Shui Po",
+          "name": {
+            "default": "深水埗"
+          }
+        },
+        {
+          "key": "Wong Tai Sin",
+          "name": {
+            "default": "黃大仙"
+          }
+        },
+        {
+          "key": "San Po Kong",
+          "name": {
+            "default": "新蒲崗"
+          }
+        },
+        {
+          "key": "Tsz Wan Shan",
+          "name": {
+            "default": "慈雲山"
+          }
+        },
+        {
+          "key": "Lok Fu",
+          "name": {
+            "default": "樂富"
+          }
+        },
+        {
+          "key": "Wang Tau Hom",
+          "name": {
+            "default": "橫頭磡"
+          }
+        },
+        {
+          "key": "Lam Tin",
+          "name": {
+            "default": "藍田"
+          }
+        },
+        {
+          "key": "Kwun Tong",
+          "name": {
+            "default": "觀塘"
+          }
+        },
+        {
+          "key": "Diamond Hill",
+          "name": {
+            "default": "鑽石山"
+          }
+        }
+      ]
+    },
+    {
+      "key": "Hong Kong Island",
+      "name": {
+        "default": "香港島"
+      },
+      "sub_regions": [
+        {
+          "key": "Sheung Wan",
+          "name": {
+            "default": "上環"
+          }
+        },
+        {
+          "key": "Tai Hang",
+          "name": {
+            "default": "大坑"
+          }
+        },
+        {
+          "key": "Tai Tam",
+          "name": {
+            "default": "大潭"
+          }
+        },
+        {
+          "key": "The Peak",
+          "name": {
+            "default": "山頂"
+          }
+        },
+        {
+          "key": "Central",
+          "name": {
+            "default": "中環"
+          }
+        },
+        {
+          "key": "North Point",
+          "name": {
+            "default": "北角"
+          }
+        },
+        {
+          "key": "Mid-level",
+          "name": {
+            "default": "半山"
+          }
+        },
+        {
+          "key": "Shek Tong Tsui",
+          "name": {
+            "default": "石塘咀"
+          }
+        },
+        {
+          "key": "Shek O",
+          "name": {
+            "default": "石澳"
+          }
+        },
+        {
+          "key": "Sai Ying Pun",
+          "name": {
+            "default": "西營盤"
+          }
+        },
+        {
+          "key": "Sai Wan Ho",
+          "name": {
+            "default": "西灣河"
+          }
+        },
+        {
+          "key": "Stanley",
+          "name": {
+            "default": "赤柱"
+          }
+        },
+        {
+          "key": "Admiralty",
+          "name": {
+            "default": "金鐘"
+          }
+        },
+        {
+          "key": "Aberdeen",
+          "name": {
+            "default": "香港仔"
+          }
+        },
+        {
+          "key": "Chai Wan",
+          "name": {
+            "default": "柴灣"
+          }
+        },
+        {
+          "key": "Kennedy Town",
+          "name": {
+            "default": "堅尼地城"
+          }
+        },
+        {
+          "key": "Deep Water Bay",
+          "name": {
+            "default": "深水灣"
+          }
+        },
+        {
+          "key": "Repulse Bay",
+          "name": {
+            "default": "淺水灣"
+          }
+        },
+        {
+          "key": "Chung Hom Kok",
+          "name": {
+            "default": "舂坎角"
+          }
+        },
+        {
+          "key": "Happy Valley",
+          "name": {
+            "default": "跑馬地"
+          }
+        },
+        {
+          "key": "Wong Chuk Hang",
+          "name": {
+            "default": "黃竹坑"
+          }
+        },
+        {
+          "key": "Shau Kei Wan",
+          "name": {
+            "default": "筲箕灣"
+          }
+        },
+        {
+          "key": "Causeway Bay",
+          "name": {
+            "default": "銅鑼灣"
+          }
+        },
+        {
+          "key": "Ap Lei Chau",
+          "name": {
+            "default": "鴨脷洲"
+          }
+        },
+        {
+          "key": "Pok Fu Lam",
+          "name": {
+            "default": "薄扶林"
+          }
+        },
+        {
+          "key": "Quarry Bay",
+          "name": {
+            "default": "鰂魚涌"
+          }
+        },
+        {
+          "key": "Wan Chai",
+          "name": {
+            "default": "灣仔"
+          }
+        }
+      ]
+    },
+    {
+      "key": "New Territories",
+      "name": {
+        "default": "新界"
+      },
+      "sub_regions": [
+        {
+          "key": "Kau To Shan",
+          "name": {
+            "default": "九肚山"
+          }
+        },
+        {
+          "key": "Sheung Shui",
+          "name": {
+            "default": "上水"
+          }
+        },
+        {
+          "key": "Tai Po",
+          "name": {
+            "default": "大埔"
+          }
+        },
+        {
+          "key": "Ting Kok Tai Po",
+          "name": {
+            "default": "大埔汀角"
+          }
+        },
+        {
+          "key": "Lam Tsuen Tai Po",
+          "name": {
+            "default": "大埔林村"
+          }
+        },
+        {
+          "key": "Shuen Wan Tai Po",
+          "name": {
+            "default": "大埔船灣"
+          }
+        },
+        {
+          "key": "Tai Po Kau",
+          "name": {
+            "default": "大埔滘"
+          }
+        },
+        {
+          "key": "Lantau Island",
+          "name": {
+            "default": "大嶼山"
+          }
+        },
+        {
+          "key": "Tai O Lantau Island",
+          "name": {
+            "default": "大嶼山大澳"
+          }
+        },
+        {
+          "key": "Shek Pik Lantau Island",
+          "name": {
+            "default": "大嶼山石壁"
+          }
+        },
+        {
+          "key": "Chek Lap Kok Lantau Island",
+          "name": {
+            "default": "大嶼山赤鱲角"
+          }
+        },
+        {
+          "key": "Ngong Ping Lantau Island",
+          "name": {
+            "default": "大嶼山昂坪"
+          }
+        },
+        {
+          "key": "Tung Chung Lantau Island",
+          "name": {
+            "default": "大嶼山東涌"
+          }
+        },
+        {
+          "key": "Chi Ma Wan Lantau Island",
+          "name": {
+            "default": "大嶼山芝麻灣"
+          }
+        },
+        {
+          "key": "Cheung Sha Lantau Island",
+          "name": {
+            "default": "大嶼山長沙"
+          }
+        },
+        {
+          "key": "Mui Wo Lantau Island",
+          "name": {
+            "default": "大嶼山梅窩"
+          }
+        },
+        {
+          "key": "Discovery Bay Lantau Island",
+          "name": {
+            "default": "大嶼山愉景灣"
+          }
+        },
+        {
+          "key": "Tong Fuk Lantau Island",
+          "name": {
+            "default": "大嶼山塘福"
+          }
+        },
+        {
+          "key": "Tai Lam",
+          "name": {
+            "default": "大欖"
+          }
+        },
+        {
+          "key": "Yuen Long",
+          "name": {
+            "default": "元朗"
+          }
+        },
+        {
+          "key": "Pat Heung Yuen Long",
+          "name": {
+            "default": "元朗八鄉"
+          }
+        },
+        {
+          "key": "Tai Tong Yuen Long",
+          "name": {
+            "default": "元朗大棠"
+          }
+        },
+        {
+          "key": "Shek Kong Yuen Long",
+          "name": {
+            "default": "元朗石崗"
+          }
+        },
+        {
+          "key": "Ping Shan Yuen Long",
+          "name": {
+            "default": "元朗屏山"
+          }
+        },
+        {
+          "key": "Ha Tsuen Yuen Long",
+          "name": {
+            "default": "元朗廈村"
+          }
+        },
+        {
+          "key": "San Tin Yuen Long",
+          "name": {
+            "default": "元朗新田"
+          }
+        },
+        {
+          "key": "Tam Mei Yuen Long",
+          "name": {
+            "default": "元朗潭尾"
+          }
+        },
+        {
+          "key": "Kam Tin Yuen Long",
+          "name": {
+            "default": "元朗錦田"
+          }
+        },
+        {
+          "key": "Tin Shui Wai",
+          "name": {
+            "default": "天水圍"
+          }
+        },
+        {
+          "key": "Tai Wo",
+          "name": {
+            "default": "太和"
+          }
+        },
+        {
+          "key": "Tuen Mun",
+          "name": {
+            "default": "屯門"
+          }
+        },
+        {
+          "key": "Siu Lam Tuen Mun",
+          "name": {
+            "default": "屯門小欖"
+          }
+        },
+        {
+          "key": "Fu Tei Tuen Mun",
+          "name": {
+            "default": "屯門虎地"
+          }
+        },
+        {
+          "key": "San Hui Tuen Mun",
+          "name": {
+            "default": "屯門新墟"
+          }
+        },
+        {
+          "key": "Lam Tei Tuen Mun",
+          "name": {
+            "default": "屯門藍地"
+          }
+        },
+        {
+          "key": "Kwu Tung",
+          "name": {
+            "default": "古洞"
+          }
+        },
+        {
+          "key": "Ta Kwu Ling",
+          "name": {
+            "default": "打鼓嶺"
+          }
+        },
+        {
+          "key": "Ting Kau",
+          "name": {
+            "default": "汀九"
+          }
+        },
+        {
+          "key": "Sai Kung",
+          "name": {
+            "default": "西貢"
+          }
+        },
+        {
+          "key": "Hang Hau Sai Kung",
+          "name": {
+            "default": "西貢坑口"
+          }
+        },
+        {
+          "key": "Sha Tin",
+          "name": {
+            "default": "沙田"
+          }
+        },
+        {
+          "key": "Tai Wai Sha Tin",
+          "name": {
+            "default": "沙田大圍"
+          }
+        },
+        {
+          "key": "Siu Lek Yuen Sha Tin",
+          "name": {
+            "default": "沙田小瀝源"
+          }
+        },
+        {
+          "key": "Fo Tan Sha Tin",
+          "name": {
+            "default": "沙田火炭"
+          }
+        },
+        {
+          "key": "Sha Tau Kok",
+          "name": {
+            "default": "沙頭角"
+          }
+        },
+        {
+          "key": "Peng Chau",
+          "name": {
+            "default": "坪洲"
+          }
+        },
+        {
+          "key": "Ping Che",
+          "name": {
+            "default": "坪輋"
+          }
+        },
+        {
+          "key": "Cheung Chau",
+          "name": {
+            "default": "長洲"
+          }
+        },
+        {
+          "key": "Tsing Yi",
+          "name": {
+            "default": "青衣"
+          }
+        },
+        {
+          "key": "Lamma Island",
+          "name": {
+            "default": "南丫島"
+          }
+        },
+        {
+          "key": "Hung Shui Kiu",
+          "name": {
+            "default": "洪水橋"
+          }
+        },
+        {
+          "key": "Lau Fau Shan",
+          "name": {
+            "default": "流浮山"
+          }
+        },
+        {
+          "key": "Fanling",
+          "name": {
+            "default": "粉嶺"
+          }
+        },
+        {
+          "key": "Kwan Tei Fanling",
+          "name": {
+            "default": "粉嶺軍地"
+          }
+        },
+        {
+          "key": "Tsuen Wan",
+          "name": {
+            "default": "荃灣"
+          }
+        },
+        {
+          "key": "Lo Wai Tsuen Wan",
+          "name": {
+            "default": "荃灣老圍"
+          }
+        },
+        {
+          "key": "Ma Liu Shui",
+          "name": {
+            "default": "馬料水"
+          }
+        },
+        {
+          "key": "Ma On Shan",
+          "name": {
+            "default": "馬鞍山"
+          }
+        },
+        {
+          "key": "Ma Wan",
+          "name": {
+            "default": "馬灣"
+          }
+        },
+        {
+          "key": "Tseung Kwan O",
+          "name": {
+            "default": "將軍澳"
+          }
+        },
+        {
+          "key": "So Kwun Wat",
+          "name": {
+            "default": "掃管笏"
+          }
+        },
+        {
+          "key": "Sham Tseng",
+          "name": {
+            "default": "深井"
+          }
+        },
+        {
+          "key": "Clear Water Bay",
+          "name": {
+            "default": "清水灣"
+          }
+        },
+        {
+          "key": "Hei Ling Chau",
+          "name": {
+            "default": "喜靈洲"
+          }
+        },
+        {
+          "key": "Kwai Chung",
+          "name": {
+            "default": "葵涌"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "id": "data/CR",
+  "key": "CR",
+  "name": "COSTA RICA",
+  "fmt": "%N%n%O%n%A%n%S, %C%n%Z",
+  "zip": "\\d{4,5}|\\d{3}-\\d{4}",
+  "zipex": "1000,2010,1001",
+  "require": "ACS"
+}

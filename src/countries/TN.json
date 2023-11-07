@@ -1,0 +1,8 @@
+{
+  "id": "data/TN",
+  "key": "TN",
+  "name": "TUNISIA",
+  "fmt": "%N%n%O%n%A%n%Z %C",
+  "zip": "\\d{4}",
+  "zipex": "1002,8129,3100,1030"
+}

@@ -1,0 +1,10 @@
+{
+  "id": "data/RO",
+  "key": "RO",
+  "name": "ROMANIA",
+  "fmt": "%N%n%O%n%A%n%Z %S %C",
+  "zip": "\\d{6}",
+  "zipex": "060274,061357,200716",
+  "upper": "AC",
+  "require": "ACZ"
+}

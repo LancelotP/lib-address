@@ -1,0 +1,3210 @@
+{
+  "id": "data/TW",
+  "key": "TW",
+  "name": "TAIWAN",
+  "fmt": "%Z%n%S%C%n%A%n%O%n%N",
+  "lfmt": "%N%n%O%n%A%n%C, %S %Z",
+  "zip": "\\d{3}(?:\\d{2,3})?",
+  "zipex": "104,106,10603,40867",
+  "lang": "zh-Hant",
+  "locality_name_type": "district",
+  "require": "ACSZ",
+  "state_name_type": "county",
+  "sub_regions": [
+    {
+      "key": "TXG",
+      "name": {
+        "default": "台中市",
+        "latin": "Taichung City"
+      },
+      "zip": "4[0-3]",
+      "zipex": "400,408,411,439",
+      "sub_regions": [
+        {
+          "key": "大甲區",
+          "name": {
+            "default": "大甲區",
+            "latin": "Dajia District"
+          },
+          "zip": "437"
+        },
+        {
+          "key": "大安區",
+          "name": {
+            "default": "大安區",
+            "latin": "Da'an District"
+          },
+          "zip": "439"
+        },
+        {
+          "key": "大肚區",
+          "name": {
+            "default": "大肚區",
+            "latin": "Dadu District"
+          },
+          "zip": "432"
+        },
+        {
+          "key": "大里區",
+          "name": {
+            "default": "大里區",
+            "latin": "Dali District"
+          },
+          "zip": "412"
+        },
+        {
+          "key": "大雅區",
+          "name": {
+            "default": "大雅區",
+            "latin": "Daya District"
+          },
+          "zip": "428"
+        },
+        {
+          "key": "中區",
+          "name": {
+            "default": "中區",
+            "latin": "Central District"
+          },
+          "zip": "400"
+        },
+        {
+          "key": "太平區",
+          "name": {
+            "default": "太平區",
+            "latin": "Taiping District"
+          },
+          "zip": "411"
+        },
+        {
+          "key": "北屯區",
+          "name": {
+            "default": "北屯區",
+            "latin": "Beitun District"
+          },
+          "zip": "406"
+        },
+        {
+          "key": "北區",
+          "name": {
+            "default": "北區",
+            "latin": "North District"
+          },
+          "zip": "404"
+        },
+        {
+          "key": "外埔區",
+          "name": {
+            "default": "外埔區",
+            "latin": "Waipu District"
+          },
+          "zip": "438"
+        },
+        {
+          "key": "石岡區",
+          "name": {
+            "default": "石岡區",
+            "latin": "Shigang District"
+          },
+          "zip": "422"
+        },
+        {
+          "key": "后里區",
+          "name": {
+            "default": "后里區",
+            "latin": "Houli District"
+          },
+          "zip": "421"
+        },
+        {
+          "key": "西屯區",
+          "name": {
+            "default": "西屯區",
+            "latin": "Xitun District"
+          },
+          "zip": "407"
+        },
+        {
+          "key": "西區",
+          "name": {
+            "default": "西區",
+            "latin": "West District"
+          },
+          "zip": "403"
+        },
+        {
+          "key": "沙鹿區",
+          "name": {
+            "default": "沙鹿區",
+            "latin": "Shalu District"
+          },
+          "zip": "433"
+        },
+        {
+          "key": "和平區",
+          "name": {
+            "default": "和平區",
+            "latin": "Heping District"
+          },
+          "zip": "424"
+        },
+        {
+          "key": "東區",
+          "name": {
+            "default": "東區",
+            "latin": "East District"
+          },
+          "zip": "401"
+        },
+        {
+          "key": "東勢區",
+          "name": {
+            "default": "東勢區",
+            "latin": "Dongshi District"
+          },
+          "zip": "423"
+        },
+        {
+          "key": "南屯區",
+          "name": {
+            "default": "南屯區",
+            "latin": "Nantun District"
+          },
+          "zip": "408"
+        },
+        {
+          "key": "南區",
+          "name": {
+            "default": "南區",
+            "latin": "South District"
+          },
+          "zip": "402"
+        },
+        {
+          "key": "烏日區",
+          "name": {
+            "default": "烏日區",
+            "latin": "Wuri District"
+          },
+          "zip": "414"
+        },
+        {
+          "key": "神岡區",
+          "name": {
+            "default": "神岡區",
+            "latin": "Shengang District"
+          },
+          "zip": "429"
+        },
+        {
+          "key": "梧棲區",
+          "name": {
+            "default": "梧棲區",
+            "latin": "Wuqi District"
+          },
+          "zip": "435"
+        },
+        {
+          "key": "清水區",
+          "name": {
+            "default": "清水區",
+            "latin": "Qingshui District"
+          },
+          "zip": "436"
+        },
+        {
+          "key": "新社區",
+          "name": {
+            "default": "新社區",
+            "latin": "Xinshe District"
+          },
+          "zip": "426"
+        },
+        {
+          "key": "潭子區",
+          "name": {
+            "default": "潭子區",
+            "latin": "Tanzi District"
+          },
+          "zip": "427"
+        },
+        {
+          "key": "龍井區",
+          "name": {
+            "default": "龍井區",
+            "latin": "Longjing District"
+          },
+          "zip": "434"
+        },
+        {
+          "key": "豐原區",
+          "name": {
+            "default": "豐原區",
+            "latin": "Fengyuan District"
+          },
+          "zip": "420"
+        },
+        {
+          "key": "霧峰區",
+          "name": {
+            "default": "霧峰區",
+            "latin": "Wufeng District"
+          },
+          "zip": "413"
+        }
+      ]
+    },
+    {
+      "key": "TPE",
+      "name": {
+        "default": "台北市",
+        "latin": "Taipei City"
+      },
+      "zip": "1[01]",
+      "zipex": "100,119",
+      "sub_regions": [
+        {
+          "key": "士林區",
+          "name": {
+            "default": "士林區",
+            "latin": "Shilin District"
+          },
+          "zip": "111"
+        },
+        {
+          "key": "大同區",
+          "name": {
+            "default": "大同區",
+            "latin": "Datong District"
+          },
+          "zip": "103"
+        },
+        {
+          "key": "大安區",
+          "name": {
+            "default": "大安區",
+            "latin": "Da'an District"
+          },
+          "zip": "106"
+        },
+        {
+          "key": "中山區",
+          "name": {
+            "default": "中山區",
+            "latin": "Zhongshan District"
+          },
+          "zip": "104"
+        },
+        {
+          "key": "中正區",
+          "name": {
+            "default": "中正區",
+            "latin": "Zhongzheng District"
+          },
+          "zip": "100"
+        },
+        {
+          "key": "內湖區",
+          "name": {
+            "default": "內湖區",
+            "latin": "Neihu District"
+          },
+          "zip": "114"
+        },
+        {
+          "key": "文山區",
+          "name": {
+            "default": "文山區",
+            "latin": "Wenshan District"
+          },
+          "zip": "116"
+        },
+        {
+          "key": "北投區",
+          "name": {
+            "default": "北投區",
+            "latin": "Beitou District"
+          },
+          "zip": "112"
+        },
+        {
+          "key": "松山區",
+          "name": {
+            "default": "松山區",
+            "latin": "Songshan District"
+          },
+          "zip": "105"
+        },
+        {
+          "key": "信義區",
+          "name": {
+            "default": "信義區",
+            "latin": "Xinyi District"
+          },
+          "zip": "110"
+        },
+        {
+          "key": "南港區",
+          "name": {
+            "default": "南港區",
+            "latin": "Nangang District"
+          },
+          "zip": "115"
+        },
+        {
+          "key": "萬華區",
+          "name": {
+            "default": "萬華區",
+            "latin": "Wanhua District"
+          },
+          "zip": "108"
+        }
+      ]
+    },
+    {
+      "key": "TTT",
+      "name": {
+        "default": "台東縣",
+        "latin": "Taitung County"
+      },
+      "zip": "9[56]",
+      "zipex": "950,966",
+      "sub_regions": [
+        {
+          "key": "大武鄉",
+          "name": {
+            "default": "大武鄉",
+            "latin": "Dawu Township"
+          },
+          "zip": "965"
+        },
+        {
+          "key": "太麻里鄉",
+          "name": {
+            "default": "太麻里鄉",
+            "latin": "Taimali Township"
+          },
+          "zip": "963"
+        },
+        {
+          "key": "台東市",
+          "name": {
+            "default": "台東市",
+            "latin": "Taitung City"
+          },
+          "zip": "950"
+        },
+        {
+          "key": "成功鎮",
+          "name": {
+            "default": "成功鎮",
+            "latin": "Chenggong Township"
+          },
+          "zip": "961"
+        },
+        {
+          "key": "池上鄉",
+          "name": {
+            "default": "池上鄉",
+            "latin": "Chishang Township"
+          },
+          "zip": "958"
+        },
+        {
+          "key": "卑南鄉",
+          "name": {
+            "default": "卑南鄉",
+            "latin": "Beinan Township"
+          },
+          "zip": "954"
+        },
+        {
+          "key": "延平鄉",
+          "name": {
+            "default": "延平鄉",
+            "latin": "Yanping Township"
+          },
+          "zip": "953"
+        },
+        {
+          "key": "東河鄉",
+          "name": {
+            "default": "東河鄉",
+            "latin": "Donghe Township"
+          },
+          "zip": "959"
+        },
+        {
+          "key": "金峰鄉",
+          "name": {
+            "default": "金峰鄉",
+            "latin": "Jinfeng Township"
+          },
+          "zip": "964"
+        },
+        {
+          "key": "長濱鄉",
+          "name": {
+            "default": "長濱鄉",
+            "latin": "Changbin Township"
+          },
+          "zip": "962"
+        },
+        {
+          "key": "海端鄉",
+          "name": {
+            "default": "海端鄉",
+            "latin": "Haiduan Township"
+          },
+          "zip": "957"
+        },
+        {
+          "key": "鹿野鄉",
+          "name": {
+            "default": "鹿野鄉",
+            "latin": "Luye Township"
+          },
+          "zip": "955"
+        },
+        {
+          "key": "達仁鄉",
+          "name": {
+            "default": "達仁鄉",
+            "latin": "Daren Township"
+          },
+          "zip": "966"
+        },
+        {
+          "key": "綠島鄉",
+          "name": {
+            "default": "綠島鄉",
+            "latin": "Lüdao Township"
+          },
+          "zip": "951"
+        },
+        {
+          "key": "關山鎮",
+          "name": {
+            "default": "關山鎮",
+            "latin": "Guanshan Township"
+          },
+          "zip": "956"
+        },
+        {
+          "key": "蘭嶼鄉",
+          "name": {
+            "default": "蘭嶼鄉",
+            "latin": "Lanyu Township"
+          },
+          "zip": "952"
+        }
+      ]
+    },
+    {
+      "key": "TNN",
+      "name": {
+        "default": "台南市",
+        "latin": "Tainan City"
+      },
+      "zip": "7[0-4]",
+      "zipex": "700,745",
+      "sub_regions": [
+        {
+          "key": "七股區",
+          "name": {
+            "default": "七股區",
+            "latin": "Qigu District"
+          },
+          "zip": "724"
+        },
+        {
+          "key": "下營區",
+          "name": {
+            "default": "下營區",
+            "latin": "Xiaying District"
+          },
+          "zip": "735"
+        },
+        {
+          "key": "大內區",
+          "name": {
+            "default": "大內區",
+            "latin": "Danei District"
+          },
+          "zip": "742"
+        },
+        {
+          "key": "山上區",
+          "name": {
+            "default": "山上區",
+            "latin": "Shanshang District"
+          },
+          "zip": "743"
+        },
+        {
+          "key": "中西區",
+          "name": {
+            "default": "中西區",
+            "latin": "West Central District"
+          },
+          "zip": "700"
+        },
+        {
+          "key": "仁德區",
+          "name": {
+            "default": "仁德區",
+            "latin": "Rende District"
+          },
+          "zip": "717"
+        },
+        {
+          "key": "六甲區",
+          "name": {
+            "default": "六甲區",
+            "latin": "Liujia District"
+          },
+          "zip": "734"
+        },
+        {
+          "key": "北門區",
+          "name": {
+            "default": "北門區",
+            "latin": "Beimen District"
+          },
+          "zip": "727"
+        },
+        {
+          "key": "北區",
+          "name": {
+            "default": "北區",
+            "latin": "North District"
+          },
+          "zip": "704"
+        },
+        {
+          "key": "左鎮區",
+          "name": {
+            "default": "左鎮區",
+            "latin": "Zuozhen District"
+          },
+          "zip": "713"
+        },
+        {
+          "key": "永康區",
+          "name": {
+            "default": "永康區",
+            "latin": "Yongkang District"
+          },
+          "zip": "710"
+        },
+        {
+          "key": "玉井區",
+          "name": {
+            "default": "玉井區",
+            "latin": "Yujing District"
+          },
+          "zip": "714"
+        },
+        {
+          "key": "白河區",
+          "name": {
+            "default": "白河區",
+            "latin": "Baihe District"
+          },
+          "zip": "732"
+        },
+        {
+          "key": "安平區",
+          "name": {
+            "default": "安平區",
+            "latin": "Anping District"
+          },
+          "zip": "708"
+        },
+        {
+          "key": "安定區",
+          "name": {
+            "default": "安定區",
+            "latin": "Anding District"
+          },
+          "zip": "745"
+        },
+        {
+          "key": "安南區",
+          "name": {
+            "default": "安南區",
+            "latin": "Annan District"
+          },
+          "zip": "709"
+        },
+        {
+          "key": "西港區",
+          "name": {
+            "default": "西港區",
+            "latin": "Xigang District"
+          },
+          "zip": "723"
+        },
+        {
+          "key": "佳里區",
+          "name": {
+            "default": "佳里區",
+            "latin": "Jiali District"
+          },
+          "zip": "722"
+        },
+        {
+          "key": "官田區",
+          "name": {
+            "default": "官田區",
+            "latin": "Guantian District"
+          },
+          "zip": "720"
+        },
+        {
+          "key": "東山區",
+          "name": {
+            "default": "東山區",
+            "latin": "Dongshan District"
+          },
+          "zip": "733"
+        },
+        {
+          "key": "東區",
+          "name": {
+            "default": "東區",
+            "latin": "East District"
+          },
+          "zip": "701"
+        },
+        {
+          "key": "南化區",
+          "name": {
+            "default": "南化區",
+            "latin": "Nanhua District"
+          },
+          "zip": "716"
+        },
+        {
+          "key": "南區",
+          "name": {
+            "default": "南區",
+            "latin": "South District"
+          },
+          "zip": "702"
+        },
+        {
+          "key": "後壁區",
+          "name": {
+            "default": "後壁區",
+            "latin": "Houbi District"
+          },
+          "zip": "731"
+        },
+        {
+          "key": "柳營區",
+          "name": {
+            "default": "柳營區",
+            "latin": "Liuying District"
+          },
+          "zip": "736"
+        },
+        {
+          "key": "將軍區",
+          "name": {
+            "default": "將軍區",
+            "latin": "Jiangjun District"
+          },
+          "zip": "725"
+        },
+        {
+          "key": "麻豆區",
+          "name": {
+            "default": "麻豆區",
+            "latin": "Madou District"
+          },
+          "zip": "721"
+        },
+        {
+          "key": "善化區",
+          "name": {
+            "default": "善化區",
+            "latin": "Shanhua District"
+          },
+          "zip": "741"
+        },
+        {
+          "key": "新化區",
+          "name": {
+            "default": "新化區",
+            "latin": "Xinhua District"
+          },
+          "zip": "712"
+        },
+        {
+          "key": "新市區",
+          "name": {
+            "default": "新市區",
+            "latin": "Xinshi District"
+          },
+          "zip": "744"
+        },
+        {
+          "key": "新營區",
+          "name": {
+            "default": "新營區",
+            "latin": "Xinying District"
+          },
+          "zip": "730"
+        },
+        {
+          "key": "楠西區",
+          "name": {
+            "default": "楠西區",
+            "latin": "Nanxi District"
+          },
+          "zip": "715"
+        },
+        {
+          "key": "學甲區",
+          "name": {
+            "default": "學甲區",
+            "latin": "Xuejia District"
+          },
+          "zip": "726"
+        },
+        {
+          "key": "龍崎區",
+          "name": {
+            "default": "龍崎區",
+            "latin": "Longqi District"
+          },
+          "zip": "719"
+        },
+        {
+          "key": "歸仁區",
+          "name": {
+            "default": "歸仁區",
+            "latin": "Guiren District"
+          },
+          "zip": "711"
+        },
+        {
+          "key": "關廟區",
+          "name": {
+            "default": "關廟區",
+            "latin": "Guanmiao District"
+          },
+          "zip": "718"
+        },
+        {
+          "key": "鹽水區",
+          "name": {
+            "default": "鹽水區",
+            "latin": "Yanshui District"
+          },
+          "zip": "737"
+        }
+      ]
+    },
+    {
+      "key": "ILA",
+      "name": {
+        "default": "宜蘭縣",
+        "latin": "Yilan County"
+      },
+      "zip": "2[67]",
+      "zipex": "260,272",
+      "sub_regions": [
+        {
+          "key": "三星鄉",
+          "name": {
+            "default": "三星鄉",
+            "latin": "Sanxing Township"
+          },
+          "zip": "266"
+        },
+        {
+          "key": "大同鄉",
+          "name": {
+            "default": "大同鄉",
+            "latin": "Datong Township"
+          },
+          "zip": "267"
+        },
+        {
+          "key": "五結鄉",
+          "name": {
+            "default": "五結鄉",
+            "latin": "Wujie Township"
+          },
+          "zip": "268"
+        },
+        {
+          "key": "冬山鄉",
+          "name": {
+            "default": "冬山鄉",
+            "latin": "Dongshan Township"
+          },
+          "zip": "269"
+        },
+        {
+          "key": "壯圍鄉",
+          "name": {
+            "default": "壯圍鄉",
+            "latin": "Zhuangwei Township"
+          },
+          "zip": "263"
+        },
+        {
+          "key": "宜蘭市",
+          "name": {
+            "default": "宜蘭市",
+            "latin": "Yilan City"
+          },
+          "zip": "260"
+        },
+        {
+          "key": "南澳鄉",
+          "name": {
+            "default": "南澳鄉",
+            "latin": "Nan'ao Township"
+          },
+          "zip": "272"
+        },
+        {
+          "key": "員山鄉",
+          "name": {
+            "default": "員山鄉",
+            "latin": "Yuanshan Township"
+          },
+          "zip": "264"
+        },
+        {
+          "key": "頭城鎮",
+          "name": {
+            "default": "頭城鎮",
+            "latin": "Toucheng Township"
+          },
+          "zip": "261"
+        },
+        {
+          "key": "礁溪鄉",
+          "name": {
+            "default": "礁溪鄉",
+            "latin": "Jiaoxi Township"
+          },
+          "zip": "262"
+        },
+        {
+          "key": "羅東鎮",
+          "name": {
+            "default": "羅東鎮",
+            "latin": "Luodong Township"
+          },
+          "zip": "265"
+        },
+        {
+          "key": "蘇澳鎮",
+          "name": {
+            "default": "蘇澳鎮",
+            "latin": "Su'ao Township"
+          },
+          "zip": "270"
+        }
+      ]
+    },
+    {
+      "key": "HUA",
+      "name": {
+        "default": "花蓮縣",
+        "latin": "Hualien County"
+      },
+      "zip": "9[78]",
+      "zipex": "970,983",
+      "sub_regions": [
+        {
+          "key": "玉里鎮",
+          "name": {
+            "default": "玉里鎮",
+            "latin": "Yuli Township"
+          },
+          "zip": "981"
+        },
+        {
+          "key": "光復鄉",
+          "name": {
+            "default": "光復鄉",
+            "latin": "Guangfu Township"
+          },
+          "zip": "976"
+        },
+        {
+          "key": "吉安鄉",
+          "name": {
+            "default": "吉安鄉",
+            "latin": "Ji'an Township"
+          },
+          "zip": "973"
+        },
+        {
+          "key": "秀林鄉",
+          "name": {
+            "default": "秀林鄉",
+            "latin": "Xiulin Township"
+          },
+          "zip": "972"
+        },
+        {
+          "key": "卓溪鄉",
+          "name": {
+            "default": "卓溪鄉",
+            "latin": "Zhuoxi Township"
+          },
+          "zip": "982"
+        },
+        {
+          "key": "花蓮市",
+          "name": {
+            "default": "花蓮市",
+            "latin": "Hualien City"
+          },
+          "zip": "970"
+        },
+        {
+          "key": "富里鄉",
+          "name": {
+            "default": "富里鄉",
+            "latin": "Fuli Township"
+          },
+          "zip": "983"
+        },
+        {
+          "key": "新城鄉",
+          "name": {
+            "default": "新城鄉",
+            "latin": "Xincheng Township"
+          },
+          "zip": "971"
+        },
+        {
+          "key": "瑞穗鄉",
+          "name": {
+            "default": "瑞穗鄉",
+            "latin": "Ruisui Township"
+          },
+          "zip": "978"
+        },
+        {
+          "key": "萬榮鄉",
+          "name": {
+            "default": "萬榮鄉",
+            "latin": "Wanrong Township"
+          },
+          "zip": "979"
+        },
+        {
+          "key": "壽豐鄉",
+          "name": {
+            "default": "壽豐鄉",
+            "latin": "Shoufeng Township"
+          },
+          "zip": "974"
+        },
+        {
+          "key": "鳳林鎮",
+          "name": {
+            "default": "鳳林鎮",
+            "latin": "Fenglin Township"
+          },
+          "zip": "975"
+        },
+        {
+          "key": "豐濱鄉",
+          "name": {
+            "default": "豐濱鄉",
+            "latin": "Fengbin Township"
+          },
+          "zip": "977"
+        }
+      ]
+    },
+    {
+      "key": "金門縣",
+      "name": {
+        "default": "金門縣",
+        "latin": "Kinmen County"
+      },
+      "zip": "89",
+      "zipex": "890,896",
+      "sub_regions": [
+        {
+          "key": "金沙鎮",
+          "name": {
+            "default": "金沙鎮",
+            "latin": "Jinsha Township"
+          },
+          "zip": "890"
+        },
+        {
+          "key": "金城鎮",
+          "name": {
+            "default": "金城鎮",
+            "latin": "Jincheng Township"
+          },
+          "zip": "893"
+        },
+        {
+          "key": "金湖鎮",
+          "name": {
+            "default": "金湖鎮",
+            "latin": "Jinhu Township"
+          },
+          "zip": "891"
+        },
+        {
+          "key": "金寧鄉",
+          "name": {
+            "default": "金寧鄉",
+            "latin": "Jinning Township"
+          },
+          "zip": "892"
+        },
+        {
+          "key": "烈嶼鄉",
+          "name": {
+            "default": "烈嶼鄉",
+            "latin": "Lieyu Township"
+          },
+          "zip": "894"
+        },
+        {
+          "key": "烏坵鄉",
+          "name": {
+            "default": "烏坵鄉",
+            "latin": "Wuqiu Township"
+          },
+          "zip": "896"
+        }
+      ]
+    },
+    {
+      "key": "NAN",
+      "name": {
+        "default": "南投縣",
+        "latin": "Nantou County"
+      },
+      "zip": "5[45]",
+      "zipex": "540,558",
+      "sub_regions": [
+        {
+          "key": "中寮鄉",
+          "name": {
+            "default": "中寮鄉",
+            "latin": "Zhongliao Township"
+          },
+          "zip": "541"
+        },
+        {
+          "key": "仁愛鄉",
+          "name": {
+            "default": "仁愛鄉",
+            "latin": "Ren'ai Township"
+          },
+          "zip": "546"
+        },
+        {
+          "key": "水里鄉",
+          "name": {
+            "default": "水里鄉",
+            "latin": "Shuili Township"
+          },
+          "zip": "553"
+        },
+        {
+          "key": "名間鄉",
+          "name": {
+            "default": "名間鄉",
+            "latin": "Mingjian Township"
+          },
+          "zip": "551"
+        },
+        {
+          "key": "竹山鎮",
+          "name": {
+            "default": "竹山鎮",
+            "latin": "Zhushan Township"
+          },
+          "zip": "557"
+        },
+        {
+          "key": "信義鄉",
+          "name": {
+            "default": "信義鄉",
+            "latin": "Xinyi Township"
+          },
+          "zip": "556"
+        },
+        {
+          "key": "南投市",
+          "name": {
+            "default": "南投市",
+            "latin": "Nantou City"
+          },
+          "zip": "540"
+        },
+        {
+          "key": "埔里鎮",
+          "name": {
+            "default": "埔里鎮",
+            "latin": "Puli Township"
+          },
+          "zip": "545"
+        },
+        {
+          "key": "草屯鎮",
+          "name": {
+            "default": "草屯鎮",
+            "latin": "Caotun Township"
+          },
+          "zip": "542"
+        },
+        {
+          "key": "國姓鄉",
+          "name": {
+            "default": "國姓鄉",
+            "latin": "Guoxing Township"
+          },
+          "zip": "544"
+        },
+        {
+          "key": "魚池鄉",
+          "name": {
+            "default": "魚池鄉",
+            "latin": "Yuchi Township"
+          },
+          "zip": "555"
+        },
+        {
+          "key": "鹿谷鄉",
+          "name": {
+            "default": "鹿谷鄉",
+            "latin": "Lugu Township"
+          },
+          "zip": "558"
+        },
+        {
+          "key": "集集鎮",
+          "name": {
+            "default": "集集鎮",
+            "latin": "Jiji Township"
+          },
+          "zip": "552"
+        }
+      ]
+    },
+    {
+      "key": "PIF",
+      "name": {
+        "default": "屏東縣",
+        "latin": "Pingtung County"
+      },
+      "zip": "9[0-4]",
+      "zipex": "900,947",
+      "sub_regions": [
+        {
+          "key": "九如鄉",
+          "name": {
+            "default": "九如鄉",
+            "latin": "Jiuru Township"
+          },
+          "zip": "904"
+        },
+        {
+          "key": "三地門鄉",
+          "name": {
+            "default": "三地門鄉",
+            "latin": "Sandimen Township"
+          },
+          "zip": "901"
+        },
+        {
+          "key": "內埔鄉",
+          "name": {
+            "default": "內埔鄉",
+            "latin": "Neipu Township"
+          },
+          "zip": "912"
+        },
+        {
+          "key": "竹田鄉",
+          "name": {
+            "default": "竹田鄉",
+            "latin": "Zhutian Township"
+          },
+          "zip": "911"
+        },
+        {
+          "key": "牡丹鄉",
+          "name": {
+            "default": "牡丹鄉",
+            "latin": "Mudan Township"
+          },
+          "zip": "945"
+        },
+        {
+          "key": "車城鄉",
+          "name": {
+            "default": "車城鄉",
+            "latin": "Checheng Township"
+          },
+          "zip": "944"
+        },
+        {
+          "key": "里港鄉",
+          "name": {
+            "default": "里港鄉",
+            "latin": "Ligang Township"
+          },
+          "zip": "905"
+        },
+        {
+          "key": "佳冬鄉",
+          "name": {
+            "default": "佳冬鄉",
+            "latin": "Jiadong Township"
+          },
+          "zip": "931"
+        },
+        {
+          "key": "來義鄉",
+          "name": {
+            "default": "來義鄉",
+            "latin": "Laiyi Township"
+          },
+          "zip": "922"
+        },
+        {
+          "key": "東港鎮",
+          "name": {
+            "default": "東港鎮",
+            "latin": "Donggang Township"
+          },
+          "zip": "928"
+        },
+        {
+          "key": "枋山鄉",
+          "name": {
+            "default": "枋山鄉",
+            "latin": "Fangshan Township"
+          },
+          "zip": "941"
+        },
+        {
+          "key": "枋寮鄉",
+          "name": {
+            "default": "枋寮鄉",
+            "latin": "Fangliao Township"
+          },
+          "zip": "940"
+        },
+        {
+          "key": "林邊鄉",
+          "name": {
+            "default": "林邊鄉",
+            "latin": "Linbian Township"
+          },
+          "zip": "927"
+        },
+        {
+          "key": "長治鄉",
+          "name": {
+            "default": "長治鄉",
+            "latin": "Changzhi Township"
+          },
+          "zip": "908"
+        },
+        {
+          "key": "南州鄉",
+          "name": {
+            "default": "南州鄉",
+            "latin": "Nanzhou Township"
+          },
+          "zip": "926"
+        },
+        {
+          "key": "屏東市",
+          "name": {
+            "default": "屏東市",
+            "latin": "Pingtung City"
+          },
+          "zip": "900"
+        },
+        {
+          "key": "恆春鎮",
+          "name": {
+            "default": "恆春鎮",
+            "latin": "Hengchun Township"
+          },
+          "zip": "946"
+        },
+        {
+          "key": "春日鄉",
+          "name": {
+            "default": "春日鄉",
+            "latin": "Chunri Township"
+          },
+          "zip": "942"
+        },
+        {
+          "key": "崁頂鄉",
+          "name": {
+            "default": "崁頂鄉",
+            "latin": "Kanding Township"
+          },
+          "zip": "924"
+        },
+        {
+          "key": "泰武鄉",
+          "name": {
+            "default": "泰武鄉",
+            "latin": "Taiwu Township"
+          },
+          "zip": "921"
+        },
+        {
+          "key": "琉球鄉",
+          "name": {
+            "default": "琉球鄉",
+            "latin": "Liuqiu Township"
+          },
+          "zip": "929"
+        },
+        {
+          "key": "高樹鄉",
+          "name": {
+            "default": "高樹鄉",
+            "latin": "Gaoshu Township"
+          },
+          "zip": "906"
+        },
+        {
+          "key": "新埤鄉",
+          "name": {
+            "default": "新埤鄉",
+            "latin": "Xinpi Township"
+          },
+          "zip": "925"
+        },
+        {
+          "key": "新園鄉",
+          "name": {
+            "default": "新園鄉",
+            "latin": "Xinyuan Township"
+          },
+          "zip": "932"
+        },
+        {
+          "key": "獅子鄉",
+          "name": {
+            "default": "獅子鄉",
+            "latin": "Shizi Township"
+          },
+          "zip": "943"
+        },
+        {
+          "key": "萬丹鄉",
+          "name": {
+            "default": "萬丹鄉",
+            "latin": "Wandan Township"
+          },
+          "zip": "913"
+        },
+        {
+          "key": "萬巒鄉",
+          "name": {
+            "default": "萬巒鄉",
+            "latin": "Wanluan Township"
+          },
+          "zip": "923"
+        },
+        {
+          "key": "滿洲鄉",
+          "name": {
+            "default": "滿洲鄉",
+            "latin": "Manzhou Township"
+          },
+          "zip": "947"
+        },
+        {
+          "key": "瑪家鄉",
+          "name": {
+            "default": "瑪家鄉",
+            "latin": "Majia Township"
+          },
+          "zip": "903"
+        },
+        {
+          "key": "潮州鎮",
+          "name": {
+            "default": "潮州鎮",
+            "latin": "Chaozhou Township"
+          },
+          "zip": "920"
+        },
+        {
+          "key": "霧台鄉",
+          "name": {
+            "default": "霧台鄉",
+            "latin": "Wutai Township"
+          },
+          "zip": "902"
+        },
+        {
+          "key": "麟洛鄉",
+          "name": {
+            "default": "麟洛鄉",
+            "latin": "Linluo Township"
+          },
+          "zip": "909"
+        },
+        {
+          "key": "鹽埔鄉",
+          "name": {
+            "default": "鹽埔鄉",
+            "latin": "Yanpu Township"
+          },
+          "zip": "907"
+        }
+      ]
+    },
+    {
+      "key": "MIA",
+      "name": {
+        "default": "苗栗縣",
+        "latin": "Miaoli County"
+      },
+      "zip": "3[56]",
+      "zipex": "350,369",
+      "sub_regions": [
+        {
+          "key": "三義鄉",
+          "name": {
+            "default": "三義鄉",
+            "latin": "Sanyi Township"
+          },
+          "zip": "367"
+        },
+        {
+          "key": "三灣鄉",
+          "name": {
+            "default": "三灣鄉",
+            "latin": "Sanwan Township"
+          },
+          "zip": "352"
+        },
+        {
+          "key": "大湖鄉",
+          "name": {
+            "default": "大湖鄉",
+            "latin": "Dahu Township"
+          },
+          "zip": "364"
+        },
+        {
+          "key": "公館鄉",
+          "name": {
+            "default": "公館鄉",
+            "latin": "Gongguan Township"
+          },
+          "zip": "363"
+        },
+        {
+          "key": "竹南鎮",
+          "name": {
+            "default": "竹南鎮",
+            "latin": "Zhunan Township"
+          },
+          "zip": "350"
+        },
+        {
+          "key": "西湖鄉",
+          "name": {
+            "default": "西湖鄉",
+            "latin": "Xihu Township"
+          },
+          "zip": "368"
+        },
+        {
+          "key": "卓蘭鎮",
+          "name": {
+            "default": "卓蘭鎮",
+            "latin": "Zhuolan Township"
+          },
+          "zip": "369"
+        },
+        {
+          "key": "南庄鄉",
+          "name": {
+            "default": "南庄鄉",
+            "latin": "Nanzhuang Township"
+          },
+          "zip": "353"
+        },
+        {
+          "key": "後龍鎮",
+          "name": {
+            "default": "後龍鎮",
+            "latin": "Houlong Township"
+          },
+          "zip": "356"
+        },
+        {
+          "key": "苑裡鎮",
+          "name": {
+            "default": "苑裡鎮",
+            "latin": "Yuanli Township"
+          },
+          "zip": "358"
+        },
+        {
+          "key": "苗栗市",
+          "name": {
+            "default": "苗栗市",
+            "latin": "Miaoli City"
+          },
+          "zip": "360"
+        },
+        {
+          "key": "泰安鄉",
+          "name": {
+            "default": "泰安鄉",
+            "latin": "Tai'an Township"
+          },
+          "zip": "365"
+        },
+        {
+          "key": "通霄鎮",
+          "name": {
+            "default": "通霄鎮",
+            "latin": "Tongxiao Township"
+          },
+          "zip": "357"
+        },
+        {
+          "key": "造橋鄉",
+          "name": {
+            "default": "造橋鄉",
+            "latin": "Zaoqiao Township"
+          },
+          "zip": "361"
+        },
+        {
+          "key": "獅潭鄉",
+          "name": {
+            "default": "獅潭鄉",
+            "latin": "Shitan Township"
+          },
+          "zip": "354"
+        },
+        {
+          "key": "銅鑼鄉",
+          "name": {
+            "default": "銅鑼鄉",
+            "latin": "Tongluo Township"
+          },
+          "zip": "366"
+        },
+        {
+          "key": "頭份市",
+          "name": {
+            "default": "頭份市",
+            "latin": "Toufen City"
+          },
+          "zip": "351"
+        },
+        {
+          "key": "頭屋鄉",
+          "name": {
+            "default": "頭屋鄉",
+            "latin": "Touwu Township"
+          },
+          "zip": "362"
+        }
+      ]
+    },
+    {
+      "key": "TAO",
+      "name": {
+        "default": "桃園市",
+        "latin": "Taoyuan City"
+      },
+      "zip": "3[23]",
+      "zipex": "320,338",
+      "sub_regions": [
+        {
+          "key": "八德區",
+          "name": {
+            "default": "八德區",
+            "latin": "Bade District"
+          },
+          "zip": "334"
+        },
+        {
+          "key": "大園區",
+          "name": {
+            "default": "大園區",
+            "latin": "Dayuan District"
+          },
+          "zip": "337"
+        },
+        {
+          "key": "大溪區",
+          "name": {
+            "default": "大溪區",
+            "latin": "Daxi District"
+          },
+          "zip": "335"
+        },
+        {
+          "key": "中壢區",
+          "name": {
+            "default": "中壢區",
+            "latin": "Zhongli District"
+          },
+          "zip": "320"
+        },
+        {
+          "key": "平鎮區",
+          "name": {
+            "default": "平鎮區",
+            "latin": "Pingzhen District"
+          },
+          "zip": "324"
+        },
+        {
+          "key": "桃園區",
+          "name": {
+            "default": "桃園區",
+            "latin": "Taoyuan District"
+          },
+          "zip": "330"
+        },
+        {
+          "key": "復興區",
+          "name": {
+            "default": "復興區",
+            "latin": "Fuxing District"
+          },
+          "zip": "336"
+        },
+        {
+          "key": "新屋區",
+          "name": {
+            "default": "新屋區",
+            "latin": "Xinwu District"
+          },
+          "zip": "327"
+        },
+        {
+          "key": "楊梅區",
+          "name": {
+            "default": "楊梅區",
+            "latin": "Yangmei District"
+          },
+          "zip": "326"
+        },
+        {
+          "key": "龍潭區",
+          "name": {
+            "default": "龍潭區",
+            "latin": "Longtan District"
+          },
+          "zip": "325"
+        },
+        {
+          "key": "龜山區",
+          "name": {
+            "default": "龜山區",
+            "latin": "Guishan District"
+          },
+          "zip": "333"
+        },
+        {
+          "key": "蘆竹區",
+          "name": {
+            "default": "蘆竹區",
+            "latin": "Luzhu District"
+          },
+          "zip": "338"
+        },
+        {
+          "key": "觀音區",
+          "name": {
+            "default": "觀音區",
+            "latin": "Guanyin District"
+          },
+          "zip": "328"
+        }
+      ]
+    },
+    {
+      "key": "KHH",
+      "name": {
+        "default": "高雄市",
+        "latin": "Kaohsiung City"
+      },
+      "zip": "8[02-5]|81[1-579]",
+      "zipex": "800,815,817,852",
+      "sub_regions": [
+        {
+          "key": "三民區",
+          "name": {
+            "default": "三民區",
+            "latin": "Sanmin District"
+          },
+          "zip": "807"
+        },
+        {
+          "key": "大社區",
+          "name": {
+            "default": "大社區",
+            "latin": "Dashe District"
+          },
+          "zip": "815"
+        },
+        {
+          "key": "大寮區",
+          "name": {
+            "default": "大寮區",
+            "latin": "Daliao District"
+          },
+          "zip": "831"
+        },
+        {
+          "key": "大樹區",
+          "name": {
+            "default": "大樹區",
+            "latin": "Dashu District"
+          },
+          "zip": "840"
+        },
+        {
+          "key": "小港區",
+          "name": {
+            "default": "小港區",
+            "latin": "Xiaogang District"
+          },
+          "zip": "812"
+        },
+        {
+          "key": "仁武區",
+          "name": {
+            "default": "仁武區",
+            "latin": "Renwu District"
+          },
+          "zip": "814"
+        },
+        {
+          "key": "內門區",
+          "name": {
+            "default": "內門區",
+            "latin": "Neimen District"
+          },
+          "zip": "845"
+        },
+        {
+          "key": "六龜區",
+          "name": {
+            "default": "六龜區",
+            "latin": "Liugui District"
+          },
+          "zip": "844"
+        },
+        {
+          "key": "左營區",
+          "name": {
+            "default": "左營區",
+            "latin": "Zuoying District"
+          },
+          "zip": "813"
+        },
+        {
+          "key": "永安區",
+          "name": {
+            "default": "永安區",
+            "latin": "Yong'an District"
+          },
+          "zip": "828"
+        },
+        {
+          "key": "田寮區",
+          "name": {
+            "default": "田寮區",
+            "latin": "Tianliao District"
+          },
+          "zip": "823"
+        },
+        {
+          "key": "甲仙區",
+          "name": {
+            "default": "甲仙區",
+            "latin": "Jiaxian District"
+          },
+          "zip": "847"
+        },
+        {
+          "key": "杉林區",
+          "name": {
+            "default": "杉林區",
+            "latin": "Shanlin District"
+          },
+          "zip": "846"
+        },
+        {
+          "key": "那瑪夏區",
+          "name": {
+            "default": "那瑪夏區",
+            "latin": "Namaxia District"
+          },
+          "zip": "849"
+        },
+        {
+          "key": "岡山區",
+          "name": {
+            "default": "岡山區",
+            "latin": "Gangshan District"
+          },
+          "zip": "820"
+        },
+        {
+          "key": "東沙島",
+          "name": {
+            "default": "東沙島",
+            "latin": "Dongsha Island"
+          },
+          "zip": "817"
+        },
+        {
+          "key": "林園區",
+          "name": {
+            "default": "林園區",
+            "latin": "Linyuan District"
+          },
+          "zip": "832"
+        },
+        {
+          "key": "阿蓮區",
+          "name": {
+            "default": "阿蓮區",
+            "latin": "Alian District"
+          },
+          "zip": "822"
+        },
+        {
+          "key": "前金區",
+          "name": {
+            "default": "前金區",
+            "latin": "Qianjin District"
+          },
+          "zip": "801"
+        },
+        {
+          "key": "前鎮區",
+          "name": {
+            "default": "前鎮區",
+            "latin": "Qianzhen District"
+          },
+          "zip": "806"
+        },
+        {
+          "key": "南沙島",
+          "name": {
+            "default": "南沙島",
+            "latin": "Nansha Island"
+          },
+          "zip": "819"
+        },
+        {
+          "key": "美濃區",
+          "name": {
+            "default": "美濃區",
+            "latin": "Meinong District"
+          },
+          "zip": "843"
+        },
+        {
+          "key": "苓雅區",
+          "name": {
+            "default": "苓雅區",
+            "latin": "Lingya District"
+          },
+          "zip": "802"
+        },
+        {
+          "key": "茂林區",
+          "name": {
+            "default": "茂林區",
+            "latin": "Maolin District"
+          },
+          "zip": "851"
+        },
+        {
+          "key": "茄萣區",
+          "name": {
+            "default": "茄萣區",
+            "latin": "Jiading District"
+          },
+          "zip": "852"
+        },
+        {
+          "key": "桃源區",
+          "name": {
+            "default": "桃源區",
+            "latin": "Taoyuan District"
+          },
+          "zip": "848"
+        },
+        {
+          "key": "梓官區",
+          "name": {
+            "default": "梓官區",
+            "latin": "Ziguan District"
+          },
+          "zip": "826"
+        },
+        {
+          "key": "鳥松區",
+          "name": {
+            "default": "鳥松區",
+            "latin": "Niaosong District"
+          },
+          "zip": "833"
+        },
+        {
+          "key": "湖內區",
+          "name": {
+            "default": "湖內區",
+            "latin": "Hunei District"
+          },
+          "zip": "829"
+        },
+        {
+          "key": "新興區",
+          "name": {
+            "default": "新興區",
+            "latin": "Xinxing District"
+          },
+          "zip": "800"
+        },
+        {
+          "key": "楠梓區",
+          "name": {
+            "default": "楠梓區",
+            "latin": "Nanzi District"
+          },
+          "zip": "811"
+        },
+        {
+          "key": "路竹區",
+          "name": {
+            "default": "路竹區",
+            "latin": "Luzhu District"
+          },
+          "zip": "821"
+        },
+        {
+          "key": "鼓山區",
+          "name": {
+            "default": "鼓山區",
+            "latin": "Gushan District"
+          },
+          "zip": "804"
+        },
+        {
+          "key": "旗山區",
+          "name": {
+            "default": "旗山區",
+            "latin": "Qishan District"
+          },
+          "zip": "842"
+        },
+        {
+          "key": "旗津區",
+          "name": {
+            "default": "旗津區",
+            "latin": "Qijin District"
+          },
+          "zip": "805"
+        },
+        {
+          "key": "鳳山區",
+          "name": {
+            "default": "鳳山區",
+            "latin": "Fengshan District"
+          },
+          "zip": "830"
+        },
+        {
+          "key": "橋頭區",
+          "name": {
+            "default": "橋頭區",
+            "latin": "Qiaotou District"
+          },
+          "zip": "825"
+        },
+        {
+          "key": "燕巢區",
+          "name": {
+            "default": "燕巢區",
+            "latin": "Yanchao District"
+          },
+          "zip": "824"
+        },
+        {
+          "key": "彌陀區",
+          "name": {
+            "default": "彌陀區",
+            "latin": "Mituo District"
+          },
+          "zip": "827"
+        },
+        {
+          "key": "鹽埕區",
+          "name": {
+            "default": "鹽埕區",
+            "latin": "Yancheng District"
+          },
+          "zip": "803"
+        }
+      ]
+    },
+    {
+      "key": "KEE",
+      "name": {
+        "default": "基隆市",
+        "latin": "Keelung City"
+      },
+      "zip": "20[0-6]",
+      "zipex": "200,206",
+      "sub_regions": [
+        {
+          "key": "七堵區",
+          "name": {
+            "default": "七堵區",
+            "latin": "Qidu District"
+          },
+          "zip": "206"
+        },
+        {
+          "key": "中山區",
+          "name": {
+            "default": "中山區",
+            "latin": "Zhongshan District"
+          },
+          "zip": "203"
+        },
+        {
+          "key": "中正區",
+          "name": {
+            "default": "中正區",
+            "latin": "Zhongzheng District"
+          },
+          "zip": "202"
+        },
+        {
+          "key": "仁愛區",
+          "name": {
+            "default": "仁愛區",
+            "latin": "Ren'ai District"
+          },
+          "zip": "200"
+        },
+        {
+          "key": "安樂區",
+          "name": {
+            "default": "安樂區",
+            "latin": "Anle District"
+          },
+          "zip": "204"
+        },
+        {
+          "key": "信義區",
+          "name": {
+            "default": "信義區",
+            "latin": "Xinyi District"
+          },
+          "zip": "201"
+        },
+        {
+          "key": "暖暖區",
+          "name": {
+            "default": "暖暖區",
+            "latin": "Nuannuan District"
+          },
+          "zip": "205"
+        }
+      ]
+    },
+    {
+      "key": "連江縣",
+      "name": {
+        "default": "連江縣",
+        "latin": "Lienchiang County"
+      },
+      "zip": "209|21[012]",
+      "zipex": "209,212",
+      "sub_regions": [
+        {
+          "key": "北竿鄉",
+          "name": {
+            "default": "北竿鄉",
+            "latin": "Beigan Township"
+          },
+          "zip": "210"
+        },
+        {
+          "key": "東引鄉",
+          "name": {
+            "default": "東引鄉",
+            "latin": "Dongyin Township"
+          },
+          "zip": "212"
+        },
+        {
+          "key": "南竿鄉",
+          "name": {
+            "default": "南竿鄉",
+            "latin": "Nangan Township"
+          },
+          "zip": "209"
+        },
+        {
+          "key": "莒光鄉",
+          "name": {
+            "default": "莒光鄉",
+            "latin": "Juguang Township"
+          },
+          "zip": "211"
+        }
+      ]
+    },
+    {
+      "key": "YUN",
+      "name": {
+        "default": "雲林縣",
+        "latin": "Yunlin County"
+      },
+      "zip": "6[3-5]",
+      "zipex": "630,655",
+      "sub_regions": [
+        {
+          "key": "二崙鄉",
+          "name": {
+            "default": "二崙鄉",
+            "latin": "Erlun Township"
+          },
+          "zip": "649"
+        },
+        {
+          "key": "口湖鄉",
+          "name": {
+            "default": "口湖鄉",
+            "latin": "Kouhu Township"
+          },
+          "zip": "653"
+        },
+        {
+          "key": "土庫鎮",
+          "name": {
+            "default": "土庫鎮",
+            "latin": "Tuku Township"
+          },
+          "zip": "633"
+        },
+        {
+          "key": "大埤鄉",
+          "name": {
+            "default": "大埤鄉",
+            "latin": "Dapi Township"
+          },
+          "zip": "631"
+        },
+        {
+          "key": "元長鄉",
+          "name": {
+            "default": "元長鄉",
+            "latin": "Yuanchang Township"
+          },
+          "zip": "655"
+        },
+        {
+          "key": "斗六市",
+          "name": {
+            "default": "斗六市",
+            "latin": "Douliu City"
+          },
+          "zip": "640"
+        },
+        {
+          "key": "斗南鎮",
+          "name": {
+            "default": "斗南鎮",
+            "latin": "Dounan Township"
+          },
+          "zip": "630"
+        },
+        {
+          "key": "水林鄉",
+          "name": {
+            "default": "水林鄉",
+            "latin": "Shuilin Township"
+          },
+          "zip": "652"
+        },
+        {
+          "key": "北港鎮",
+          "name": {
+            "default": "北港鎮",
+            "latin": "Beigang Township"
+          },
+          "zip": "651"
+        },
+        {
+          "key": "古坑鄉",
+          "name": {
+            "default": "古坑鄉",
+            "latin": "Gukeng Township"
+          },
+          "zip": "646"
+        },
+        {
+          "key": "台西鄉",
+          "name": {
+            "default": "台西鄉",
+            "latin": "Taixi Township"
+          },
+          "zip": "636"
+        },
+        {
+          "key": "四湖鄉",
+          "name": {
+            "default": "四湖鄉",
+            "latin": "Sihu Township"
+          },
+          "zip": "654"
+        },
+        {
+          "key": "西螺鎮",
+          "name": {
+            "default": "西螺鎮",
+            "latin": "Xiluo Township"
+          },
+          "zip": "648"
+        },
+        {
+          "key": "東勢鄉",
+          "name": {
+            "default": "東勢鄉",
+            "latin": "Dongshi Township"
+          },
+          "zip": "635"
+        },
+        {
+          "key": "林內鄉",
+          "name": {
+            "default": "林內鄉",
+            "latin": "Linnei Township"
+          },
+          "zip": "643"
+        },
+        {
+          "key": "虎尾鎮",
+          "name": {
+            "default": "虎尾鎮",
+            "latin": "Huwei Township"
+          },
+          "zip": "632"
+        },
+        {
+          "key": "崙背鄉",
+          "name": {
+            "default": "崙背鄉",
+            "latin": "Lunbei Township"
+          },
+          "zip": "637"
+        },
+        {
+          "key": "麥寮鄉",
+          "name": {
+            "default": "麥寮鄉",
+            "latin": "Mailiao Township"
+          },
+          "zip": "638"
+        },
+        {
+          "key": "莿桐鄉",
+          "name": {
+            "default": "莿桐鄉",
+            "latin": "Citong Township"
+          },
+          "zip": "647"
+        },
+        {
+          "key": "褒忠鄉",
+          "name": {
+            "default": "褒忠鄉",
+            "latin": "Baozhong Township"
+          },
+          "zip": "634"
+        }
+      ]
+    },
+    {
+      "key": "NWT",
+      "name": {
+        "default": "新北市",
+        "latin": "New Taipei City"
+      },
+      "zip": "20[78]|2[2345]",
+      "zipex": "207,208,220,253",
+      "sub_regions": [
+        {
+          "key": "八里區",
+          "name": {
+            "default": "八里區",
+            "latin": "Bali District"
+          },
+          "zip": "249"
+        },
+        {
+          "key": "三芝區",
+          "name": {
+            "default": "三芝區",
+            "latin": "Sanzhi District"
+          },
+          "zip": "252"
+        },
+        {
+          "key": "三重區",
+          "name": {
+            "default": "三重區",
+            "latin": "Sanchong District"
+          },
+          "zip": "241"
+        },
+        {
+          "key": "三峽區",
+          "name": {
+            "default": "三峽區",
+            "latin": "Sanxia District"
+          },
+          "zip": "237"
+        },
+        {
+          "key": "土城區",
+          "name": {
+            "default": "土城區",
+            "latin": "Tucheng District"
+          },
+          "zip": "236"
+        },
+        {
+          "key": "中和區",
+          "name": {
+            "default": "中和區",
+            "latin": "Zhonghe District"
+          },
+          "zip": "235"
+        },
+        {
+          "key": "五股區",
+          "name": {
+            "default": "五股區",
+            "latin": "Wugu District"
+          },
+          "zip": "248"
+        },
+        {
+          "key": "平溪區",
+          "name": {
+            "default": "平溪區",
+            "latin": "Pingxi District"
+          },
+          "zip": "226"
+        },
+        {
+          "key": "永和區",
+          "name": {
+            "default": "永和區",
+            "latin": "Yonghe District"
+          },
+          "zip": "234"
+        },
+        {
+          "key": "石門區",
+          "name": {
+            "default": "石門區",
+            "latin": "Shimen District"
+          },
+          "zip": "253"
+        },
+        {
+          "key": "石碇區",
+          "name": {
+            "default": "石碇區",
+            "latin": "Shiding District"
+          },
+          "zip": "223"
+        },
+        {
+          "key": "汐止區",
+          "name": {
+            "default": "汐止區",
+            "latin": "Xizhi District"
+          },
+          "zip": "221"
+        },
+        {
+          "key": "坪林區",
+          "name": {
+            "default": "坪林區",
+            "latin": "Pinglin District"
+          },
+          "zip": "232"
+        },
+        {
+          "key": "板橋區",
+          "name": {
+            "default": "板橋區",
+            "latin": "Banqiao District"
+          },
+          "zip": "220"
+        },
+        {
+          "key": "林口區",
+          "name": {
+            "default": "林口區",
+            "latin": "Linkou District"
+          },
+          "zip": "244"
+        },
+        {
+          "key": "金山區",
+          "name": {
+            "default": "金山區",
+            "latin": "Jinshan District"
+          },
+          "zip": "208"
+        },
+        {
+          "key": "泰山區",
+          "name": {
+            "default": "泰山區",
+            "latin": "Taishan District"
+          },
+          "zip": "243"
+        },
+        {
+          "key": "烏來區",
+          "name": {
+            "default": "烏來區",
+            "latin": "Wulai District"
+          },
+          "zip": "233"
+        },
+        {
+          "key": "貢寮區",
+          "name": {
+            "default": "貢寮區",
+            "latin": "Gongliao District"
+          },
+          "zip": "228"
+        },
+        {
+          "key": "淡水區",
+          "name": {
+            "default": "淡水區",
+            "latin": "Tamsui District"
+          },
+          "zip": "251"
+        },
+        {
+          "key": "深坑區",
+          "name": {
+            "default": "深坑區",
+            "latin": "Shenkeng District"
+          },
+          "zip": "222"
+        },
+        {
+          "key": "新店區",
+          "name": {
+            "default": "新店區",
+            "latin": "Xindian District"
+          },
+          "zip": "231"
+        },
+        {
+          "key": "新莊區",
+          "name": {
+            "default": "新莊區",
+            "latin": "Xinzhuang District"
+          },
+          "zip": "24[28]"
+        },
+        {
+          "key": "瑞芳區",
+          "name": {
+            "default": "瑞芳區",
+            "latin": "Ruifang District"
+          },
+          "zip": "224"
+        },
+        {
+          "key": "萬里區",
+          "name": {
+            "default": "萬里區",
+            "latin": "Wanli District"
+          },
+          "zip": "207"
+        },
+        {
+          "key": "樹林區",
+          "name": {
+            "default": "樹林區",
+            "latin": "Shulin District"
+          },
+          "zip": "238"
+        },
+        {
+          "key": "雙溪區",
+          "name": {
+            "default": "雙溪區",
+            "latin": "Shuangxi District"
+          },
+          "zip": "227"
+        },
+        {
+          "key": "蘆洲區",
+          "name": {
+            "default": "蘆洲區",
+            "latin": "Luzhou District"
+          },
+          "zip": "247"
+        },
+        {
+          "key": "鶯歌區",
+          "name": {
+            "default": "鶯歌區",
+            "latin": "Yingge District"
+          },
+          "zip": "239"
+        }
+      ]
+    },
+    {
+      "key": "HSZ",
+      "name": {
+        "default": "新竹市",
+        "latin": "Hsinchu City"
+      },
+      "zip": "300",
+      "sub_regions": [
+        {
+          "key": "北區",
+          "name": {
+            "default": "北區",
+            "latin": "North District"
+          }
+        },
+        {
+          "key": "東區",
+          "name": {
+            "default": "東區",
+            "latin": "East District"
+          }
+        },
+        {
+          "key": "香山區",
+          "name": {
+            "default": "香山區",
+            "latin": "Xiangshan District"
+          }
+        }
+      ]
+    },
+    {
+      "key": "HSQ",
+      "name": {
+        "default": "新竹縣",
+        "latin": "Hsinchu County"
+      },
+      "zip": "30[2-8]|31",
+      "zipex": "302,315",
+      "sub_regions": [
+        {
+          "key": "五峰鄉",
+          "name": {
+            "default": "五峰鄉",
+            "latin": "Wufeng Township"
+          },
+          "zip": "311"
+        },
+        {
+          "key": "北埔鄉",
+          "name": {
+            "default": "北埔鄉",
+            "latin": "Beipu Township"
+          },
+          "zip": "314"
+        },
+        {
+          "key": "尖石鄉",
+          "name": {
+            "default": "尖石鄉",
+            "latin": "Jianshi Township"
+          },
+          "zip": "313"
+        },
+        {
+          "key": "竹北市",
+          "name": {
+            "default": "竹北市",
+            "latin": "Zhubei City"
+          },
+          "zip": "302"
+        },
+        {
+          "key": "竹東鎮",
+          "name": {
+            "default": "竹東鎮",
+            "latin": "Zhudong Township"
+          },
+          "zip": "310"
+        },
+        {
+          "key": "芎林鄉",
+          "name": {
+            "default": "芎林鄉",
+            "latin": "Qionglin Township"
+          },
+          "zip": "307"
+        },
+        {
+          "key": "峨眉鄉",
+          "name": {
+            "default": "峨眉鄉",
+            "latin": "Emei Township"
+          },
+          "zip": "315"
+        },
+        {
+          "key": "湖口鄉",
+          "name": {
+            "default": "湖口鄉",
+            "latin": "Hukou Township"
+          },
+          "zip": "303"
+        },
+        {
+          "key": "新埔鎮",
+          "name": {
+            "default": "新埔鎮",
+            "latin": "Xinpu Township"
+          },
+          "zip": "305"
+        },
+        {
+          "key": "新豐鄉",
+          "name": {
+            "default": "新豐鄉",
+            "latin": "Xinfeng Township"
+          },
+          "zip": "304"
+        },
+        {
+          "key": "橫山鄉",
+          "name": {
+            "default": "橫山鄉",
+            "latin": "Hengshan Township"
+          },
+          "zip": "312"
+        },
+        {
+          "key": "關西鎮",
+          "name": {
+            "default": "關西鎮",
+            "latin": "Guanxi Township"
+          },
+          "zip": "306"
+        },
+        {
+          "key": "寶山鄉",
+          "name": {
+            "default": "寶山鄉",
+            "latin": "Baoshan Township"
+          },
+          "zip": "308"
+        }
+      ]
+    },
+    {
+      "key": "CYI",
+      "name": {
+        "default": "嘉義市",
+        "latin": "Chiayi City"
+      },
+      "zip": "600",
+      "sub_regions": [
+        {
+          "key": "西區",
+          "name": {
+            "default": "西區",
+            "latin": "West District"
+          }
+        },
+        {
+          "key": "東區",
+          "name": {
+            "default": "東區",
+            "latin": "East District"
+          }
+        }
+      ]
+    },
+    {
+      "key": "CYQ",
+      "name": {
+        "default": "嘉義縣",
+        "latin": "Chiayi County"
+      },
+      "zip": "60[1-9]|6[12]",
+      "zipex": "602,625",
+      "sub_regions": [
+        {
+          "key": "大林鎮",
+          "name": {
+            "default": "大林鎮",
+            "latin": "Dalin Township"
+          },
+          "zip": "622"
+        },
+        {
+          "key": "大埔鄉",
+          "name": {
+            "default": "大埔鄉",
+            "latin": "Dapu Township"
+          },
+          "zip": "607"
+        },
+        {
+          "key": "中埔鄉",
+          "name": {
+            "default": "中埔鄉",
+            "latin": "Zhongpu Township"
+          },
+          "zip": "606"
+        },
+        {
+          "key": "六腳鄉",
+          "name": {
+            "default": "六腳鄉",
+            "latin": "Liujiao Township"
+          },
+          "zip": "615"
+        },
+        {
+          "key": "太保市",
+          "name": {
+            "default": "太保市",
+            "latin": "Taibao City"
+          },
+          "zip": "612"
+        },
+        {
+          "key": "水上鄉",
+          "name": {
+            "default": "水上鄉",
+            "latin": "Shuishang Township"
+          },
+          "zip": "608"
+        },
+        {
+          "key": "布袋鎮",
+          "name": {
+            "default": "布袋鎮",
+            "latin": "Budai Township"
+          },
+          "zip": "625"
+        },
+        {
+          "key": "民雄鄉",
+          "name": {
+            "default": "民雄鄉",
+            "latin": "Minxiong Township"
+          },
+          "zip": "621"
+        },
+        {
+          "key": "朴子市",
+          "name": {
+            "default": "朴子市",
+            "latin": "Puzi City"
+          },
+          "zip": "613"
+        },
+        {
+          "key": "竹崎鄉",
+          "name": {
+            "default": "竹崎鄉",
+            "latin": "Zhuqi Township"
+          },
+          "zip": "604"
+        },
+        {
+          "key": "東石鄉",
+          "name": {
+            "default": "東石鄉",
+            "latin": "Dongshi Township"
+          },
+          "zip": "614"
+        },
+        {
+          "key": "阿里山鄉",
+          "name": {
+            "default": "阿里山鄉",
+            "latin": "Alishan Township"
+          },
+          "zip": "605"
+        },
+        {
+          "key": "梅山鄉",
+          "name": {
+            "default": "梅山鄉",
+            "latin": "Meishan Township"
+          },
+          "zip": "603"
+        },
+        {
+          "key": "鹿草鄉",
+          "name": {
+            "default": "鹿草鄉",
+            "latin": "Lucao Township"
+          },
+          "zip": "611"
+        },
+        {
+          "key": "番路鄉",
+          "name": {
+            "default": "番路鄉",
+            "latin": "Fanlu Township"
+          },
+          "zip": "602"
+        },
+        {
+          "key": "新港鄉",
+          "name": {
+            "default": "新港鄉",
+            "latin": "Xingang Township"
+          },
+          "zip": "616"
+        },
+        {
+          "key": "溪口鄉",
+          "name": {
+            "default": "溪口鄉",
+            "latin": "Xikou Township"
+          },
+          "zip": "623"
+        },
+        {
+          "key": "義竹鄉",
+          "name": {
+            "default": "義竹鄉",
+            "latin": "Yizhu Township"
+          },
+          "zip": "624"
+        }
+      ]
+    },
+    {
+      "key": "CHA",
+      "name": {
+        "default": "彰化縣",
+        "latin": "Changhua County"
+      },
+      "zip": "5[0123]",
+      "zipex": "500,530",
+      "sub_regions": [
+        {
+          "key": "二水鄉",
+          "name": {
+            "default": "二水鄉",
+            "latin": "Ershui Township"
+          },
+          "zip": "530"
+        },
+        {
+          "key": "二林鎮",
+          "name": {
+            "default": "二林鎮",
+            "latin": "Erlin Township"
+          },
+          "zip": "526"
+        },
+        {
+          "key": "大村鄉",
+          "name": {
+            "default": "大村鄉",
+            "latin": "Dacun Township"
+          },
+          "zip": "515"
+        },
+        {
+          "key": "大城鄉",
+          "name": {
+            "default": "大城鄉",
+            "latin": "Dacheng Township"
+          },
+          "zip": "527"
+        },
+        {
+          "key": "北斗鎮",
+          "name": {
+            "default": "北斗鎮",
+            "latin": "Beidou Township"
+          },
+          "zip": "521"
+        },
+        {
+          "key": "永靖鄉",
+          "name": {
+            "default": "永靖鄉",
+            "latin": "Yongjing Township"
+          },
+          "zip": "512"
+        },
+        {
+          "key": "田中鎮",
+          "name": {
+            "default": "田中鎮",
+            "latin": "Tianzhong Township"
+          },
+          "zip": "520"
+        },
+        {
+          "key": "田尾鄉",
+          "name": {
+            "default": "田尾鄉",
+            "latin": "Tianwei Township"
+          },
+          "zip": "522"
+        },
+        {
+          "key": "竹塘鄉",
+          "name": {
+            "default": "竹塘鄉",
+            "latin": "Zhutang Township"
+          },
+          "zip": "525"
+        },
+        {
+          "key": "伸港鄉",
+          "name": {
+            "default": "伸港鄉",
+            "latin": "Shengang Township"
+          },
+          "zip": "509"
+        },
+        {
+          "key": "秀水鄉",
+          "name": {
+            "default": "秀水鄉",
+            "latin": "Xiushui Township"
+          },
+          "zip": "504"
+        },
+        {
+          "key": "和美鎮",
+          "name": {
+            "default": "和美鎮",
+            "latin": "Hemei Township"
+          },
+          "zip": "508"
+        },
+        {
+          "key": "社頭鄉",
+          "name": {
+            "default": "社頭鄉",
+            "latin": "Shetou Township"
+          },
+          "zip": "511"
+        },
+        {
+          "key": "芬園鄉",
+          "name": {
+            "default": "芬園鄉",
+            "latin": "Fenyuan Township"
+          },
+          "zip": "502"
+        },
+        {
+          "key": "花壇鄉",
+          "name": {
+            "default": "花壇鄉",
+            "latin": "Huatan Township"
+          },
+          "zip": "503"
+        },
+        {
+          "key": "芳苑鄉",
+          "name": {
+            "default": "芳苑鄉",
+            "latin": "Fangyuan Township"
+          },
+          "zip": "528"
+        },
+        {
+          "key": "員林市",
+          "name": {
+            "default": "員林市",
+            "latin": "Yuanlin City"
+          },
+          "zip": "510"
+        },
+        {
+          "key": "埔心鄉",
+          "name": {
+            "default": "埔心鄉",
+            "latin": "Puxin Township"
+          },
+          "zip": "513"
+        },
+        {
+          "key": "埔鹽鄉",
+          "name": {
+            "default": "埔鹽鄉",
+            "latin": "Puyan Township"
+          },
+          "zip": "516"
+        },
+        {
+          "key": "埤頭鄉",
+          "name": {
+            "default": "埤頭鄉",
+            "latin": "Pitou Township"
+          },
+          "zip": "523"
+        },
+        {
+          "key": "鹿港鎮",
+          "name": {
+            "default": "鹿港鎮",
+            "latin": "Lukang Township"
+          },
+          "zip": "505"
+        },
+        {
+          "key": "溪州鄉",
+          "name": {
+            "default": "溪州鄉",
+            "latin": "Xizhou Township"
+          },
+          "zip": "524"
+        },
+        {
+          "key": "溪湖鎮",
+          "name": {
+            "default": "溪湖鎮",
+            "latin": "Xihu Township"
+          },
+          "zip": "514"
+        },
+        {
+          "key": "彰化市",
+          "name": {
+            "default": "彰化市",
+            "latin": "Changhua City"
+          },
+          "zip": "500"
+        },
+        {
+          "key": "福興鄉",
+          "name": {
+            "default": "福興鄉",
+            "latin": "Fuxing Township"
+          },
+          "zip": "506"
+        },
+        {
+          "key": "線西鄉",
+          "name": {
+            "default": "線西鄉",
+            "latin": "Xianxi Township"
+          },
+          "zip": "507"
+        }
+      ]
+    },
+    {
+      "key": "PEN",
+      "name": {
+        "default": "澎湖縣",
+        "latin": "Penghu County"
+      },
+      "zip": "88",
+      "zipex": "880,885",
+      "sub_regions": [
+        {
+          "key": "七美鄉",
+          "name": {
+            "default": "七美鄉",
+            "latin": "Qimei Township"
+          },
+          "zip": "883"
+        },
+        {
+          "key": "白沙鄉",
+          "name": {
+            "default": "白沙鄉",
+            "latin": "Baisha Township"
+          },
+          "zip": "884"
+        },
+        {
+          "key": "西嶼鄉",
+          "name": {
+            "default": "西嶼鄉",
+            "latin": "Xiyu Township"
+          },
+          "zip": "881"
+        },
+        {
+          "key": "馬公市",
+          "name": {
+            "default": "馬公市",
+            "latin": "Magong City"
+          },
+          "zip": "880"
+        },
+        {
+          "key": "望安鄉",
+          "name": {
+            "default": "望安鄉",
+            "latin": "Wang'an Township"
+          },
+          "zip": "882"
+        },
+        {
+          "key": "湖西鄉",
+          "name": {
+            "default": "湖西鄉",
+            "latin": "Huxi Township"
+          },
+          "zip": "885"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "id": "data/AT",
+  "key": "AT",
+  "name": "AUSTRIA",
+  "fmt": "%O%n%N%n%A%n%Z %C",
+  "zip": "\\d{4}",
+  "zipex": "1010,3741",
+  "require": "ACZ"
+}
