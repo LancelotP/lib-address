@@ -1,15 +1,23 @@
 {
-  "private": true,
   "name": "lib-address",
+  "description": "A library to format and validate addresses based on Google's open-source address metadata.",
+  "homepage": "https://github.com/LancelotP/lib-address",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/LancelotP/lib-address.git"
+  },
+  "bugs": {
+    "url": "https://github.com/LancelotP/lib-address/issues"
+  },
+  "author": {
+    "email": "lancelot@prigent.dev",
+    "name": "Lancelot Prigent"
+  },
   "version": "0.1.0",
   "license": "MIT",
   "type": "module",
   "engines": {
     "node": ">=18.16.1"
-  },
-  "author": {
-    "email": "lancelot@prigent.dev",
-    "name": "Lancelot Prigent"
   },
   "keywords": [
     "address",
