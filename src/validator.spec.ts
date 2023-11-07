@@ -1,6 +1,7 @@
 import { describe, it, expect } from "vitest";
+import type {
+  CountryFields} from "./validator";
 import {
-  CountryFields,
   getOptionnalFields,
   getRequiredFields,
   isAddressValid,
@@ -15,12 +16,12 @@ import ag from "../countries/AG.json";
 import ae from "../countries/AE.json";
 import fr from "../countries/FR.json";
 import us from "../countries/US.json";
-import { AddressInput } from "./types";
+import type { AddressInput } from "./types";
 import { AddressValidationError } from "./errors/missing-fields.error";
 import { MissingFieldError } from "./errors/missing-field.error";
 import { InvalidZipError } from "./errors/invalid-zip.error";
 import { InvalidStateError } from "./errors/invalid-state.error";
-import { CountryCode } from "./codes";
+import type { CountryCode } from "./codes";
 
 registerCountry(ag);
 registerCountry(ae);

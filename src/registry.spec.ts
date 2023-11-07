@@ -3,7 +3,7 @@ import { getCountryData, registerCountry, registry } from "./registry";
 
 import tg from "../countries/TG.json";
 import { CountryMissingError } from "./errors/country-missing.error";
-import { CountryCode } from "./codes";
+import type { CountryCode } from "./codes";
 
 describe.sequential("registry", () => {
   describe.sequential("registerCountry", () => {

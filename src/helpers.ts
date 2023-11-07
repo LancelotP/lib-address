@@ -1,4 +1,4 @@
-import { CountryCode } from "./codes";
+import type { CountryCode } from "./codes";
 import { getCountryData } from "./registry";
 
 export function getZipExamples(country: CountryCode, subRegion?: string) {
