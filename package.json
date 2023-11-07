@@ -17,8 +17,9 @@
   "license": "MIT",
   "type": "module",
   "engines": {
-    "node": ">=18.16.1"
+    "node": ">=18.18.2"
   },
+  "packageManager": "pnpm@8.10.0",
   "keywords": [
     "address",
     "metadata",
