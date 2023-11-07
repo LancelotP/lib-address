@@ -1,9 +1,0 @@
-{
-  "id": "data/EE",
-  "key": "EE",
-  "name": "ESTONIA",
-  "fmt": "%N%n%O%n%A%n%Z %C %S",
-  "zip": "\\d{5}",
-  "zipex": "69501,11212",
-  "require": "ACZ"
-}

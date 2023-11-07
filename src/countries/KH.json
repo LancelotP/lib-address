@@ -1,8 +1,0 @@
-{
-  "id": "data/KH",
-  "key": "KH",
-  "name": "CAMBODIA",
-  "fmt": "%N%n%O%n%A%n%C %Z",
-  "zip": "\\d{5,6}",
-  "zipex": "120101,120108"
-}

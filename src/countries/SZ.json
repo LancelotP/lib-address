@@ -1,9 +1,0 @@
-{
-  "id": "data/SZ",
-  "key": "SZ",
-  "name": "SWAZILAND",
-  "fmt": "%N%n%O%n%A%n%C%n%Z",
-  "zip": "[HLMS]\\d{3}",
-  "zipex": "H100",
-  "upper": "ACZ"
-}

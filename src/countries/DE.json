@@ -1,9 +1,0 @@
-{
-  "id": "data/DE",
-  "key": "DE",
-  "name": "GERMANY",
-  "fmt": "%N%n%O%n%A%n%Z %C",
-  "zip": "\\d{5}",
-  "zipex": "26133,53225",
-  "require": "ACZ"
-}

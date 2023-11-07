@@ -1,8 +1,0 @@
-{
-  "id": "data/PK",
-  "key": "PK",
-  "name": "PAKISTAN",
-  "fmt": "%N%n%O%n%A%n%D%n%C-%Z",
-  "zip": "\\d{5}",
-  "zipex": "44000"
-}
