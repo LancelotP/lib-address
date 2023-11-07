@@ -1,4 +1,4 @@
-import { CountryCode } from "./codes";
+import type { CountryCode } from "./codes";
 
 export type CountryData = {
   id: string;

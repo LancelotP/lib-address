@@ -1,5 +1,5 @@
 import { getCountryData } from "./registry";
-import { AddressInput } from "./types";
+import type { AddressInput } from "./types";
 import { convertAbbrStringToObject } from "./utils";
 import { validateAddress } from "./validator";
 

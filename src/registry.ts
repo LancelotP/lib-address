@@ -1,6 +1,6 @@
-import { CountryCode } from "./codes";
+import type { CountryCode } from "./codes";
 import { CountryMissingError } from "./errors/country-missing.error";
-import { CountryData } from "./types";
+import type { CountryData } from "./types";
 
 const defaultCountryData = {
   fmt: "%N%n%O%n%A%n%C",

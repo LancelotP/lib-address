@@ -1,14 +1,15 @@
 import { MissingFieldError } from "./errors/missing-field.error";
 import { AddressValidationError } from "./errors/missing-fields.error";
 import { getCountryData } from "./registry";
-import { Address, AddressInput } from "./types";
+import type { Address, AddressInput } from "./types";
 import { convertAbbrStringToObject } from "./utils";
-import { CountryCode, codes as countryCodes } from "./codes";
+import type { CountryCode} from "./codes";
+import { codes as countryCodes } from "./codes";
 import {
   InvalidZipError,
   InvalidZipSubRegionError,
 } from "./errors/invalid-zip.error";
-import { LibAddressError } from "./errors/base.error";
+import type { LibAddressError } from "./errors/base.error";
 import { InvalidStateError } from "./errors/invalid-state.error";
 
 /**

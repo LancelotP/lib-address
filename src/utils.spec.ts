@@ -1,5 +1,6 @@
 import { expect, describe, it } from "vitest";
-import { AbbrObject, convertAbbrStringToObject } from "./utils";
+import type { AbbrObject } from "./utils";
+import { convertAbbrStringToObject } from "./utils";
 
 describe("convertAbbrStringToObject", () => {
   it.each<{ value: string; fields: (keyof AbbrObject)[] }>([

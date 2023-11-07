@@ -1,5 +1,5 @@
 import { describe, it, expect } from "vitest";
-import { AddressInput } from "./types";
+import type { AddressInput } from "./types";
 import { formatAddress } from "./formatter";
 
 import { registerCountry } from "./registry";
