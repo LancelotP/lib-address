@@ -7,3 +7,4 @@ export {
   validateAddress,
   getCountryFields,
 } from "./validator";
+export { getZipExamples } from "./helpers";
