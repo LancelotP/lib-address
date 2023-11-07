@@ -6,14 +6,17 @@ import { getCountryData } from "./registry";
  * @param country CountryCode to get zip code examples for (e.g. US, FR, etc.)
  * @param subRegion Subdivision code to get zip code examples for (e.g. CA, NY, etc.)
  */
-export function getZipExamples(country: CountryCode, subRegion?: string) {
+export function getZipExamples(
+  country: CountryCode,
+  subRegion?: string,
+): string[] {
   const data = getCountryData(country);
 
-  if (!subRegion) return data.zipex;
+  if (!subRegion) return data.zipex?.split(",") ?? [];
 
   const subRegionData = data.sub_regions?.find((sr) => sr.key === subRegion);
 
-  return subRegionData?.zipex ?? data.zipex;
+  return (subRegionData?.zipex ?? data.zipex)?.split(",") ?? [];
 }
 
 /**
@@ -24,8 +27,10 @@ export function getZipExamples(country: CountryCode, subRegion?: string) {
 export function getCountryStates(country: CountryCode, lang = "default") {
   const data = getCountryData(country);
 
-  return data.sub_regions?.map((sr) => ({
-    value: sr.key,
-    label: sr.name[lang] ?? sr.name.default,
-  }));
+  return (
+    data.sub_regions?.map((sr) => ({
+      value: sr.key,
+      label: sr.name[lang] ?? sr.name.default,
+    })) ?? []
+  );
 }
