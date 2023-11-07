@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.2.0 (2023-11-07)
+
+## What's Changed
+* feat: add getter for registered countries by @LancelotP in https://github.com/LancelotP/lib-address/pull/10
+
+
+**Full Changelog**: https://github.com/LancelotP/lib-address/compare/v0.1.1...v0.2.0
+
 ## 0.1.1 (2023-11-07)
 
 ## What's Changed
