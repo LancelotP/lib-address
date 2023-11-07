@@ -13,6 +13,7 @@ const config = {
   parser: "@typescript-eslint/parser",
   parserOptions: {
     project: true,
+    tsconfigRootDir: __dirname,
   },
   plugins: ["@typescript-eslint", "import"],
   rules: {
@@ -31,7 +32,16 @@ const config = {
     ],
     "import/consistent-type-specifier-style": ["error", "prefer-top-level"],
   },
-  ignorePatterns: ["dist", "countries", ".eslintrc.cjs", ".prettierrc.js", "node_modules", "coverage", "vite.config.ts", "tsconfig.json", "tsconfig.scripts.json", "package.json", "scripts"],
+  ignorePatterns: [
+    "dist",
+    "countries",
+    ".eslintrc.cjs",
+    ".prettierrc.js",
+    "node_modules",
+    "coverage",
+    "vite.config.ts",
+    "package.json",
+  ],
   reportUnusedDisableDirectives: true,
 };
 
