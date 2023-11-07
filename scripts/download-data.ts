@@ -1,5 +1,6 @@
 import axios from "axios";
 import axiosRetry from "axios-retry";
+import type { SingleBar } from "cli-progress";
 
 import type { CountryCode } from "../src/codes.ts";
 import type {
@@ -24,6 +25,7 @@ export async function getCountryCodes() {
 export async function getCountrySubRegionData(
   id: string,
   extraLocales: string[] = [],
+  progress?: SingleBar,
 ): Promise<SubRegionData> {
   const url = `${BASE_URL}/${id}`;
 
@@ -35,12 +37,19 @@ export async function getCountrySubRegionData(
     })),
   );
 
-  console.log(res.data.id);
+  const subRegionKeys = res.data.sub_keys?.split("~") ?? [];
+  progress?.setTotal(progress.getTotal() + subRegionKeys.length);
 
   const sub_regions = await Promise.all(
-    (res.data.sub_keys?.split("~") ?? []).map((key) =>
-      getCountrySubRegionData(`${res.data.id}/${key}`, extraLocales),
-    ),
+    subRegionKeys.map(async (key) => {
+      const result = await getCountrySubRegionData(
+        `${res.data.id}/${key}`,
+        extraLocales,
+        progress,
+      );
+      progress?.increment();
+      return result;
+    }),
   );
 
   const foo = {
@@ -62,6 +71,7 @@ export async function getCountrySubRegionData(
 
 export async function getCountryData<K extends string>(
   countryCode: K,
+  progress?: SingleBar,
 ): Promise<CountryData> {
   const url = `${BASE_URL}/data/${countryCode}`;
 
@@ -72,12 +82,20 @@ export async function getCountryData<K extends string>(
   }
 
   const extraLocales = res.data.languages?.split("~").slice(1) ?? [];
-  console.log(res.data.key);
+
+  const subRegionKeys = res.data.sub_keys?.split("~") ?? [];
+  progress?.setTotal(progress.getTotal() + subRegionKeys.length);
 
   const sub_regions = await Promise.all(
-    (res.data.sub_keys?.split("~") ?? []).map((key) =>
-      getCountrySubRegionData(`${res.data.id}/${key}`, extraLocales),
-    ),
+    subRegionKeys.map(async (key) => {
+      const result = await getCountrySubRegionData(
+        `${res.data.id}/${key}`,
+        extraLocales,
+        progress,
+      );
+      progress?.increment();
+      return result;
+    }),
   );
 
   return {
