@@ -1,0 +1,67 @@
+{
+  "id": "data/AD",
+  "key": "AD",
+  "name": "ANDORRA",
+  "fmt": "%N%n%O%n%A%n%Z %C",
+  "zip": "AD[1-7]0\\d",
+  "zipex": "AD100,AD501,AD700",
+  "lang": "ca",
+  "sub_regions": [
+    {
+      "key": "07",
+      "name": {
+        "default": "Andorra la Vella"
+      },
+      "zip": "AD50[01]",
+      "zipex": "AD500"
+    },
+    {
+      "key": "02",
+      "name": {
+        "default": "Canillo"
+      },
+      "zip": "AD10[01]",
+      "zipex": "AD100"
+    },
+    {
+      "key": "03",
+      "name": {
+        "default": "Encamp"
+      },
+      "zip": "AD20[01]",
+      "zipex": "AD200"
+    },
+    {
+      "key": "08",
+      "name": {
+        "default": "Escaldes-Engordany"
+      },
+      "zip": "AD70[01]",
+      "zipex": "AD700"
+    },
+    {
+      "key": "04",
+      "name": {
+        "default": "La Massana"
+      },
+      "zip": "AD40[01]",
+      "zipex": "AD400"
+    },
+    {
+      "key": "05",
+      "name": {
+        "default": "Ordino"
+      },
+      "zip": "AD30[01]",
+      "zipex": "AD300"
+    },
+    {
+      "key": "06",
+      "name": {
+        "default": "Sant Julià de Lòria"
+      },
+      "zip": "AD60[01]",
+      "zipex": "AD600"
+    }
+  ]
+}

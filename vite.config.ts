@@ -1,11 +1,9 @@
 /// <reference types="vitest" />
 // Configure Vitest (https://vitest.dev/config/)
 
-import { resolve } from "path";
 import { defineConfig } from "vite";
 import dts from "vite-plugin-dts";
 import { visualizer } from "rollup-plugin-visualizer";
-import { viteStaticCopy } from "vite-plugin-static-copy";
 
 export default defineConfig({
   esbuild: {
@@ -39,14 +37,6 @@ export default defineConfig({
     },
   },
   plugins: [
-    viteStaticCopy({
-      targets: [
-        {
-          src: resolve(__dirname, "src/countries"),
-          dest: resolve(__dirname, "dist"),
-        },
-      ],
-    }),
     visualizer(),
     dts({
       exclude: ["./src/*.spec.ts"],

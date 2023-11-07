@@ -1,0 +1,235 @@
+{
+  "id": "data/NG",
+  "key": "NG",
+  "name": "NIGERIA",
+  "fmt": "%N%n%O%n%A%n%D%n%C %Z%n%S",
+  "zip": "\\d{6}",
+  "zipex": "930283,300001,931104",
+  "lang": "en",
+  "upper": "CS",
+  "state_name_type": "state",
+  "sub_regions": [
+    {
+      "key": "AB",
+      "name": {
+        "default": "Abia"
+      }
+    },
+    {
+      "key": "AD",
+      "name": {
+        "default": "Adamawa"
+      }
+    },
+    {
+      "key": "AK",
+      "name": {
+        "default": "Akwa Ibom"
+      }
+    },
+    {
+      "key": "AN",
+      "name": {
+        "default": "Anambra"
+      }
+    },
+    {
+      "key": "BA",
+      "name": {
+        "default": "Bauchi"
+      }
+    },
+    {
+      "key": "BY",
+      "name": {
+        "default": "Bayelsa"
+      }
+    },
+    {
+      "key": "BE",
+      "name": {
+        "default": "Benue"
+      }
+    },
+    {
+      "key": "BO",
+      "name": {
+        "default": "Borno"
+      }
+    },
+    {
+      "key": "CR",
+      "name": {
+        "default": "Cross River"
+      }
+    },
+    {
+      "key": "DE",
+      "name": {
+        "default": "Delta"
+      }
+    },
+    {
+      "key": "EB",
+      "name": {
+        "default": "Ebonyi"
+      }
+    },
+    {
+      "key": "ED",
+      "name": {
+        "default": "Edo"
+      }
+    },
+    {
+      "key": "EK",
+      "name": {
+        "default": "Ekiti"
+      }
+    },
+    {
+      "key": "EN",
+      "name": {
+        "default": "Enugu"
+      }
+    },
+    {
+      "key": "FC",
+      "name": {
+        "default": "Federal Capital Territory"
+      }
+    },
+    {
+      "key": "GO",
+      "name": {
+        "default": "Gombe"
+      }
+    },
+    {
+      "key": "IM",
+      "name": {
+        "default": "Imo"
+      }
+    },
+    {
+      "key": "JI",
+      "name": {
+        "default": "Jigawa"
+      }
+    },
+    {
+      "key": "KD",
+      "name": {
+        "default": "Kaduna"
+      }
+    },
+    {
+      "key": "KN",
+      "name": {
+        "default": "Kano"
+      }
+    },
+    {
+      "key": "KT",
+      "name": {
+        "default": "Katsina"
+      }
+    },
+    {
+      "key": "KE",
+      "name": {
+        "default": "Kebbi"
+      }
+    },
+    {
+      "key": "KO",
+      "name": {
+        "default": "Kogi"
+      }
+    },
+    {
+      "key": "KW",
+      "name": {
+        "default": "Kwara"
+      }
+    },
+    {
+      "key": "LA",
+      "name": {
+        "default": "Lagos"
+      }
+    },
+    {
+      "key": "NA",
+      "name": {
+        "default": "Nasarawa"
+      }
+    },
+    {
+      "key": "NI",
+      "name": {
+        "default": "Niger"
+      }
+    },
+    {
+      "key": "OG",
+      "name": {
+        "default": "Ogun State"
+      }
+    },
+    {
+      "key": "ON",
+      "name": {
+        "default": "Ondo"
+      }
+    },
+    {
+      "key": "OS",
+      "name": {
+        "default": "Osun"
+      }
+    },
+    {
+      "key": "OY",
+      "name": {
+        "default": "Oyo"
+      }
+    },
+    {
+      "key": "PL",
+      "name": {
+        "default": "Plateau"
+      }
+    },
+    {
+      "key": "RI",
+      "name": {
+        "default": "Rivers"
+      }
+    },
+    {
+      "key": "SO",
+      "name": {
+        "default": "Sokoto"
+      }
+    },
+    {
+      "key": "TA",
+      "name": {
+        "default": "Taraba"
+      }
+    },
+    {
+      "key": "YO",
+      "name": {
+        "default": "Yobe"
+      }
+    },
+    {
+      "key": "ZA",
+      "name": {
+        "default": "Zamfara"
+      }
+    }
+  ]
+}

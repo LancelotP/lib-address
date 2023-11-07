@@ -1,0 +1,9 @@
+{
+  "id": "data/PT",
+  "key": "PT",
+  "name": "PORTUGAL",
+  "fmt": "%N%n%O%n%A%n%Z %C",
+  "zip": "\\d{4}-\\d{3}",
+  "zipex": "2725-079,1250-096,1201-950,2860-571,1208-148",
+  "require": "ACZ"
+}

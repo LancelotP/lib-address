@@ -1,0 +1,12 @@
+{
+  "id": "data/MP",
+  "key": "MP",
+  "name": "NORTHERN MARIANA ISLANDS",
+  "fmt": "%N%n%O%n%A%n%C %S %Z",
+  "zip": "(9695[012])(?:[ \\-](\\d{4}))?",
+  "zipex": "96950,96951,96952",
+  "upper": "ACNOS",
+  "require": "ACSZ",
+  "state_name_type": "state",
+  "zip_name_type": "zip"
+}

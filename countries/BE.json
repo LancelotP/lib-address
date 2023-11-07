@@ -1,0 +1,9 @@
+{
+  "id": "data/BE",
+  "key": "BE",
+  "name": "BELGIUM",
+  "fmt": "%O%n%N%n%A%n%Z %C",
+  "zip": "\\d{4}",
+  "zipex": "4000,1000",
+  "require": "ACZ"
+}

@@ -1,0 +1,12 @@
+{
+  "id": "data/PR",
+  "key": "PR",
+  "name": "PUERTO RICO",
+  "fmt": "%N%n%O%n%A%n%C PR %Z",
+  "zip": "(00[679]\\d{2})(?:[ \\-](\\d{4}))?",
+  "zipex": "00930",
+  "upper": "ACNO",
+  "postprefix": "PR ",
+  "require": "ACZ",
+  "zip_name_type": "zip"
+}

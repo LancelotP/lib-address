@@ -1,0 +1,10 @@
+{
+  "id": "data/MQ",
+  "key": "MQ",
+  "name": "MARTINIQUE",
+  "fmt": "%O%n%N%n%A%n%Z %C %X",
+  "zip": "9[78]2\\d{2}",
+  "zipex": "97220",
+  "upper": "ACX",
+  "require": "ACZ"
+}

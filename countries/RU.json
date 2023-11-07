@@ -1,0 +1,695 @@
+{
+  "id": "data/RU",
+  "key": "RU",
+  "name": "RUSSIAN FEDERATION",
+  "fmt": "%N%n%O%n%A%n%C%n%S%n%Z",
+  "lfmt": "%N%n%O%n%A%n%C%n%S%n%Z",
+  "zip": "\\d{6}",
+  "zipex": "247112,103375,188300",
+  "lang": "ru",
+  "upper": "AC",
+  "require": "ACSZ",
+  "state_name_type": "oblast",
+  "sub_regions": [
+    {
+      "key": "ALT",
+      "name": {
+        "default": "Алтайский край",
+        "latin": "Altayskiy kray"
+      },
+      "zip": "65[6-9]"
+    },
+    {
+      "key": "AMU",
+      "name": {
+        "default": "Амурская область",
+        "latin": "Amurskaya oblast'"
+      },
+      "zip": "67[56]"
+    },
+    {
+      "key": "ARK",
+      "name": {
+        "default": "Архангельская область",
+        "latin": "Arkhangelskaya oblast'"
+      },
+      "zip": "16[3-5]"
+    },
+    {
+      "key": "AST",
+      "name": {
+        "default": "Астраханская область",
+        "latin": "Astrakhanskaya oblast'"
+      },
+      "zip": "41[4-6]"
+    },
+    {
+      "key": "BEL",
+      "name": {
+        "default": "Белгородская область",
+        "latin": "Belgorodskaya oblast'"
+      },
+      "zip": "30[89]"
+    },
+    {
+      "key": "BRY",
+      "name": {
+        "default": "Брянская область",
+        "latin": "Bryanskaya oblast'"
+      },
+      "zip": "24[1-3]"
+    },
+    {
+      "key": "VLA",
+      "name": {
+        "default": "Владимирская область",
+        "latin": "Vladimirskaya oblast'"
+      },
+      "zip": "60[0-2]"
+    },
+    {
+      "key": "VGG",
+      "name": {
+        "default": "Волгоградская область",
+        "latin": "Volgogradskaya oblast'"
+      },
+      "zip": "40[0-4]"
+    },
+    {
+      "key": "VLG",
+      "name": {
+        "default": "Вологодская область",
+        "latin": "Vologodskaya oblast'"
+      },
+      "zip": "16[0-2]"
+    },
+    {
+      "key": "VOR",
+      "name": {
+        "default": "Воронежская область",
+        "latin": "Voronezhskaya oblast'"
+      },
+      "zip": "39[4-7]"
+    },
+    {
+      "key": "YEV",
+      "name": {
+        "default": "Еврейская автономная область",
+        "latin": "Evreyskaya avtonomnaya oblast'"
+      },
+      "zip": "679"
+    },
+    {
+      "key": "ZAB",
+      "name": {
+        "default": "Забайкальский край",
+        "latin": "Zabaykalskiy kray"
+      },
+      "zip": "6(?:7[2-4]|87)"
+    },
+    {
+      "key": "IVA",
+      "name": {
+        "default": "Ивановская область",
+        "latin": "Ivanovskaya oblast'"
+      },
+      "zip": "15[3-5]"
+    },
+    {
+      "key": "IRK",
+      "name": {
+        "default": "Иркутская область",
+        "latin": "Irkutskaya oblast'"
+      },
+      "zip": "66[4-9]"
+    },
+    {
+      "key": "KB",
+      "name": {
+        "default": "Кабардино-Балкарская Республика",
+        "latin": "Kabardino-Balkarskaya Republits"
+      },
+      "zip": "36[01]"
+    },
+    {
+      "key": "KGD",
+      "name": {
+        "default": "Калининградская область",
+        "latin": "Kaliningradskaya oblast'"
+      },
+      "zip": "23[6-8]"
+    },
+    {
+      "key": "KLU",
+      "name": {
+        "default": "Калужская область",
+        "latin": "Kaluzhskaya oblast'"
+      },
+      "zip": "24[89]"
+    },
+    {
+      "key": "KAM",
+      "name": {
+        "default": "Камчатский край",
+        "latin": "Kamchatskiy kray"
+      },
+      "zip": "68[348]"
+    },
+    {
+      "key": "KC",
+      "name": {
+        "default": "Карачаево-Черкесская Республика",
+        "latin": "Karachaevo-Cherkesskaya Republits"
+      },
+      "zip": "369"
+    },
+    {
+      "key": "KEM",
+      "name": {
+        "default": "Кемеровская область",
+        "latin": "Kemerovskaya oblast'"
+      },
+      "zip": "65[0-4]"
+    },
+    {
+      "key": "KIR",
+      "name": {
+        "default": "Кировская область",
+        "latin": "Kirovskaya oblast'"
+      },
+      "zip": "61[0-3]"
+    },
+    {
+      "key": "KOS",
+      "name": {
+        "default": "Костромская область",
+        "latin": "Kostromskaya oblast'"
+      },
+      "zip": "15[67]"
+    },
+    {
+      "key": "KDA",
+      "name": {
+        "default": "Краснодарский край",
+        "latin": "Krasnodarskiy kray"
+      },
+      "zip": "35[0-4]"
+    },
+    {
+      "key": "KYA",
+      "name": {
+        "default": "Красноярский край",
+        "latin": "Krasnoyarskiy kray"
+      },
+      "zip": "6(?:6[0-3]|4[78])"
+    },
+    {
+      "key": "KGN",
+      "name": {
+        "default": "Курганская область",
+        "latin": "Kurganskaya oblast'"
+      },
+      "zip": "64[01]"
+    },
+    {
+      "key": "KRS",
+      "name": {
+        "default": "Курская область",
+        "latin": "Kurskaya oblast'"
+      },
+      "zip": "30[5-7]"
+    },
+    {
+      "key": "LEN",
+      "name": {
+        "default": "Ленинградская область",
+        "latin": "Leningradskaya oblast'"
+      },
+      "zip": "18[78]"
+    },
+    {
+      "key": "LIP",
+      "name": {
+        "default": "Липецкая область",
+        "latin": "Lipetskaya oblast'"
+      },
+      "zip": "39[89]"
+    },
+    {
+      "key": "MAG",
+      "name": {
+        "default": "Магаданская область",
+        "latin": "Magadanskaya oblast'"
+      },
+      "zip": "68[56]"
+    },
+    {
+      "key": "MOW",
+      "name": {
+        "default": "Москва",
+        "latin": "Moskva"
+      },
+      "zip": "1(?:0[1-9]|1|2|3[0-5]|4[0-4])"
+    },
+    {
+      "key": "MOS",
+      "name": {
+        "default": "Московская область",
+        "latin": "Moskovskaya oblast'"
+      },
+      "zip": "14[0-4]"
+    },
+    {
+      "key": "MUR",
+      "name": {
+        "default": "Мурманская область",
+        "latin": "Murmanskaya oblast'"
+      },
+      "zip": "18[34]"
+    },
+    {
+      "key": "NEN",
+      "name": {
+        "default": "Ненецкий автономный округ",
+        "latin": "Nenetskiy"
+      },
+      "zip": "166"
+    },
+    {
+      "key": "NIZ",
+      "name": {
+        "default": "Нижегородская область",
+        "latin": "Nizhegorodskaya oblast'"
+      },
+      "zip": "60[3-7]"
+    },
+    {
+      "key": "NGR",
+      "name": {
+        "default": "Новгородская область",
+        "latin": "Novgorodskaya oblast'"
+      },
+      "zip": "17[3-5]"
+    },
+    {
+      "key": "NVS",
+      "name": {
+        "default": "Новосибирская область",
+        "latin": "Novosibirskaya oblast'"
+      },
+      "zip": "63[0-3]"
+    },
+    {
+      "key": "OMS",
+      "name": {
+        "default": "Омская область",
+        "latin": "Omskaya oblast'"
+      },
+      "zip": "64[4-6]"
+    },
+    {
+      "key": "ORE",
+      "name": {
+        "default": "Оренбургская область",
+        "latin": "Orenburgskaya oblast'"
+      },
+      "zip": "46[0-2]"
+    },
+    {
+      "key": "ORL",
+      "name": {
+        "default": "Орловская область",
+        "latin": "Orlovskaya oblast'"
+      },
+      "zip": "30[23]"
+    },
+    {
+      "key": "PNZ",
+      "name": {
+        "default": "Пензенская область",
+        "latin": "Penzenskaya oblast'"
+      },
+      "zip": "44[0-2]"
+    },
+    {
+      "key": "PER",
+      "name": {
+        "default": "Пермский край",
+        "latin": "Permskiy kray"
+      },
+      "zip": "61[4-9]"
+    },
+    {
+      "key": "PRI",
+      "name": {
+        "default": "Приморский край",
+        "latin": "Primorskiy kray"
+      },
+      "zip": "69[0-2]"
+    },
+    {
+      "key": "PSK",
+      "name": {
+        "default": "Псковская область",
+        "latin": "Pskovskaya oblast'"
+      },
+      "zip": "18[0-2]"
+    },
+    {
+      "key": "AD",
+      "name": {
+        "default": "Республика Адыгея",
+        "latin": "Respublika Adygeya"
+      },
+      "zip": "385"
+    },
+    {
+      "key": "AL",
+      "name": {
+        "default": "Республика Алтай",
+        "latin": "Altay Republits"
+      },
+      "zip": "649"
+    },
+    {
+      "key": "BA",
+      "name": {
+        "default": "Республика Башкортостан",
+        "latin": "Bashkortostan Republits"
+      },
+      "zip": "45[0-3]"
+    },
+    {
+      "key": "BU",
+      "name": {
+        "default": "Республика Бурятия",
+        "latin": "Buryatiya Republits"
+      },
+      "zip": "67[01]"
+    },
+    {
+      "key": "DA",
+      "name": {
+        "default": "Республика Дагестан",
+        "latin": "Dagestan Republits"
+      },
+      "zip": "36[78]"
+    },
+    {
+      "key": "IN",
+      "name": {
+        "default": "Республика Ингушетия",
+        "latin": "Ingushetiya Republits"
+      },
+      "zip": "386"
+    },
+    {
+      "key": "KL",
+      "name": {
+        "default": "Республика Калмыкия",
+        "latin": "Respublika Kalmykiya"
+      },
+      "zip": "35[89]"
+    },
+    {
+      "key": "KR",
+      "name": {
+        "default": "Республика Карелия",
+        "latin": "Kareliya Republits"
+      },
+      "zip": "18[56]"
+    },
+    {
+      "key": "KO",
+      "name": {
+        "default": "Республика Коми",
+        "latin": "Komi Republits"
+      },
+      "zip": "16[7-9]"
+    },
+    {
+      "key": "Автономна Республіка Крим",
+      "name": {
+        "default": "Республика Крым",
+        "latin": "Respublika Krym"
+      },
+      "zip": "29[5-8]"
+    },
+    {
+      "key": "ME",
+      "name": {
+        "default": "Республика Марий Эл",
+        "latin": "Respublika Mariy El"
+      },
+      "zip": "42[45]"
+    },
+    {
+      "key": "MO",
+      "name": {
+        "default": "Республика Мордовия",
+        "latin": "Respublika Mordoviya"
+      },
+      "zip": "43[01]"
+    },
+    {
+      "key": "SA",
+      "name": {
+        "default": "Республика Саха (Якутия)",
+        "latin": "Sakha (Yakutiya) Republits"
+      },
+      "zip": "67[78]"
+    },
+    {
+      "key": "SE",
+      "name": {
+        "default": "Республика Северная Осетия-Алания",
+        "latin": "Respublika Severnaya Osetiya-Alaniya"
+      },
+      "zip": "36[23]"
+    },
+    {
+      "key": "TA",
+      "name": {
+        "default": "Республика Татарстан",
+        "latin": "Respublika Tatarstan"
+      },
+      "zip": "42[0-3]"
+    },
+    {
+      "key": "TY",
+      "name": {
+        "default": "Республика Тыва",
+        "latin": "Tyva Republits"
+      },
+      "zip": "66[78]"
+    },
+    {
+      "key": "UD",
+      "name": {
+        "default": "Республика Удмуртия",
+        "latin": "Udmurtskaja Respublika"
+      },
+      "zip": "42[67]"
+    },
+    {
+      "key": "KK",
+      "name": {
+        "default": "Республика Хакасия",
+        "latin": "Khakasiya Republits"
+      },
+      "zip": "655"
+    },
+    {
+      "key": "ROS",
+      "name": {
+        "default": "Ростовская область",
+        "latin": "Rostovskaya oblast'"
+      },
+      "zip": "34[4-7]"
+    },
+    {
+      "key": "RYA",
+      "name": {
+        "default": "Рязанская область",
+        "latin": "Ryazanskaya oblast'"
+      },
+      "zip": "39[01]"
+    },
+    {
+      "key": "SAM",
+      "name": {
+        "default": "Самарская область",
+        "latin": "Samarskaya oblast'"
+      },
+      "zip": "44[3-6]"
+    },
+    {
+      "key": "SPE",
+      "name": {
+        "default": "Санкт-Петербург",
+        "latin": "Sankt-Peterburg"
+      },
+      "zip": "19"
+    },
+    {
+      "key": "SAR",
+      "name": {
+        "default": "Саратовская область",
+        "latin": "Saratovskaya oblast'"
+      },
+      "zip": "41[0-3]"
+    },
+    {
+      "key": "SAK",
+      "name": {
+        "default": "Сахалинская область",
+        "latin": "Sakhalinskaya oblast'"
+      },
+      "zip": "69[34]"
+    },
+    {
+      "key": "SVE",
+      "name": {
+        "default": "Свердловская область",
+        "latin": "Sverdlovskaya oblast'"
+      },
+      "zip": "62[0-4]"
+    },
+    {
+      "key": "Севастополь",
+      "name": {
+        "default": "Севастополь",
+        "latin": "Sevastopol'"
+      },
+      "zip": "299"
+    },
+    {
+      "key": "SMO",
+      "name": {
+        "default": "Смоленская область",
+        "latin": "Smolenskaya oblast'"
+      },
+      "zip": "21[4-6]"
+    },
+    {
+      "key": "STA",
+      "name": {
+        "default": "Ставропольский край",
+        "latin": "Stavropolskiy kray"
+      },
+      "zip": "35[5-7]"
+    },
+    {
+      "key": "TAM",
+      "name": {
+        "default": "Тамбовская область",
+        "latin": "Tambovskaya oblast'"
+      },
+      "zip": "39[23]"
+    },
+    {
+      "key": "TVE",
+      "name": {
+        "default": "Тверская область",
+        "latin": "Tverskaya oblast'"
+      },
+      "zip": "17[0-2]"
+    },
+    {
+      "key": "TOM",
+      "name": {
+        "default": "Томская область",
+        "latin": "Tomskaya oblast'"
+      },
+      "zip": "63[4-6]"
+    },
+    {
+      "key": "TUL",
+      "name": {
+        "default": "Тульская область",
+        "latin": "Tulskaya oblast'"
+      },
+      "zip": "30[01]"
+    },
+    {
+      "key": "TYU",
+      "name": {
+        "default": "Тюменская область",
+        "latin": "Tyumenskaya oblast'"
+      },
+      "zip": "62[5-7]"
+    },
+    {
+      "key": "ULY",
+      "name": {
+        "default": "Ульяновская область",
+        "latin": "Ulyanovskaya oblast'"
+      },
+      "zip": "43[23]"
+    },
+    {
+      "key": "KHA",
+      "name": {
+        "default": "Хабаровский край",
+        "latin": "Khabarovskiy kray"
+      },
+      "zip": "68[0-2]"
+    },
+    {
+      "key": "KHM",
+      "name": {
+        "default": "Ханты-Мансийский автономный округ",
+        "latin": "Khanty-Mansiyskiy avtonomnyy okrug"
+      },
+      "zip": "628"
+    },
+    {
+      "key": "CHE",
+      "name": {
+        "default": "Челябинская область",
+        "latin": "Chelyabinskaya oblast'"
+      },
+      "zip": "45[4-7]"
+    },
+    {
+      "key": "CE",
+      "name": {
+        "default": "Чеченская Республика",
+        "latin": "Chechenskaya Republits"
+      },
+      "zip": "36[4-6]"
+    },
+    {
+      "key": "CU",
+      "name": {
+        "default": "Чувашская Республика",
+        "latin": "Chuvashia"
+      },
+      "zip": "42[89]"
+    },
+    {
+      "key": "CHU",
+      "name": {
+        "default": "Чукотский автономный округ",
+        "latin": "Chukotskiy"
+      },
+      "zip": "689"
+    },
+    {
+      "key": "YAN",
+      "name": {
+        "default": "Ямало-Ненецкий автономный округ",
+        "latin": "Yamalo-Nenetskiy"
+      },
+      "zip": "629"
+    },
+    {
+      "key": "YAR",
+      "name": {
+        "default": "Ярославская область",
+        "latin": "Yaroslavskaya oblast'"
+      },
+      "zip": "15[0-2]"
+    }
+  ]
+}

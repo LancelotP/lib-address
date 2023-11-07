@@ -1,0 +1,168 @@
+{
+  "id": "data/PE",
+  "key": "PE",
+  "name": "PERU",
+  "fmt": "%N%n%O%n%A%n%C %Z%n%S",
+  "zip": "(?:LIMA \\d{1,2}|CALLAO 0?\\d)|[0-2]\\d{4}",
+  "zipex": "LIMA 23,LIMA 42,CALLAO 2,02001",
+  "lang": "es",
+  "locality_name_type": "district",
+  "sub_regions": [
+    {
+      "key": "AMA",
+      "name": {
+        "default": "Amazonas"
+      }
+    },
+    {
+      "key": "ANC",
+      "name": {
+        "default": "Áncash"
+      }
+    },
+    {
+      "key": "APU",
+      "name": {
+        "default": "Apurímac"
+      }
+    },
+    {
+      "key": "ARE",
+      "name": {
+        "default": "Arequipa"
+      }
+    },
+    {
+      "key": "AYA",
+      "name": {
+        "default": "Ayacucho"
+      }
+    },
+    {
+      "key": "CAJ",
+      "name": {
+        "default": "Cajamarca"
+      }
+    },
+    {
+      "key": "CAL",
+      "name": {
+        "default": "Callao"
+      }
+    },
+    {
+      "key": "CUS",
+      "name": {
+        "default": "Cuzco"
+      }
+    },
+    {
+      "key": "LIM",
+      "name": {
+        "default": "Gobierno Regional de Lima"
+      }
+    },
+    {
+      "key": "HUV",
+      "name": {
+        "default": "Huancavelica"
+      }
+    },
+    {
+      "key": "HUC",
+      "name": {
+        "default": "Huánuco"
+      }
+    },
+    {
+      "key": "ICA",
+      "name": {
+        "default": "Ica"
+      }
+    },
+    {
+      "key": "JUN",
+      "name": {
+        "default": "Junín"
+      }
+    },
+    {
+      "key": "LAL",
+      "name": {
+        "default": "La Libertad"
+      }
+    },
+    {
+      "key": "LAM",
+      "name": {
+        "default": "Lambayeque"
+      }
+    },
+    {
+      "key": "LOR",
+      "name": {
+        "default": "Loreto"
+      }
+    },
+    {
+      "key": "MDD",
+      "name": {
+        "default": "Madre de Dios"
+      }
+    },
+    {
+      "key": "MOQ",
+      "name": {
+        "default": "Moquegua"
+      }
+    },
+    {
+      "key": "LMA",
+      "name": {
+        "default": "Municipalidad Metropolitana de Lima"
+      }
+    },
+    {
+      "key": "PAS",
+      "name": {
+        "default": "Pasco"
+      }
+    },
+    {
+      "key": "PIU",
+      "name": {
+        "default": "Piura"
+      }
+    },
+    {
+      "key": "PUN",
+      "name": {
+        "default": "Puno"
+      }
+    },
+    {
+      "key": "SAM",
+      "name": {
+        "default": "San Martín"
+      }
+    },
+    {
+      "key": "TAC",
+      "name": {
+        "default": "Tacna"
+      }
+    },
+    {
+      "key": "TUM",
+      "name": {
+        "default": "Tumbes"
+      }
+    },
+    {
+      "key": "UCA",
+      "name": {
+        "default": "Ucayali"
+      }
+    }
+  ]
+}

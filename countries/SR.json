@@ -1,0 +1,70 @@
+{
+  "id": "data/SR",
+  "key": "SR",
+  "name": "SURINAME",
+  "fmt": "%N%n%O%n%A%n%C%n%S",
+  "lang": "nl",
+  "upper": "AS",
+  "sub_regions": [
+    {
+      "key": "BR",
+      "name": {
+        "default": "Brokopondo"
+      }
+    },
+    {
+      "key": "CM",
+      "name": {
+        "default": "Commewijne"
+      }
+    },
+    {
+      "key": "CR",
+      "name": {
+        "default": "Coronie"
+      }
+    },
+    {
+      "key": "MA",
+      "name": {
+        "default": "Marowijne"
+      }
+    },
+    {
+      "key": "NI",
+      "name": {
+        "default": "Nickerie"
+      }
+    },
+    {
+      "key": "PR",
+      "name": {
+        "default": "Para"
+      }
+    },
+    {
+      "key": "PM",
+      "name": {
+        "default": "Paramaribo"
+      }
+    },
+    {
+      "key": "SA",
+      "name": {
+        "default": "Saramacca"
+      }
+    },
+    {
+      "key": "SI",
+      "name": {
+        "default": "Sipaliwini"
+      }
+    },
+    {
+      "key": "WA",
+      "name": {
+        "default": "Wanica"
+      }
+    }
+  ]
+}

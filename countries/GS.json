@@ -1,0 +1,10 @@
+{
+  "id": "data/GS",
+  "key": "GS",
+  "name": "SOUTH GEORGIA",
+  "fmt": "%N%n%O%n%A%n%n%C%n%Z",
+  "zip": "SIQQ 1ZZ",
+  "zipex": "SIQQ 1ZZ",
+  "upper": "CZ",
+  "require": "ACZ"
+}

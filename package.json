@@ -37,13 +37,9 @@
     "coverage": "vitest run --coverage",
     "scripts:download": "ts-node-esm -P tsconfig.scripts.json scripts/download-metadata.ts"
   },
-  "exports": {
-    ".": {
-      "browser": "./dist/entry-browser.mjs",
-      "import": "./dist/entry-node.mjs",
-      "require": "./dist/entry-node.cjs"
-    }
-  },
+  "browser": "./dist/entry-browser.mjs",
+  "main": "./dist/entry-node.mjs",
+  "types": "./dist/entry-node.d.ts",
   "files": [
     "dist"
   ],
@@ -57,7 +53,6 @@
     "typescript": "^5.2.2",
     "vite": "^4.5.0",
     "vite-plugin-dts": "^3.6.3",
-    "vite-plugin-static-copy": "^0.17.0",
     "vitest": "^0.34.6"
   }
 }

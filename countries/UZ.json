@@ -1,0 +1,9 @@
+{
+  "id": "data/UZ",
+  "key": "UZ",
+  "name": "UZBEKISTAN",
+  "fmt": "%N%n%O%n%A%n%Z %C%n%S",
+  "zip": "\\d{6}",
+  "zipex": "702100,700000",
+  "upper": "CS"
+}

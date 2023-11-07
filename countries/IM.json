@@ -1,0 +1,10 @@
+{
+  "id": "data/IM",
+  "key": "IM",
+  "name": "ISLE OF MAN",
+  "fmt": "%N%n%O%n%A%n%C%n%Z",
+  "zip": "IM\\d[\\dA-Z]? ?\\d[ABD-HJLN-UW-Z]{2}",
+  "zipex": "IM2 1AA,IM99 1PS",
+  "upper": "CZ",
+  "require": "ACZ"
+}

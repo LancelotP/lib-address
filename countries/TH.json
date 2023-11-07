@@ -1,0 +1,628 @@
+{
+  "id": "data/TH",
+  "key": "TH",
+  "name": "THAILAND",
+  "fmt": "%N%n%O%n%A%n%D %C%n%S %Z",
+  "lfmt": "%N%n%O%n%A%n%D, %C%n%S %Z",
+  "zip": "\\d{5}",
+  "zipex": "10150,10210",
+  "lang": "th",
+  "upper": "S",
+  "sub_regions": [
+    {
+      "key": "81",
+      "name": {
+        "default": "กระบี่",
+        "latin": "Krabi"
+      },
+      "zip": "81"
+    },
+    {
+      "key": "10",
+      "name": {
+        "default": "กรุงเทพมหานคร",
+        "latin": "Bangkok"
+      },
+      "zip": "10"
+    },
+    {
+      "key": "71",
+      "name": {
+        "default": "กาญจนบุรี",
+        "latin": "Kanchanaburi"
+      },
+      "zip": "71"
+    },
+    {
+      "key": "46",
+      "name": {
+        "default": "กาฬสินธุ์",
+        "latin": "Kalasin"
+      },
+      "zip": "46"
+    },
+    {
+      "key": "62",
+      "name": {
+        "default": "กำแพงเพชร",
+        "latin": "Kamphaeng Phet"
+      },
+      "zip": "62"
+    },
+    {
+      "key": "40",
+      "name": {
+        "default": "ขอนแก่น",
+        "latin": "Khon Kaen"
+      },
+      "zip": "40"
+    },
+    {
+      "key": "38",
+      "name": {
+        "default": "จังหวัด บึงกาฬ",
+        "latin": "Bueng Kan"
+      }
+    },
+    {
+      "key": "22",
+      "name": {
+        "default": "จันทบุรี",
+        "latin": "Chanthaburi"
+      },
+      "zip": "22"
+    },
+    {
+      "key": "24",
+      "name": {
+        "default": "ฉะเชิงเทรา",
+        "latin": "Chachoengsao"
+      },
+      "zip": "24"
+    },
+    {
+      "key": "20",
+      "name": {
+        "default": "ชลบุรี",
+        "latin": "Chon Buri"
+      },
+      "zip": "20"
+    },
+    {
+      "key": "18",
+      "name": {
+        "default": "ชัยนาท",
+        "latin": "Chai Nat"
+      },
+      "zip": "17"
+    },
+    {
+      "key": "36",
+      "name": {
+        "default": "ชัยภูมิ",
+        "latin": "Chaiyaphum"
+      },
+      "zip": "36"
+    },
+    {
+      "key": "86",
+      "name": {
+        "default": "ชุมพร",
+        "latin": "Chumpon"
+      },
+      "zip": "86"
+    },
+    {
+      "key": "57",
+      "name": {
+        "default": "เชียงราย",
+        "latin": "Chiang Rai"
+      },
+      "zip": "57"
+    },
+    {
+      "key": "50",
+      "name": {
+        "default": "เชียงใหม่",
+        "latin": "Chiang Mai"
+      },
+      "zip": "50"
+    },
+    {
+      "key": "92",
+      "name": {
+        "default": "ตรัง",
+        "latin": "Trang"
+      },
+      "zip": "92"
+    },
+    {
+      "key": "23",
+      "name": {
+        "default": "ตราด",
+        "latin": "Trat"
+      },
+      "zip": "23"
+    },
+    {
+      "key": "63",
+      "name": {
+        "default": "ตาก",
+        "latin": "Tak"
+      },
+      "zip": "63"
+    },
+    {
+      "key": "26",
+      "name": {
+        "default": "นครนายก",
+        "latin": "Nakhon Nayok"
+      },
+      "zip": "26"
+    },
+    {
+      "key": "73",
+      "name": {
+        "default": "นครปฐม",
+        "latin": "Nakhon Pathom"
+      },
+      "zip": "73"
+    },
+    {
+      "key": "48",
+      "name": {
+        "default": "นครพนม",
+        "latin": "Nakhon Phanom"
+      },
+      "zip": "48"
+    },
+    {
+      "key": "30",
+      "name": {
+        "default": "นครราชสีมา",
+        "latin": "Nakhon Ratchasima"
+      },
+      "zip": "30"
+    },
+    {
+      "key": "80",
+      "name": {
+        "default": "นครศรีธรรมราช",
+        "latin": "Nakhon Si Thammarat"
+      },
+      "zip": "80"
+    },
+    {
+      "key": "60",
+      "name": {
+        "default": "นครสวรรค์",
+        "latin": "Nakhon Sawan"
+      },
+      "zip": "60"
+    },
+    {
+      "key": "12",
+      "name": {
+        "default": "นนทบุรี",
+        "latin": "Nonthaburi"
+      },
+      "zip": "11"
+    },
+    {
+      "key": "96",
+      "name": {
+        "default": "นราธิวาส",
+        "latin": "Narathiwat"
+      },
+      "zip": "96"
+    },
+    {
+      "key": "55",
+      "name": {
+        "default": "น่าน",
+        "latin": "Nan"
+      },
+      "zip": "55"
+    },
+    {
+      "key": "31",
+      "name": {
+        "default": "บุรีรัมย์",
+        "latin": "Buri Ram"
+      },
+      "zip": "31"
+    },
+    {
+      "key": "13",
+      "name": {
+        "default": "ปทุมธานี",
+        "latin": "Pathum Thani"
+      },
+      "zip": "12"
+    },
+    {
+      "key": "77",
+      "name": {
+        "default": "ประจวบคีรีขันธ์",
+        "latin": "Prachuap Khiri Khan"
+      },
+      "zip": "77"
+    },
+    {
+      "key": "25",
+      "name": {
+        "default": "ปราจีนบุรี",
+        "latin": "Prachin Buri"
+      },
+      "zip": "25"
+    },
+    {
+      "key": "94",
+      "name": {
+        "default": "ปัตตานี",
+        "latin": "Pattani"
+      },
+      "zip": "94"
+    },
+    {
+      "key": "14",
+      "name": {
+        "default": "พระนครศรีอยุธยา",
+        "latin": "Phra Nakhon Si Ayutthaya"
+      },
+      "zip": "13"
+    },
+    {
+      "key": "56",
+      "name": {
+        "default": "พะเยา",
+        "latin": "Phayao"
+      },
+      "zip": "56"
+    },
+    {
+      "key": "82",
+      "name": {
+        "default": "พังงา",
+        "latin": "Phang Nga"
+      },
+      "zip": "82"
+    },
+    {
+      "key": "93",
+      "name": {
+        "default": "พัทลุง",
+        "latin": "Phattalung"
+      },
+      "zip": "93"
+    },
+    {
+      "key": "66",
+      "name": {
+        "default": "พิจิตร",
+        "latin": "Phichit"
+      },
+      "zip": "66"
+    },
+    {
+      "key": "65",
+      "name": {
+        "default": "พิษณุโลก",
+        "latin": "Phitsanulok"
+      },
+      "zip": "65"
+    },
+    {
+      "key": "76",
+      "name": {
+        "default": "เพชรบุรี",
+        "latin": "Phetchaburi"
+      },
+      "zip": "76"
+    },
+    {
+      "key": "67",
+      "name": {
+        "default": "เพชรบูรณ์",
+        "latin": "Phetchabun"
+      },
+      "zip": "67"
+    },
+    {
+      "key": "54",
+      "name": {
+        "default": "แพร่",
+        "latin": "Phrae"
+      },
+      "zip": "54"
+    },
+    {
+      "key": "83",
+      "name": {
+        "default": "ภูเก็ต",
+        "latin": "Phuket"
+      },
+      "zip": "83"
+    },
+    {
+      "key": "44",
+      "name": {
+        "default": "มหาสารคาม",
+        "latin": "Maha Sarakham"
+      },
+      "zip": "44"
+    },
+    {
+      "key": "49",
+      "name": {
+        "default": "มุกดาหาร",
+        "latin": "Mukdahan"
+      },
+      "zip": "49"
+    },
+    {
+      "key": "58",
+      "name": {
+        "default": "แม่ฮ่องสอน",
+        "latin": "Mae Hong Son"
+      },
+      "zip": "58"
+    },
+    {
+      "key": "35",
+      "name": {
+        "default": "ยโสธร",
+        "latin": "Yasothon"
+      },
+      "zip": "35"
+    },
+    {
+      "key": "95",
+      "name": {
+        "default": "ยะลา",
+        "latin": "Yala"
+      },
+      "zip": "95"
+    },
+    {
+      "key": "45",
+      "name": {
+        "default": "ร้อยเอ็ด",
+        "latin": "Roi Et"
+      },
+      "zip": "45"
+    },
+    {
+      "key": "85",
+      "name": {
+        "default": "ระนอง",
+        "latin": "Ranong"
+      },
+      "zip": "85"
+    },
+    {
+      "key": "21",
+      "name": {
+        "default": "ระยอง",
+        "latin": "Rayong"
+      },
+      "zip": "21"
+    },
+    {
+      "key": "70",
+      "name": {
+        "default": "ราชบุรี",
+        "latin": "Ratchaburi"
+      },
+      "zip": "70"
+    },
+    {
+      "key": "16",
+      "name": {
+        "default": "ลพบุรี",
+        "latin": "Lop Buri"
+      },
+      "zip": "15"
+    },
+    {
+      "key": "52",
+      "name": {
+        "default": "ลำปาง",
+        "latin": "Lampang"
+      },
+      "zip": "52"
+    },
+    {
+      "key": "51",
+      "name": {
+        "default": "ลำพูน",
+        "latin": "Lamphun"
+      },
+      "zip": "51"
+    },
+    {
+      "key": "42",
+      "name": {
+        "default": "เลย",
+        "latin": "Loei"
+      },
+      "zip": "42"
+    },
+    {
+      "key": "33",
+      "name": {
+        "default": "ศรีสะเกษ",
+        "latin": "Si Sa Ket"
+      },
+      "zip": "33"
+    },
+    {
+      "key": "47",
+      "name": {
+        "default": "สกลนคร",
+        "latin": "Sakon Nakhon"
+      },
+      "zip": "47"
+    },
+    {
+      "key": "90",
+      "name": {
+        "default": "สงขลา",
+        "latin": "Songkhla"
+      },
+      "zip": "90"
+    },
+    {
+      "key": "91",
+      "name": {
+        "default": "สตูล",
+        "latin": "Satun"
+      },
+      "zip": "91"
+    },
+    {
+      "key": "11",
+      "name": {
+        "default": "สมุทรปราการ",
+        "latin": "Samut Prakan"
+      },
+      "zip": "10"
+    },
+    {
+      "key": "75",
+      "name": {
+        "default": "สมุทรสงคราม",
+        "latin": "Samut Songkhram"
+      },
+      "zip": "75"
+    },
+    {
+      "key": "74",
+      "name": {
+        "default": "สมุทรสาคร",
+        "latin": "Samut Sakhon"
+      },
+      "zip": "74"
+    },
+    {
+      "key": "27",
+      "name": {
+        "default": "สระแก้ว",
+        "latin": "Sa Kaeo"
+      },
+      "zip": "27"
+    },
+    {
+      "key": "19",
+      "name": {
+        "default": "สระบุรี",
+        "latin": "Saraburi"
+      },
+      "zip": "18"
+    },
+    {
+      "key": "17",
+      "name": {
+        "default": "สิงห์บุรี",
+        "latin": "Sing Buri"
+      },
+      "zip": "16"
+    },
+    {
+      "key": "64",
+      "name": {
+        "default": "สุโขทัย",
+        "latin": "Sukhothai"
+      },
+      "zip": "64"
+    },
+    {
+      "key": "72",
+      "name": {
+        "default": "สุพรรณบุรี",
+        "latin": "Suphanburi"
+      },
+      "zip": "72"
+    },
+    {
+      "key": "84",
+      "name": {
+        "default": "สุราษฎร์ธานี",
+        "latin": "Surat Thani"
+      },
+      "zip": "84"
+    },
+    {
+      "key": "32",
+      "name": {
+        "default": "สุรินทร์",
+        "latin": "Surin"
+      },
+      "zip": "32"
+    },
+    {
+      "key": "43",
+      "name": {
+        "default": "หนองคาย",
+        "latin": "Nong Khai"
+      },
+      "zip": "43"
+    },
+    {
+      "key": "39",
+      "name": {
+        "default": "หนองบัวลำภู",
+        "latin": "Nong Bua Lam Phu"
+      },
+      "zip": "39"
+    },
+    {
+      "key": "15",
+      "name": {
+        "default": "อ่างทอง",
+        "latin": "Ang Thong"
+      },
+      "zip": "14"
+    },
+    {
+      "key": "37",
+      "name": {
+        "default": "อำนาจเจริญ",
+        "latin": "Amnat Charoen"
+      },
+      "zip": "37"
+    },
+    {
+      "key": "41",
+      "name": {
+        "default": "อุดรธานี",
+        "latin": "Udon Thani"
+      },
+      "zip": "41"
+    },
+    {
+      "key": "53",
+      "name": {
+        "default": "อุตรดิตถ์",
+        "latin": "Uttaradit"
+      },
+      "zip": "53"
+    },
+    {
+      "key": "61",
+      "name": {
+        "default": "อุทัยธานี",
+        "latin": "Uthai Thani"
+      },
+      "zip": "61"
+    },
+    {
+      "key": "34",
+      "name": {
+        "default": "อุบลราชธานี",
+        "latin": "Ubon Ratchathani"
+      },
+      "zip": "34"
+    }
+  ]
+}

@@ -1,0 +1,132 @@
+{
+  "id": "data/NI",
+  "key": "NI",
+  "name": "NICARAGUA",
+  "fmt": "%N%n%O%n%A%n%Z%n%C, %S",
+  "zip": "\\d{5}",
+  "zipex": "52000",
+  "lang": "es",
+  "upper": "CS",
+  "state_name_type": "department",
+  "sub_regions": [
+    {
+      "key": "BO",
+      "name": {
+        "default": "Boaco"
+      },
+      "zip": "5[12]"
+    },
+    {
+      "key": "CA",
+      "name": {
+        "default": "Carazo"
+      },
+      "zip": "4[56]"
+    },
+    {
+      "key": "CI",
+      "name": {
+        "default": "Chinandega"
+      },
+      "zip": "2[5-7]"
+    },
+    {
+      "key": "CO",
+      "name": {
+        "default": "Chontales"
+      },
+      "zip": "5[56]"
+    },
+    {
+      "key": "ES",
+      "name": {
+        "default": "Estelí"
+      },
+      "zip": "3[12]"
+    },
+    {
+      "key": "GR",
+      "name": {
+        "default": "Granada"
+      },
+      "zip": "4[34]"
+    },
+    {
+      "key": "JI",
+      "name": {
+        "default": "Jinotega"
+      },
+      "zip": "6[56]"
+    },
+    {
+      "key": "LE",
+      "name": {
+        "default": "León"
+      },
+      "zip": "2[12]"
+    },
+    {
+      "key": "MD",
+      "name": {
+        "default": "Madriz"
+      },
+      "zip": "3[45]"
+    },
+    {
+      "key": "MN",
+      "name": {
+        "default": "Managua"
+      },
+      "zip": "1[0-6]"
+    },
+    {
+      "key": "MS",
+      "name": {
+        "default": "Masaya"
+      },
+      "zip": "4[12]"
+    },
+    {
+      "key": "MT",
+      "name": {
+        "default": "Matagalpa"
+      },
+      "zip": "6[1-3]"
+    },
+    {
+      "key": "NS",
+      "name": {
+        "default": "Nueva Segovia"
+      },
+      "zip": "3[7-9]"
+    },
+    {
+      "key": "AN",
+      "name": {
+        "default": "Región Autónoma de la Costa Caribe Norte"
+      },
+      "zip": "7[12]"
+    },
+    {
+      "key": "AS",
+      "name": {
+        "default": "Región Autónoma de la Costa Caribe Sur"
+      },
+      "zip": "8[1-3]"
+    },
+    {
+      "key": "SJ",
+      "name": {
+        "default": "Río San Juan"
+      },
+      "zip": "9[12]"
+    },
+    {
+      "key": "RI",
+      "name": {
+        "default": "Rivas"
+      },
+      "zip": "4[78]"
+    }
+  ]
+}

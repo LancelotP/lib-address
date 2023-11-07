@@ -1,0 +1,95 @@
+{
+  "id": "data/JM",
+  "key": "JM",
+  "name": "JAMAICA",
+  "fmt": "%N%n%O%n%A%n%C%n%S %X",
+  "lang": "en",
+  "require": "ACS",
+  "state_name_type": "parish",
+  "sub_regions": [
+    {
+      "key": "13",
+      "name": {
+        "default": "Clarendon"
+      }
+    },
+    {
+      "key": "09",
+      "name": {
+        "default": "Hanover"
+      }
+    },
+    {
+      "key": "01",
+      "name": {
+        "default": "Kingston"
+      }
+    },
+    {
+      "key": "12",
+      "name": {
+        "default": "Manchester"
+      }
+    },
+    {
+      "key": "04",
+      "name": {
+        "default": "Portland"
+      }
+    },
+    {
+      "key": "02",
+      "name": {
+        "default": "St. Andrew"
+      }
+    },
+    {
+      "key": "06",
+      "name": {
+        "default": "St. Ann"
+      }
+    },
+    {
+      "key": "14",
+      "name": {
+        "default": "St. Catherine"
+      }
+    },
+    {
+      "key": "11",
+      "name": {
+        "default": "St. Elizabeth"
+      }
+    },
+    {
+      "key": "08",
+      "name": {
+        "default": "St. James"
+      }
+    },
+    {
+      "key": "05",
+      "name": {
+        "default": "St. Mary"
+      }
+    },
+    {
+      "key": "03",
+      "name": {
+        "default": "St. Thomas"
+      }
+    },
+    {
+      "key": "07",
+      "name": {
+        "default": "Trelawny"
+      }
+    },
+    {
+      "key": "10",
+      "name": {
+        "default": "Westmoreland"
+      }
+    }
+  ]
+}

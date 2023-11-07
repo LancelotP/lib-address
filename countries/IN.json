@@ -1,0 +1,299 @@
+{
+  "id": "data/IN",
+  "key": "IN",
+  "name": "INDIA",
+  "fmt": "%N%n%O%n%A%n%C %Z%n%S",
+  "zip": "\\d{6}",
+  "zipex": "110034,110001",
+  "lang": "en",
+  "require": "ACSZ",
+  "state_name_type": "state",
+  "zip_name_type": "pin",
+  "sub_regions": [
+    {
+      "key": "AN",
+      "name": {
+        "default": "Andaman & Nicobar"
+      },
+      "zip": "744"
+    },
+    {
+      "key": "AP",
+      "name": {
+        "default": "Andhra Pradesh",
+        "hi": "आंध्र प्रदेश"
+      },
+      "zip": "5[0-3]"
+    },
+    {
+      "key": "AR",
+      "name": {
+        "default": "Arunachal Pradesh",
+        "hi": "अरुणाचल प्रदेश"
+      },
+      "zip": "79[0-2]"
+    },
+    {
+      "key": "AS",
+      "name": {
+        "default": "Assam",
+        "hi": "असम"
+      },
+      "zip": "78"
+    },
+    {
+      "key": "BR",
+      "name": {
+        "default": "Bihar",
+        "hi": "बिहार"
+      },
+      "zip": "8[0-5]"
+    },
+    {
+      "key": "CH",
+      "name": {
+        "default": "Chandigarh",
+        "hi": "चंडीगढ़"
+      },
+      "zip": "16|1440[3-9]"
+    },
+    {
+      "key": "CT",
+      "name": {
+        "default": "Chhattisgarh",
+        "hi": "छत्तीसगढ़"
+      },
+      "zip": "49"
+    },
+    {
+      "key": "DH",
+      "name": {
+        "default": "Dadra & Nagar Haveli & Daman & Diu"
+      },
+      "zip": "396|362"
+    },
+    {
+      "key": "DL",
+      "name": {
+        "default": "Delhi",
+        "hi": "दिल्ली"
+      },
+      "zip": "11"
+    },
+    {
+      "key": "GA",
+      "name": {
+        "default": "Goa",
+        "hi": "गोआ"
+      },
+      "zip": "403"
+    },
+    {
+      "key": "GJ",
+      "name": {
+        "default": "Gujarat",
+        "hi": "गुजरात"
+      },
+      "zip": "3[6-9]"
+    },
+    {
+      "key": "HR",
+      "name": {
+        "default": "Haryana",
+        "hi": "हरियाणा"
+      },
+      "zip": "1[23]"
+    },
+    {
+      "key": "HP",
+      "name": {
+        "default": "Himachal Pradesh",
+        "hi": "हिमाचल प्रदेश"
+      },
+      "zip": "17"
+    },
+    {
+      "key": "JK",
+      "name": {
+        "default": "Jammu & Kashmir"
+      },
+      "zip": "1[89]"
+    },
+    {
+      "key": "JH",
+      "name": {
+        "default": "Jharkhand",
+        "hi": "झारखण्ड"
+      },
+      "zip": "81[4-9]|82|83[0-5]"
+    },
+    {
+      "key": "KA",
+      "name": {
+        "default": "Karnataka",
+        "hi": "कर्नाटक"
+      },
+      "zip": "5[4-9]|53[7-9]"
+    },
+    {
+      "key": "KL",
+      "name": {
+        "default": "Kerala",
+        "hi": "केरल"
+      },
+      "zip": "6[7-9]|6010|607008|777"
+    },
+    {
+      "key": "LA",
+      "name": {
+        "default": "Ladakh",
+        "hi": "लद्दाख़"
+      },
+      "zip": "194"
+    },
+    {
+      "key": "LD",
+      "name": {
+        "default": "Lakshadweep",
+        "hi": "लक्षद्वीप"
+      },
+      "zip": "682"
+    },
+    {
+      "key": "MP",
+      "name": {
+        "default": "Madhya Pradesh",
+        "hi": "मध्य प्रदेश"
+      },
+      "zip": "4[5-8]|490"
+    },
+    {
+      "key": "MH",
+      "name": {
+        "default": "Maharashtra",
+        "hi": "महाराष्ट्र"
+      },
+      "zip": "4[0-4]"
+    },
+    {
+      "key": "MN",
+      "name": {
+        "default": "Manipur",
+        "hi": "मणिपुर"
+      },
+      "zip": "79[56]"
+    },
+    {
+      "key": "ML",
+      "name": {
+        "default": "Meghalaya",
+        "hi": "मेघालय"
+      },
+      "zip": "79[34]"
+    },
+    {
+      "key": "MZ",
+      "name": {
+        "default": "Mizoram",
+        "hi": "मिजोरम"
+      },
+      "zip": "796"
+    },
+    {
+      "key": "NL",
+      "name": {
+        "default": "Nagaland",
+        "hi": "नागालैंड"
+      },
+      "zip": "79[78]"
+    },
+    {
+      "key": "OR",
+      "name": {
+        "default": "Odisha",
+        "hi": "ओड़िशा"
+      },
+      "zip": "7[5-7]"
+    },
+    {
+      "key": "PY",
+      "name": {
+        "default": "Puducherry",
+        "hi": "पांडिचेरी"
+      },
+      "zip": "60[579]"
+    },
+    {
+      "key": "PB",
+      "name": {
+        "default": "Punjab",
+        "hi": "पंजाब"
+      },
+      "zip": "1[456]"
+    },
+    {
+      "key": "RJ",
+      "name": {
+        "default": "Rajasthan",
+        "hi": "राजस्थान"
+      },
+      "zip": "3[0-4]"
+    },
+    {
+      "key": "SK",
+      "name": {
+        "default": "Sikkim",
+        "hi": "सिक्किम"
+      },
+      "zip": "737|750"
+    },
+    {
+      "key": "TN",
+      "name": {
+        "default": "Tamil Nadu",
+        "hi": "तमिल नाडु"
+      },
+      "zip": "6[0-6]|536"
+    },
+    {
+      "key": "TG",
+      "name": {
+        "default": "Telangana",
+        "hi": "तेलंगाना"
+      },
+      "zip": "5[0-3]"
+    },
+    {
+      "key": "TR",
+      "name": {
+        "default": "Tripura",
+        "hi": "त्रिपुरा"
+      },
+      "zip": "799"
+    },
+    {
+      "key": "UP",
+      "name": {
+        "default": "Uttar Pradesh",
+        "hi": "उत्तर प्रदेश"
+      },
+      "zip": "2[0-35-8]|24[0-7]|26[12]"
+    },
+    {
+      "key": "UT",
+      "name": {
+        "default": "Uttarakhand",
+        "hi": "उत्तराखण्ड"
+      },
+      "zip": "24[46-9]|254|26[23]"
+    },
+    {
+      "key": "WB",
+      "name": {
+        "default": "West Bengal",
+        "hi": "पश्चिम बंगाल"
+      },
+      "zip": "7[0-4]"
+    }
+  ]
+}

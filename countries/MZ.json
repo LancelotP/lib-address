@@ -1,0 +1,77 @@
+{
+  "id": "data/MZ",
+  "key": "MZ",
+  "name": "MOZAMBIQUE",
+  "fmt": "%N%n%O%n%A%n%Z %C%S",
+  "zip": "\\d{4}",
+  "zipex": "1102,1119,3212",
+  "lang": "pt",
+  "sub_regions": [
+    {
+      "key": "P",
+      "name": {
+        "default": "Cabo Delgado"
+      }
+    },
+    {
+      "key": "MPM",
+      "name": {
+        "default": "Cidade de Maputo"
+      }
+    },
+    {
+      "key": "G",
+      "name": {
+        "default": "Gaza"
+      }
+    },
+    {
+      "key": "I",
+      "name": {
+        "default": "Inhambane"
+      }
+    },
+    {
+      "key": "B",
+      "name": {
+        "default": "Manica"
+      }
+    },
+    {
+      "key": "L",
+      "name": {
+        "default": "Maputo"
+      }
+    },
+    {
+      "key": "N",
+      "name": {
+        "default": "Nampula"
+      }
+    },
+    {
+      "key": "A",
+      "name": {
+        "default": "Niassa"
+      }
+    },
+    {
+      "key": "S",
+      "name": {
+        "default": "Sofala"
+      }
+    },
+    {
+      "key": "T",
+      "name": {
+        "default": "Tete"
+      }
+    },
+    {
+      "key": "Q",
+      "name": {
+        "default": "Zambezia"
+      }
+    }
+  ]
+}

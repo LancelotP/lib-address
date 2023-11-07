@@ -1,0 +1,11 @@
+{
+  "id": "data/GU",
+  "key": "GU",
+  "name": "GUAM",
+  "fmt": "%N%n%O%n%A%n%C %Z",
+  "zip": "(969(?:[12]\\d|3[12]))(?:[ \\-](\\d{4}))?",
+  "zipex": "96910,96931",
+  "upper": "ACNO",
+  "require": "ACZ",
+  "zip_name_type": "zip"
+}
