@@ -11,10 +11,10 @@ import {
 
 import { registerCountry } from "./registry";
 
-import ag from "./countries/AG.json";
-import ae from "./countries/AE.json";
-import fr from "./countries/FR.json";
-import us from "./countries/US.json";
+import ag from "../countries/AG.json";
+import ae from "../countries/AE.json";
+import fr from "../countries/FR.json";
+import us from "../countries/US.json";
 import { AddressInput } from "./types";
 import { AddressValidationError } from "./errors/missing-fields.error";
 import { MissingFieldError } from "./errors/missing-field.error";

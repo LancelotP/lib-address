@@ -1,7 +1,7 @@
 import { expect, describe, it } from "vitest";
 import { getCountryData, registerCountry, registry } from "./registry";
 
-import tg from "./countries/TG.json";
+import tg from "../countries/TG.json";
 import { CountryMissingError } from "./errors/country-missing.error";
 
 describe.sequential("registry", () => {

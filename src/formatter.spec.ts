@@ -4,16 +4,16 @@ import { formatAddress } from "./formatter";
 
 import { registerCountry } from "./registry";
 
-import AE from "./countries/AE.json";
-import AG from "./countries/AG.json";
-import CA from "./countries/CA.json";
-import CI from "./countries/CI.json";
-import CN from "./countries/CN.json";
-import ES from "./countries/ES.json";
-import FR from "./countries/FR.json";
-import HK from "./countries/HK.json";
-import KY from "./countries/KY.json";
-import US from "./countries/US.json";
+import AE from "../countries/AE.json";
+import AG from "../countries/AG.json";
+import CA from "../countries/CA.json";
+import CI from "../countries/CI.json";
+import CN from "../countries/CN.json";
+import ES from "../countries/ES.json";
+import FR from "../countries/FR.json";
+import HK from "../countries/HK.json";
+import KY from "../countries/KY.json";
+import US from "../countries/US.json";
 
 registerCountry(AE);
 registerCountry(AG);
