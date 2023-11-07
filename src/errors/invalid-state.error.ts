@@ -1,4 +1,4 @@
-import type { CountryCode } from "../codes";
+import type { CountryCode } from "../generated";
 import { LibAddressError } from "./base.error";
 
 export class InvalidStateError extends LibAddressError {

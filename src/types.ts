@@ -1,10 +1,10 @@
-import type { CountryCode } from "./codes";
 import type {
+  CountryCode,
   LocalityType,
   StateType,
   SublocalityType,
   ZipType,
-} from "./generated";
+} from "./generated.ts";
 
 export type CountryData = {
   id: string;
@@ -67,10 +67,4 @@ export type AddressInput = {
   state?: string;
   zip?: string;
   sortingCode?: string;
-};
-
-export type Address = AddressInput & {
-  country: "FR" | "US" | "CH";
-  city: string;
-  zip: string;
 };

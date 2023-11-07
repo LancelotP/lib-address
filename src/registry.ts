@@ -1,12 +1,12 @@
-import type { CountryCode } from "./codes";
-import { CountryMissingError } from "./errors/country-missing.error";
+import { CountryMissingError } from "./errors/country-missing.error.ts";
 import type {
+  CountryCode,
   LocalityType,
   StateType,
   SublocalityType,
   ZipType,
-} from "./generated";
-import type { CountryData } from "./types";
+} from "./generated.ts";
+import type { CountryData } from "./types.ts";
 
 const defaultCountryData: {
   fmt: string;

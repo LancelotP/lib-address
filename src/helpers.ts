@@ -1,5 +1,5 @@
-import type { CountryCode } from "./codes";
-import { getCountryData } from "./registry";
+import type { CountryCode } from "./generated.ts";
+import { getCountryData } from "./registry.ts";
 
 /**
  * @description Get a list of zip code examples for a given country. If no subRegion is provided, the default zip code example for the country will be used.

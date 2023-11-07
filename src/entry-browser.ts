@@ -3,13 +3,13 @@ export type {
   StateType,
   SublocalityType,
   ZipType,
-} from "./generated";
+} from "./generated.ts";
 
-export { registerCountry, getCountryData } from "./registry";
+export { registerCountry, getCountryData } from "./registry.ts";
 
-export { getZipExamples } from "./helpers";
+export { getZipExamples } from "./helpers.ts";
 
-export { formatAddress } from "./formatter";
+export { formatAddress } from "./formatter.ts";
 
 export {
   isAddressValid,
@@ -17,4 +17,6 @@ export {
   isValidCountrySubdivisionCode,
   validateAddress,
   getCountryFields,
-} from "./validator";
+  getOptionnalFields,
+  getRequiredFields,
+} from "./validator.ts";

@@ -1,4 +1,6 @@
-export const codes = [
+import type { CountryCode } from "./generated";
+
+export const codes: CountryCode[] = [
   "AC",
   "AD",
   "AE",
@@ -250,7 +252,5 @@ export const codes = [
   "YT",
   "ZA",
   "ZM",
-  "ZW"
-] as const;
-
-export type CountryCode = (typeof codes)[number]
+  "ZW",
+];

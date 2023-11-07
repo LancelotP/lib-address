@@ -3,11 +3,7 @@ import progress from "cli-progress";
 import type { CountryData } from "../src/types.ts";
 import { getCountryCodes, getCountryData } from "./download-data.ts";
 import { override } from "./override.ts";
-import {
-  persistCountries,
-  persistCountryCodes,
-  persistGeneratedTypes,
-} from "./persist-data.ts";
+import { persistCountries, persistGeneratedTypes } from "./persist-data.ts";
 
 async function main() {
   const bar = new progress.SingleBar({}, progress.Presets.legacy);
@@ -33,7 +29,6 @@ async function main() {
   const combinedDict = override(dict);
 
   await persistCountries(combinedDict);
-  await persistCountryCodes(combinedDict);
   await persistGeneratedTypes(combinedDict);
   bar.stop();
 }

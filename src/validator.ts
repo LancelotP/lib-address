@@ -1,16 +1,16 @@
-import type { CountryCode } from "./codes";
-import { codes as countryCodes } from "./codes";
-import type { LibAddressError } from "./errors/base.error";
-import { InvalidStateError } from "./errors/invalid-state.error";
+import { codes as countryCodes } from "./codes.ts";
+import type { LibAddressError } from "./errors/base.error.ts";
+import { InvalidStateError } from "./errors/invalid-state.error.ts";
 import {
   InvalidZipError,
   InvalidZipSubRegionError,
-} from "./errors/invalid-zip.error";
-import { MissingFieldError } from "./errors/missing-field.error";
-import { AddressValidationError } from "./errors/missing-fields.error";
-import { getCountryData } from "./registry";
-import type { Address, AddressInput } from "./types";
-import { convertAbbrStringToObject } from "./utils";
+} from "./errors/invalid-zip.error.ts";
+import { MissingFieldError } from "./errors/missing-field.error.ts";
+import { AddressValidationError } from "./errors/missing-fields.error.ts";
+import type { Address, CountryCode } from "./generated.ts";
+import { getCountryData } from "./registry.ts";
+import type { AddressInput } from "./types.ts";
+import { convertAbbrStringToObject } from "./utils.ts";
 
 /**
  * @description Checks if a string is a valid country code (ISO 3166-1 alpha-2)

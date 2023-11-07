@@ -1,6 +1,6 @@
-import { codes } from "./codes";
-import { registerCountry } from "./registry";
-import type { CountryData } from "./types";
+import { codes } from "./codes.ts";
+import { registerCountry } from "./registry.ts";
+import type { CountryData } from "./types.ts";
 
 for (const country of codes) {
   registerCountry(
