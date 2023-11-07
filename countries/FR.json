@@ -6,5 +6,6 @@
   "zip": "\\d{2} ?\\d{3}",
   "zipex": "33380,34092,33506",
   "upper": "CX",
-  "require": "ACZ"
+  "require": "ACZ",
+  "state_name_type": "region"
 }

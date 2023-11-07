@@ -37,7 +37,7 @@
     "test": "vitest",
     "lint": "eslint --ignore-path .gitignore .",
     "coverage": "vitest run --coverage",
-    "scripts:download": "ts-node-esm -P tsconfig.scripts.json scripts/download-metadata.ts"
+    "scripts:download": "ts-node-esm -P scripts/tsconfig.json scripts/generate-metadata.ts"
   },
   "browser": "./dist/entry-browser.mjs",
   "main": "./dist/entry-node.cjs",
@@ -56,6 +56,7 @@
     "eslint": "^8.53.0",
     "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-import": "^2.29.0",
+    "immutability-helper": "^3.1.1",
     "prettier": "^3.0.3",
     "rollup-plugin-visualizer": "^5.9.2",
     "ts-node": "^10.9.1",

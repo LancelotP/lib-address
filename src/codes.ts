@@ -250,7 +250,7 @@ export const codes = [
   "YT",
   "ZA",
   "ZM",
-  "ZW",
+  "ZW"
 ] as const;
 
-export type CountryCode = (typeof codes)[number];
+export type CountryCode = (typeof codes)[number]

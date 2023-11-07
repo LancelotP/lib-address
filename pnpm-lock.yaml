@@ -35,6 +35,9 @@ devDependencies:
   eslint-plugin-import:
     specifier: ^2.29.0
     version: 2.29.0(@typescript-eslint/parser@6.10.0)(eslint@8.53.0)
+  immutability-helper:
+    specifier: ^3.1.1
+    version: 3.1.1
   prettier:
     specifier: ^3.0.3
     version: 3.0.3
@@ -2043,6 +2046,10 @@ packages:
   /ignore@5.2.4:
     resolution: {integrity: sha512-MAb38BcSbH0eHNBxn7ql2NH/kX33OkB3lZ1BNdh7ENeRChHTYsTvWrMubiIAMNS2llXEEgZ1MUOBtXChP3kaFQ==}
     engines: {node: '>= 4'}
+    dev: true
+
+  /immutability-helper@3.1.1:
+    resolution: {integrity: sha512-Q0QaXjPjwIju/28TsugCHNEASwoCcJSyJV3uO1sOIQGI0jKgm9f41Lvz0DZj3n46cNCyAZTsEYoY4C2bVRUzyQ==}
     dev: true
 
   /import-fresh@3.3.0:
