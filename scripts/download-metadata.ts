@@ -142,7 +142,7 @@ async function downloadMetadata() {
   await Promise.all(
     results.map((result) =>
       writeFile(
-        resolve(__dirname, "../src/countries", `${result.key}.json`),
+        resolve(__dirname, "../countries", `${result.key}.json`),
         JSON.stringify(result, null, 2),
         "utf-8"
       )
