@@ -1,4 +1,5 @@
-import { expect, describe, it } from "vitest";
+import { describe, expect, it } from "vitest";
+
 import type { AbbrObject } from "./utils";
 import { convertAbbrStringToObject } from "./utils";
 
@@ -23,7 +24,7 @@ describe("convertAbbrStringToObject", () => {
     },
   ])("convertAbbrStringToObject($value) -> $fields", ({ value, fields }) => {
     expect(convertAbbrStringToObject(value)).toEqual(
-      generateAbbrObject(fields)
+      generateAbbrObject(fields),
     );
   });
 });

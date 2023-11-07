@@ -8,7 +8,7 @@ export class AddressValidationError extends LibAddressError {
       `Address validation failed: ${errors
         .map((error) => error.message)
         .join(", ")}`,
-      "ADDRESS_VALIDATION_FAILED"
+      "ADDRESS_VALIDATION_FAILED",
     );
 
     this.errors = errors;

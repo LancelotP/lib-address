@@ -1,6 +1,17 @@
-import { describe, it, expect } from "vitest";
-import type {
-  CountryFields} from "./validator";
+import { describe, expect, it } from "vitest";
+
+import ae from "../countries/AE.json";
+import ag from "../countries/AG.json";
+import fr from "../countries/FR.json";
+import us from "../countries/US.json";
+import type { CountryCode } from "./codes";
+import { InvalidStateError } from "./errors/invalid-state.error";
+import { InvalidZipError } from "./errors/invalid-zip.error";
+import { MissingFieldError } from "./errors/missing-field.error";
+import { AddressValidationError } from "./errors/missing-fields.error";
+import { registerCountry } from "./registry";
+import type { AddressInput } from "./types";
+import type { CountryFields } from "./validator";
 import {
   getOptionnalFields,
   getRequiredFields,
@@ -9,19 +20,6 @@ import {
   isValidCountrySubdivisionCode,
   validateAddress,
 } from "./validator";
-
-import { registerCountry } from "./registry";
-
-import ag from "../countries/AG.json";
-import ae from "../countries/AE.json";
-import fr from "../countries/FR.json";
-import us from "../countries/US.json";
-import type { AddressInput } from "./types";
-import { AddressValidationError } from "./errors/missing-fields.error";
-import { MissingFieldError } from "./errors/missing-field.error";
-import { InvalidZipError } from "./errors/invalid-zip.error";
-import { InvalidStateError } from "./errors/invalid-state.error";
-import type { CountryCode } from "./codes";
 
 registerCountry(ag);
 registerCountry(ae);
@@ -97,7 +95,7 @@ describe("validator", () => {
       "isValidCountrySubdivisionCode($country, $value) -> $expected",
       ({ country, value, expected }) => {
         expect(isValidCountrySubdivisionCode(country, value)).toBe(expected);
-      }
+      },
     );
   });
 
@@ -131,7 +129,7 @@ describe("validator", () => {
         "validateAddress({ country: $value.country, ... }) -> void",
         ({ value }) => {
           expect(() => validateAddress(value)).not.toThrow();
-        }
+        },
       );
     });
 
@@ -180,7 +178,7 @@ describe("validator", () => {
             expect(err).toBeInstanceOf(AddressValidationError);
             if (err instanceof AddressValidationError) {
               missingFieldErrors = err.errors.filter(
-                (error) => error instanceof MissingFieldError
+                (error) => error instanceof MissingFieldError,
               ) as MissingFieldError[];
             } else {
               throw err;
@@ -194,7 +192,7 @@ describe("validator", () => {
           missingFields.forEach((field) => {
             expect(missingFieldErrors.map((e) => e.field)).toContain(field);
           });
-        }
+        },
       );
     });
 
@@ -235,7 +233,7 @@ describe("validator", () => {
           expect(err).toBeInstanceOf(AddressValidationError);
           if (err instanceof AddressValidationError) {
             error = err.errors.find(
-              (error) => error instanceof InvalidZipError
+              (error) => error instanceof InvalidZipError,
             ) as InvalidZipError;
           } else {
             throw err;
@@ -274,7 +272,7 @@ describe("validator", () => {
           expect(err).toBeInstanceOf(AddressValidationError);
           if (err instanceof AddressValidationError) {
             error = err.errors.find(
-              (error) => error instanceof InvalidStateError
+              (error) => error instanceof InvalidStateError,
             ) as InvalidStateError;
           } else {
             throw err;

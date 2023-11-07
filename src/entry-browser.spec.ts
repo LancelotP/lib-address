@@ -1,6 +1,6 @@
-import { expect, describe, it } from "vitest";
-import { codes } from "./codes";
+import { describe, expect, it } from "vitest";
 
+import { codes } from "./codes";
 import { getCountryData } from "./entry-browser";
 import { CountryMissingError } from "./errors/country-missing.error";
 

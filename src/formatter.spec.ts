@@ -1,8 +1,4 @@
-import { describe, it, expect } from "vitest";
-import type { AddressInput } from "./types";
-import { formatAddress } from "./formatter";
-
-import { registerCountry } from "./registry";
+import { describe, expect, it } from "vitest";
 
 import AE from "../countries/AE.json";
 import AG from "../countries/AG.json";
@@ -14,6 +10,9 @@ import FR from "../countries/FR.json";
 import HK from "../countries/HK.json";
 import KY from "../countries/KY.json";
 import US from "../countries/US.json";
+import { formatAddress } from "./formatter";
+import { registerCountry } from "./registry";
+import type { AddressInput } from "./types";
 
 registerCountry(AE);
 registerCountry(AG);
@@ -79,7 +78,7 @@ describe("formatter", () => {
         `formatAddress({ country: $value.country, ... }) -> $expected`,
         ({ value, expected }) => {
           expect(formatAddress(value)).toBe(expected);
-        }
+        },
       );
     });
 
@@ -129,7 +128,7 @@ describe("formatter", () => {
         `formatAddress({ country: $value.country, ... }) -> $expected`,
         ({ value, expected }) => {
           expect(formatAddress(value)).toBe(expected);
-        }
+        },
       );
     });
 
@@ -179,7 +178,7 @@ describe("formatter", () => {
         `formatAddress({ country: $value.country, ... }) -> $expected`,
         ({ value, expected }) => {
           expect(formatAddress(value)).toBe(expected);
-        }
+        },
       );
     });
 
@@ -233,7 +232,7 @@ describe("formatter", () => {
         `formatAddress({ country: $value.country, ... }) -> $expected`,
         ({ value, expected }) => {
           expect(formatAddress(value)).toBe(expected);
-        }
+        },
       );
     });
 
@@ -281,7 +280,7 @@ describe("formatter", () => {
         `formatAddress({ country: $value.country, ... }) -> $expected`,
         ({ value, expected }) => {
           expect(formatAddress(value, { preserveCase: true })).toBe(expected);
-        }
+        },
       );
     });
 
@@ -301,9 +300,9 @@ describe("formatter", () => {
         `formatAddress({ country: $value.country, ... }) -> $expected`,
         ({ value, expected }) => {
           expect(formatAddress(value, { useStateISOCode: true })).toBe(
-            expected
+            expected,
           );
-        }
+        },
       );
 
       it.each<{ value: AddressInput; expected: string }>([
@@ -328,9 +327,9 @@ describe("formatter", () => {
         `[EXCEPTIONS] formatAddress({ country: $value.country, ... }) -> $expected`,
         ({ value, expected }) => {
           expect(formatAddress(value, { useStateISOCode: true })).toBe(
-            expected
+            expected,
           );
-        }
+        },
       );
     });
 
@@ -394,7 +393,7 @@ describe("formatter", () => {
         `formatAddress({ ... }, { lang: $lang }) -> $expected`,
         ({ value, lang, expected }) => {
           expect(formatAddress(value, { lang })).toBe(expected);
-        }
+        },
       );
     });
 
@@ -440,7 +439,7 @@ describe("formatter", () => {
         `formatAddress({ country: $value.country, ... }) -> $expected`,
         ({ value, expected }) => {
           expect(formatAddress(value, { appendCountry: true })).toBe(expected);
-        }
+        },
       );
     });
 
@@ -489,9 +488,9 @@ describe("formatter", () => {
             formatAddress(value, {
               appendCountry: true,
               useCountryISOCode: true,
-            })
+            }),
           ).toBe(expected);
-        }
+        },
       );
     });
 
@@ -567,9 +566,9 @@ describe("formatter", () => {
           expect(
             formatAddress(value, {
               useLatin,
-            })
+            }),
           ).toBe(expected);
-        }
+        },
       );
     });
   });

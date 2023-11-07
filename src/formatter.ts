@@ -42,7 +42,7 @@ type FormatAddressOptions = {
 
 export function formatAddress(
   address: AddressInput,
-  opts?: FormatAddressOptions
+  opts?: FormatAddressOptions,
 ): string {
   const {
     preserveCase = false,
@@ -113,7 +113,7 @@ export function formatAddress(
 
 function convertAddressCasing(
   address: AddressInput,
-  upper: string
+  upper: string,
 ): AddressInput {
   const upperFields = convertAbbrStringToObject(upper);
 
