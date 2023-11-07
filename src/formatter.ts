@@ -1,7 +1,7 @@
-import { getCountryData } from "./registry";
-import type { AddressInput } from "./types";
-import { convertAbbrStringToObject } from "./utils";
-import { validateAddress } from "./validator";
+import { getCountryData } from "./registry.ts";
+import type { AddressInput } from "./types.ts";
+import { convertAbbrStringToObject } from "./utils.ts";
+import { validateAddress } from "./validator.ts";
 
 type FormatAddressOptions = {
   /**

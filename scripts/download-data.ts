@@ -2,13 +2,13 @@ import axios from "axios";
 import axiosRetry from "axios-retry";
 import type { SingleBar } from "cli-progress";
 
-import type { CountryCode } from "../src/codes.ts";
 import type {
+  CountryCode,
   LocalityType,
   StateType,
   SublocalityType,
   ZipType,
-} from "../src/generated";
+} from "../src/generated.ts";
 import type { CountryData, SubRegionData } from "../src/types";
 
 axiosRetry(axios, { retries: 3 });

@@ -1,6 +1,6 @@
 import update from "immutability-helper";
 
-import type { CountryCode } from "../src/codes.ts";
+import type { CountryCode } from "../src/generated.ts";
 import type { CountryData } from "../src/types.ts";
 
 export function override(data: Record<CountryCode, CountryData>) {
