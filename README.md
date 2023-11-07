@@ -1,5 +1,9 @@
 # LibAddress
 
+![GitHub](https://img.shields.io/github/license/lancelotp/lib-address)
+![GitHub Workflow Status (with event)](https://img.shields.io/github/actions/workflow/status/LancelotP/lib-address/release-please.yml)
+![npm](https://img.shields.io/npm/v/lib-address)
+
 ## Description
 
 A library for parsing and formatting addresses based on Google's [AddessValidationMetadata](https://github.com/google/libaddressinput/wiki/AddressValidationMetadata).
@@ -11,6 +15,23 @@ Wether it is the zip (or postal code) format, the need for a state or province, 
 This library aims to provide a simple API for parsing and formatting addresses.
 
 The library is written in TypeScript and is fully typed.
+
+## Table of Contents
+
+- [Usage](#usage)
+- [API](#api)
+- [Install](#install)
+- [Tests](#tests)
+- [Contributing](#contributing)
+- [License](#license)
+
+## Usage
+
+> Under construction
+
+## API
+
+> Under construction
 
 ## Install
 
@@ -38,10 +59,6 @@ via [bun](https://bun.sh)
 $ bun install lib-address
 ```
 
-## Usage
-
-> Under construction
-
 ## Tests
 
 To run tests:
@@ -57,3 +74,14 @@ pnpm coverage
 ```
 
 The code coverage report can be viewed by opening `./coverage/index.html`.
+
+## Contributing
+
+Pull requests are welcome. For major changes, please open an issue first
+to discuss what you would like to change.
+
+Please make sure to update tests as appropriate.
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
