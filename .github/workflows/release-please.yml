@@ -24,17 +24,17 @@ jobs:
           package-name: lib-address
           changelog-notes-type: github
 
-      - name: Checkout repo
-        uses: actions/checkout@v4
-
-      - name: Setup pnpm
-        uses: pnpm/action-setup@v2.4.0
-
   release-npm-ackage:
     needs: release-please
     runs-on: ubuntu-latest
     if: ${{ needs.release-please.outputs.releases_created }}
     steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v2.4.0
+      
       - name: Setup Node 18
         uses: actions/setup-node@v4
         with:
