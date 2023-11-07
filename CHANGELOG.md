@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.1.1 (2023-11-07)
+
+## What's Changed
+* fix: json exports by @LancelotP in https://github.com/LancelotP/lib-address/pull/8
+
+
+**Full Changelog**: https://github.com/LancelotP/lib-address/compare/v0.1.0...v0.1.1
+
 ## 0.1.0 (2023-11-07)
 
 ## What's Changed
