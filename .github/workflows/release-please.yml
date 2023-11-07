@@ -24,7 +24,7 @@ jobs:
           package-name: lib-address
           changelog-notes-type: github
 
-  release-npm-ackage:
+  release-npm-package:
     needs: release-please
     runs-on: ubuntu-latest
     if: ${{ needs.release-please.outputs.releases_created }}
