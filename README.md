@@ -29,6 +29,20 @@ The library is written in TypeScript and is fully typed.
 
 > Under construction
 
+```ts
+import { isAddressValid, registerCountry } from "lib-address";
+import fr from "lib-address/countries/fr.json";
+
+registerCountry(fr);
+
+isAddressValid({
+  country: "FR",
+  addressLine1: "1 rue de Rivoli",
+  city: "Paris",
+  zip: "75001",
+});
+```
+
 ## API
 
 > Under construction

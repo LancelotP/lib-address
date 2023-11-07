@@ -43,7 +43,8 @@
   "main": "./dist/entry-node.cjs",
   "types": "./dist/entry-node.d.ts",
   "files": [
-    "dist"
+    "dist",
+    "countries"
   ],
   "devDependencies": {
     "@ianvs/prettier-plugin-sort-imports": "^4.1.1",
