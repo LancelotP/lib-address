@@ -1,5 +1,6 @@
+import { CountryCode } from "./codes";
 import { CountryMissingError } from "./errors/country-missing.error";
-import { CountryCode, CountryData } from "./types";
+import { CountryData } from "./types";
 
 const defaultCountryData = {
   fmt: "%N%n%O%n%A%n%C",
@@ -15,8 +16,13 @@ type DefaultCountryData = typeof defaultCountryData;
 
 export const registry = new Map<CountryCode, CountryData>();
 
-export function registerCountry(data: CountryData) {
-  registry.set(data.id.slice("data/".length), data);
+export function registerCountry(
+  data: Omit<CountryData, "key"> & { key: string }
+) {
+  registry.set(
+    data.id.slice("data/".length) as CountryCode,
+    data as CountryData
+  );
 }
 
 export function getCountryData(

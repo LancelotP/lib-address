@@ -1,5 +1,5 @@
 import { expect, describe, it } from "vitest";
-import { codes } from "./codes.json";
+import { codes } from "./codes";
 
 import { getCountryData } from "./entry-node";
 

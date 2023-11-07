@@ -3,6 +3,7 @@ import { getCountryData, registerCountry, registry } from "./registry";
 
 import tg from "../countries/TG.json";
 import { CountryMissingError } from "./errors/country-missing.error";
+import { CountryCode } from "./codes";
 
 describe.sequential("registry", () => {
   describe.sequential("registerCountry", () => {
@@ -46,12 +47,12 @@ describe.sequential("registry", () => {
       ];
 
       enhanceFields.forEach((field) => {
-        expect(getCountryData("X1")).toHaveProperty(field);
+        expect(getCountryData("X1" as CountryCode)).toHaveProperty(field);
       });
     });
 
     it("should throw an error if the country is not registered", () => {
-      expect(() => getCountryData("XX")).toThrowError(
+      expect(() => getCountryData("XX" as CountryCode)).toThrowError(
         new CountryMissingError("XX")
       );
     });

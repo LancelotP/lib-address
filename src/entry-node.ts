@@ -1,4 +1,4 @@
-import { codes } from "./codes.json";
+import { codes } from "./codes";
 
 import { registerCountry } from "./registry";
 

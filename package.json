@@ -38,7 +38,7 @@
     "scripts:download": "ts-node-esm -P tsconfig.scripts.json scripts/download-metadata.ts"
   },
   "browser": "./dist/entry-browser.mjs",
-  "main": "./dist/entry-node.mjs",
+  "main": "./dist/entry-node.cjs",
   "types": "./dist/entry-node.d.ts",
   "files": [
     "dist"

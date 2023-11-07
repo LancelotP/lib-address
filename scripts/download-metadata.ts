@@ -5,6 +5,7 @@ import axios from "axios";
 import axiosRetry from "axios-retry";
 
 import { CountryData, SubRegionData } from "../src/types";
+import { CountryCode } from "../src/codes";
 
 axiosRetry(axios, { retries: 3 });
 
@@ -21,19 +22,6 @@ async function getCountryCodes() {
 
   return data.countries.split("~");
 }
-
-// async function getDefaultCountryData() {
-//   return (await getCountryData("ZZ")) as {
-//     fmt: string;
-//     id: string;
-//     locality_name_type: string;
-//     require: string;
-//     state_name_type: string;
-//     sublocality_name_type: string;
-//     upper: string;
-//     zip_name_type: string;
-//   };
-// }
 
 type JSONSubRegionData = {
   id: string;
@@ -108,7 +96,7 @@ async function getCountryData<K extends string>(
 
   return {
     id: res.data.id,
-    key: res.data.key,
+    key: res.data.key as CountryCode,
     name: res.data.name,
     fmt: res.data.fmt,
     lfmt: res.data.lfmt,
@@ -150,16 +138,15 @@ async function downloadMetadata() {
   );
 
   await writeFile(
-    resolve(__dirname, "../src/codes.json"),
-    JSON.stringify({ codes: Object.keys(dict) }, null, 2),
+    resolve(__dirname, "../src/codes.ts"),
+    [
+      `export const codes = ${JSON.stringify(Object.keys(dict), null, 2)};`,
+      "",
+      "export type CountryCode = (typeof codes)[number]",
+      "",
+    ].join("\n"),
     "utf-8"
   );
-
-  // await writeFile(
-  //   resolve(__dirname, "./out/metadata.json"),
-  //   JSON.stringify(dict, null, 2),
-  //   "utf-8"
-  // );
 
   return dict;
 }

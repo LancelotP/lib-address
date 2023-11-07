@@ -20,6 +20,7 @@ import { AddressValidationError } from "./errors/missing-fields.error";
 import { MissingFieldError } from "./errors/missing-field.error";
 import { InvalidZipError } from "./errors/invalid-zip.error";
 import { InvalidStateError } from "./errors/invalid-state.error";
+import { CountryCode } from "./codes";
 
 registerCountry(ag);
 registerCountry(ae);
@@ -29,7 +30,7 @@ registerCountry(us);
 describe("validator", () => {
   describe("getRequiredFields", () => {
     it.each<{
-      value: string;
+      value: CountryCode;
       fields: (keyof CountryFields)[];
     }>([
       {
@@ -52,7 +53,7 @@ describe("validator", () => {
 
   describe("getOptionnalFields", () => {
     it.each<{
-      value: string;
+      value: CountryCode;
       fields: (keyof CountryFields)[];
     }>([
       {
@@ -84,7 +85,7 @@ describe("validator", () => {
   });
 
   describe("isValidCountrySubdivisionCode", () => {
-    it.each([
+    it.each<{ country: CountryCode; value: string; expected: boolean }>([
       { country: "US", value: "CA", expected: true },
       { country: "US", value: " CA ", expected: true },
       { country: "US", value: " Ca ", expected: true },

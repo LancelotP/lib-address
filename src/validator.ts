@@ -1,9 +1,9 @@
 import { MissingFieldError } from "./errors/missing-field.error";
 import { AddressValidationError } from "./errors/missing-fields.error";
 import { getCountryData } from "./registry";
-import { Address, AddressInput, CountryCode } from "./types";
+import { Address, AddressInput } from "./types";
 import { convertAbbrStringToObject } from "./utils";
-import { codes as countryCodes } from "./codes.json";
+import { CountryCode, codes as countryCodes } from "./codes";
 import {
   InvalidZipError,
   InvalidZipSubRegionError,
@@ -17,7 +17,7 @@ import { InvalidStateError } from "./errors/invalid-state.error";
  * @returns true if the country code is valid
  */
 export function isValidCountryCode(value: string): value is CountryCode {
-  return countryCodes.includes(value.toUpperCase().trim());
+  return countryCodes.includes(value.toUpperCase().trim() as CountryCode);
 }
 
 /**
@@ -33,7 +33,7 @@ export function isValidCountrySubdivisionCode(
   const sanitizedValue = value.toUpperCase().trim();
   const sanitizedCountry = country.toUpperCase().trim();
 
-  if (!sanitizedValue) return false;
+  if (!sanitizedValue || !isValidCountryCode(sanitizedCountry)) return false;
 
   const data = getCountryData(sanitizedCountry);
   return !!data.sub_regions?.find((sr) => sr.key === sanitizedValue) ?? false;
@@ -117,7 +117,7 @@ export type CountryFields = {
   addressLine3?: "required" | "optional";
 };
 
-export function getCountryFields(countryCode: string): CountryFields {
+export function getCountryFields(countryCode: CountryCode): CountryFields {
   const data = getCountryData(countryCode);
   const requiredFields = convertAbbrStringToObject(data.require);
   const optionnalFields = convertAbbrStringToObject(data.fmt);
@@ -158,13 +158,13 @@ export function getCountryFields(countryCode: string): CountryFields {
   };
 }
 
-export function getRequiredFields(countryCode: string) {
+export function getRequiredFields(countryCode: CountryCode) {
   return Object.entries(getCountryFields(countryCode))
     .filter(([_, value]) => value === "required")
     .map(([key]) => key) as (keyof CountryFields)[];
 }
 
-export function getOptionnalFields(countryCode: string) {
+export function getOptionnalFields(countryCode: CountryCode) {
   return Object.entries(getCountryFields(countryCode))
     .filter(([_, value]) => value === "optional")
     .map(([key]) => key) as (keyof CountryFields)[];
