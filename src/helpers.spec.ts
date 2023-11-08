@@ -1,7 +1,13 @@
 import { describe, expect, it } from "vitest";
 
+import type { CountryCode } from "./entry-node";
 import { getZipExamples } from "./entry-node";
-import { getCountryStates } from "./helpers";
+import type { CountryFields } from "./helpers";
+import {
+  getCountryStates,
+  getOptionnalFields,
+  getRequiredFields,
+} from "./helpers";
 
 describe("helpers", () => {
   describe("getZipExamples", () => {
@@ -44,6 +50,47 @@ describe("helpers", () => {
 
       expect(states).toBeInstanceOf(Array);
       expect(states.length).toEqual(0);
+    });
+  });
+
+  describe("getRequiredFields", () => {
+    it.each<{
+      value: CountryCode;
+      fields: (keyof CountryFields)[];
+    }>([
+      {
+        value: "FR",
+        fields: ["zip", "city", "addressLine1"],
+      },
+      {
+        value: "AE",
+        fields: ["state", "addressLine1"],
+      },
+      { value: "AG", fields: ["addressLine1"] },
+      {
+        value: "US",
+        fields: ["state", "zip", "city", "addressLine1"],
+      },
+    ])("getRequiredFields($value) -> $fields", ({ value, fields }) => {
+      expect(getRequiredFields(value)).toEqual(fields);
+    });
+  });
+
+  describe("getOptionnalFields", () => {
+    it.each<{
+      value: CountryCode;
+      fields: (keyof CountryFields)[];
+    }>([
+      {
+        value: "FR",
+        fields: ["addressLine2", "addressLine3"],
+      },
+      {
+        value: "AG",
+        fields: ["city", "addressLine2", "addressLine3"],
+      },
+    ])("getOptionnalFields($value) -> $fields", ({ value, fields }) => {
+      expect(getOptionnalFields(value)).toEqual(fields);
     });
   });
 });

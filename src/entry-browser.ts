@@ -6,7 +6,13 @@ export {
   getRegisteredCountries,
 } from "./registry.ts";
 
-export { getZipExamples } from "./helpers.ts";
+export {
+  getCountryFields,
+  getCountryStates,
+  getOptionnalFields,
+  getRequiredFields,
+  getZipExamples,
+} from "./helpers.ts";
 
 export { formatAddress } from "./formatter.ts";
 
@@ -15,7 +21,4 @@ export {
   isValidCountryCode,
   isValidCountrySubdivisionCode,
   validateAddress,
-  getCountryFields,
-  getOptionnalFields,
-  getRequiredFields,
 } from "./validator.ts";

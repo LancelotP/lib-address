@@ -11,10 +11,7 @@ import { AddressValidationError } from "./errors/missing-fields.error";
 import type { CountryCode } from "./generated";
 import { registerCountry } from "./registry";
 import type { AddressInput } from "./types";
-import type { CountryFields } from "./validator";
 import {
-  getOptionnalFields,
-  getRequiredFields,
   isAddressValid,
   isValidCountryCode,
   isValidCountrySubdivisionCode,
@@ -27,47 +24,6 @@ registerCountry(fr);
 registerCountry(us);
 
 describe("validator", () => {
-  describe("getRequiredFields", () => {
-    it.each<{
-      value: CountryCode;
-      fields: (keyof CountryFields)[];
-    }>([
-      {
-        value: "FR",
-        fields: ["zip", "city", "addressLine1"],
-      },
-      {
-        value: "AE",
-        fields: ["state", "addressLine1"],
-      },
-      { value: "AG", fields: ["addressLine1"] },
-      {
-        value: "US",
-        fields: ["state", "zip", "city", "addressLine1"],
-      },
-    ])("getRequiredFields($value) -> $fields", ({ value, fields }) => {
-      expect(getRequiredFields(value)).toEqual(fields);
-    });
-  });
-
-  describe("getOptionnalFields", () => {
-    it.each<{
-      value: CountryCode;
-      fields: (keyof CountryFields)[];
-    }>([
-      {
-        value: "FR",
-        fields: ["addressLine2", "addressLine3"],
-      },
-      {
-        value: "AG",
-        fields: ["city", "addressLine2", "addressLine3"],
-      },
-    ])("getOptionnalFields($value) -> $fields", ({ value, fields }) => {
-      expect(getOptionnalFields(value)).toEqual(fields);
-    });
-  });
-
   describe("isValidCountryCode", () => {
     it.each([
       { value: "US", expected: true },

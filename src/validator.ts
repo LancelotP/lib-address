@@ -8,9 +8,9 @@ import {
 import { MissingFieldError } from "./errors/missing-field.error.ts";
 import { AddressValidationError } from "./errors/missing-fields.error.ts";
 import type { Address, CountryCode } from "./generated.ts";
+import { getCountryFields } from "./helpers.ts";
 import { getCountryData } from "./registry.ts";
 import type { AddressInput } from "./types.ts";
-import { convertAbbrStringToObject } from "./utils.ts";
 
 /**
  * @description Checks if a string is a valid country code (ISO 3166-1 alpha-2)
@@ -105,68 +105,4 @@ export function isAddressValid(address: AddressInput): address is Address {
   } catch {
     return false;
   }
-}
-
-export type CountryFields = {
-  state?: "required" | "optional";
-  zip?: "required" | "optional";
-  dependentLocality?: "required" | "optional";
-  city?: "required" | "optional";
-  sortingCode?: "required" | "optional";
-  addressLine1?: "required" | "optional";
-  addressLine2?: "required" | "optional";
-  addressLine3?: "required" | "optional";
-};
-
-export function getCountryFields(countryCode: CountryCode): CountryFields {
-  const data = getCountryData(countryCode);
-  const requiredFields = convertAbbrStringToObject(data.require);
-  const optionnalFields = convertAbbrStringToObject(data.fmt);
-
-  return {
-    state: requiredFields.state
-      ? "required"
-      : optionnalFields.state
-      ? "optional"
-      : undefined,
-    zip: requiredFields.zip
-      ? "required"
-      : optionnalFields.zip
-      ? "optional"
-      : undefined,
-    dependentLocality: requiredFields.dependentLocality
-      ? "required"
-      : optionnalFields.dependentLocality
-      ? "optional"
-      : undefined,
-    city: requiredFields.city
-      ? "required"
-      : optionnalFields.city
-      ? "optional"
-      : undefined,
-    sortingCode: requiredFields.sortingCode
-      ? "required"
-      : optionnalFields.sortingCode
-      ? "optional"
-      : undefined,
-    addressLine1: requiredFields.addressLine1
-      ? "required"
-      : optionnalFields.addressLine1
-      ? "optional"
-      : undefined,
-    addressLine2: optionnalFields.addressLine1 ? "optional" : undefined,
-    addressLine3: optionnalFields.addressLine1 ? "optional" : undefined,
-  };
-}
-
-export function getRequiredFields(countryCode: CountryCode) {
-  return Object.entries(getCountryFields(countryCode))
-    .filter(([_, value]) => value === "required")
-    .map(([key]) => key) as (keyof CountryFields)[];
-}
-
-export function getOptionnalFields(countryCode: CountryCode) {
-  return Object.entries(getCountryFields(countryCode))
-    .filter(([_, value]) => value === "optional")
-    .map(([key]) => key) as (keyof CountryFields)[];
 }
