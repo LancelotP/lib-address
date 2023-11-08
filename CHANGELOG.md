@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.3.0 (2023-11-08)
+
+## What's Changed
+* feat: add support for latin variants in getCountryStates helper by @LancelotP in https://github.com/LancelotP/lib-address/pull/12
+
+
+**Full Changelog**: https://github.com/LancelotP/lib-address/compare/v0.2.0...v0.3.0
+
 ## 0.2.0 (2023-11-07)
 
 ## What's Changed
