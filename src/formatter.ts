@@ -67,8 +67,8 @@ export function formatAddress(
 
   if (!useStateISOCode && stateData) {
     cpy.state = [
-      useLatin && stateData.name.latin,
       lang && stateData.name[lang],
+      useLatin && stateData.name.latin,
       stateData.name.default,
     ].filter(Boolean)[0] as string;
   }
