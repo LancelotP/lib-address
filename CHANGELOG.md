@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.4.0 (2023-11-08)
+
+## What's Changed
+* feat: add error helpers by @LancelotP in https://github.com/LancelotP/lib-address/pull/14
+
+
+**Full Changelog**: https://github.com/LancelotP/lib-address/compare/v0.3.0...v0.4.0
+
 ## 0.3.0 (2023-11-08)
 
 ## What's Changed
