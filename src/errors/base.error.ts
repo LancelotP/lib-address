@@ -1,4 +1,4 @@
-export class LibAddressError extends Error {
+export abstract class LibAddressError extends Error {
   readonly isLibAddressError = true;
   readonly code: string;
 

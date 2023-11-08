@@ -1,3 +1,4 @@
+import { LibAddressError } from "./errors/base.error.ts";
 import type { CountryCode } from "./generated.ts";
 import { getCountryData } from "./registry.ts";
 import { convertAbbrStringToObject } from "./utils.ts";
@@ -118,4 +119,8 @@ export function getOptionnalFields(countryCode: CountryCode) {
   return Object.entries(getCountryFields(countryCode))
     .filter(([_, value]) => value === "optional")
     .map(([key]) => key) as (keyof CountryFields)[];
+}
+
+export function isAddressError(err: unknown): err is LibAddressError {
+  return err instanceof LibAddressError;
 }
