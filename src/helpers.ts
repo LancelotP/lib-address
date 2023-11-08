@@ -20,18 +20,38 @@ export function getZipExamples(
   return (subRegionData?.zipex ?? data.zipex)?.split(",") ?? [];
 }
 
+type GetCountryStatesOptions = {
+  /**
+   * @description Language to use for state names. If not provided, the default lang is used. Not all countries support multiple langs. Takes precedence over useLatin
+   * @default default
+   */
+  lang?: string;
+  /**
+   * @description Use latinised equivalents for state names if true. Not all countries support latinised equivalents
+   * @default false
+   */
+  useLatin?: boolean;
+};
+
 /**
  * @description Get a list of states for a given country. If no language is provided, the default language for the country will be used.
  * @param country CountryCode to get states for (e.g. US, FR, etc.)
- * @param lang Language to use for state names. If not provided, the default language for the country will be used. Not all countries support multiple languages
  */
-export function getCountryStates(country: CountryCode, lang = "default") {
+export function getCountryStates(
+  country: CountryCode,
+  opts?: GetCountryStatesOptions,
+) {
+  const { lang, useLatin = false } = opts ?? {};
   const data = getCountryData(country);
 
   return (
     data.sub_regions?.map((sr) => ({
       value: sr.key,
-      label: sr.name[lang] ?? sr.name.default,
+      label: [
+        lang && sr.name[lang],
+        useLatin && sr.name.latin,
+        sr.name.default,
+      ].filter(Boolean)[0] as string,
     })) ?? []
   );
 }
