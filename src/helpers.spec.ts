@@ -34,7 +34,7 @@ describe("helpers", () => {
     });
 
     it("should return an array with locale", () => {
-      const states = getCountryStates("CN", "latin");
+      const states = getCountryStates("CN", { useLatin: true });
 
       expect(states).toBeInstanceOf(Array);
       expect(states.length).toBeGreaterThan(0);
