@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.5.1 (2023-11-09)
+
+## What's Changed
+* fix: package entry-points + readme by @LancelotP in https://github.com/LancelotP/lib-address/pull/19
+
+
+**Full Changelog**: https://github.com/LancelotP/lib-address/compare/v0.5.0...v0.5.1
+
 ## 0.5.0 (2023-11-09)
 
 ## What's Changed
