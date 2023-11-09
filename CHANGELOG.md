@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.5.3 (2023-11-09)
+
+## What's Changed
+* fix: remove browser specific export for zod by @LancelotP in https://github.com/LancelotP/lib-address/pull/24
+
+
+**Full Changelog**: https://github.com/LancelotP/lib-address/compare/v0.5.2...v0.5.3
+
 ## 0.5.2 (2023-11-09)
 
 ## What's Changed
