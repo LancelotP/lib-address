@@ -43,12 +43,15 @@
     ".": {
       "import": "./dist/entry-node.mjs",
       "require": "./dist/entry-node.cjs",
-      "browser": "./dist/entry-browser.mjs"
+      "browser": "./dist/entry-browser.mjs",
+      "types": "./dist/entry-browser.d.ts"
     },
     "./zod": {
       "import": "./dist/validators/zod.mjs",
-      "require": "./dist/validators/zod.cjs"
-    }
+      "require": "./dist/validators/zod.cjs",
+      "types": "./dist/validators/zod.d.ts"
+    },
+    "./countries/*": "./countries/*"
   },
   "files": [
     "dist",

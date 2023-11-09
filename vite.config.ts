@@ -4,6 +4,8 @@
 import { visualizer } from "rollup-plugin-visualizer";
 import { defineConfig } from "vite";
 import dts from "vite-plugin-dts";
+import pkg from './package.json' assert { type: 'json' }
+
 
 export default defineConfig({
   esbuild: {
@@ -17,6 +19,10 @@ export default defineConfig({
         "src/entry-node.ts",
         "src/entry-browser.ts",
         "src/validators/zod.ts",
+      ],
+      external: [
+        ...Object.keys(pkg.optionalDependencies), // don't bundle dependencies
+        /^node:.*/, // don't bundle built-in Node.js modules (use protocol imports!)
       ],
       output: [
         {
@@ -44,7 +50,7 @@ export default defineConfig({
     visualizer(),
     dts({
       exclude: ["./src/*.spec.ts"],
-      rollupTypes: true,
+      entryRoot: "src",
     }),
   ],
 });
