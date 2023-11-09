@@ -39,6 +39,10 @@
     "coverage": "vitest run --coverage",
     "scripts:download": "ts-node-esm -P scripts/tsconfig.json scripts/generate-metadata.ts"
   },
+  "import": "./dist/entry-node.mjs",
+  "require": "./dist/entry-node.cjs",
+  "browser": "./dist/entry-browser.mjs",
+  "types": "./dist/entry-browser.d.ts",
   "exports": {
     ".": {
       "import": "./dist/entry-node.mjs",
