@@ -67,5 +67,8 @@
     "vite": "^4.5.0",
     "vite-plugin-dts": "^3.6.3",
     "vitest": "^0.34.6"
+  },
+  "optionalDependencies": {
+    "zod": "^3"
   }
 }
