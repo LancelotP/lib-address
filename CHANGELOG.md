@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.5.2 (2023-11-09)
+
+## What's Changed
+* chore: mark as side-effect free by @LancelotP in https://github.com/LancelotP/lib-address/pull/21
+* fix: package export order by @LancelotP in https://github.com/LancelotP/lib-address/pull/23
+
+
+**Full Changelog**: https://github.com/LancelotP/lib-address/compare/v0.5.1...v0.5.2
+
 ## 0.5.1 (2023-11-09)
 
 ## What's Changed
