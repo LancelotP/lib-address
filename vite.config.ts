@@ -1,9 +1,9 @@
 /// <reference types="vitest" />
 // Configure Vitest (https://vitest.dev/config/)
 
+import { visualizer } from "rollup-plugin-visualizer";
 import { defineConfig } from "vite";
 import dts from "vite-plugin-dts";
-import { visualizer } from "rollup-plugin-visualizer";
 
 export default defineConfig({
   esbuild: {
@@ -13,7 +13,11 @@ export default defineConfig({
     target: "esnext",
     rollupOptions: {
       preserveEntrySignatures: "strict",
-      input: ["src/entry-node.ts", "src/entry-browser.ts"],
+      input: [
+        "src/entry-node.ts",
+        "src/entry-browser.ts",
+        "src/validators/zod.ts",
+      ],
       output: [
         {
           dir: "dist",
