@@ -12,8 +12,8 @@ import {
 } from "./entry-node";
 import type { CountryFields } from "./helpers";
 import {
-  getCountryStates,
-  getOptionnalFields,
+  getCountrySubdivisions,
+  getOptionalFields,
   getRequiredFields,
   isAddressError,
 } from "./helpers";
@@ -61,9 +61,9 @@ describe("helpers", () => {
     });
   });
 
-  describe("getCountryStates", () => {
+  describe("getCountrySubdivisions", () => {
     it("should return an array", () => {
-      const states = getCountryStates("US");
+      const states = getCountrySubdivisions("US");
 
       expect(states).toBeInstanceOf(Array);
       expect(states.length).toBeGreaterThan(0);
@@ -75,7 +75,7 @@ describe("helpers", () => {
     });
 
     it("should return an array with locale", () => {
-      const states = getCountryStates("CA", { lang: "FR" });
+      const states = getCountrySubdivisions("CA", { lang: "FR" });
 
       expect(states).toBeInstanceOf(Array);
       expect(states.length).toBeGreaterThan(0);
@@ -87,7 +87,7 @@ describe("helpers", () => {
     });
 
     it("should return an array with latin", () => {
-      const states = getCountryStates("CN", { useLatin: true });
+      const states = getCountrySubdivisions("CN", { useLatin: true });
 
       expect(states).toBeInstanceOf(Array);
       expect(states.length).toBeGreaterThan(0);
@@ -99,10 +99,55 @@ describe("helpers", () => {
     });
 
     it("should return an empty array", () => {
-      const states = getCountryStates("FR");
+      const states = getCountrySubdivisions("FR");
 
       expect(states).toBeInstanceOf(Array);
       expect(states.length).toEqual(0);
+    });
+
+    it("should return an empty array", () => {
+      const states = getCountrySubdivisions(["FR"]);
+
+      expect(states).toBeInstanceOf(Array);
+      expect(states.length).toEqual(0);
+    });
+
+    it("should return an array of states", () => {
+      const states = getCountrySubdivisions("CN", { useLatin: true });
+
+      expect(states).toBeInstanceOf(Array);
+      expect(states.length).toBeGreaterThan(0);
+
+      states.forEach((state) => {
+        expect(state.label).toBeTypeOf("string");
+        expect(state.value).toBeTypeOf("string");
+      });
+    });
+
+    it("should return an array of cities", () => {
+      const states = getCountrySubdivisions(["CN", "34"], { useLatin: true });
+
+      expect(states).toBeInstanceOf(Array);
+      expect(states.length).toBeGreaterThan(0);
+
+      states.forEach((state) => {
+        expect(state.label).toBeTypeOf("string");
+        expect(state.value).toBeTypeOf("string");
+      });
+    });
+
+    it("should return an array of dependant locality", () => {
+      const states = getCountrySubdivisions(["CN", "34", "安庆市"], {
+        useLatin: true,
+      });
+
+      expect(states).toBeInstanceOf(Array);
+      expect(states.length).toBeGreaterThan(0);
+
+      states.forEach((state) => {
+        expect(state.label).toBeTypeOf("string");
+        expect(state.value).toBeTypeOf("string");
+      });
     });
   });
 
@@ -148,7 +193,7 @@ describe("helpers", () => {
     });
   });
 
-  describe("getOptionnalFields", () => {
+  describe("getOptionalFields", () => {
     it.each<{
       value: CountryCode;
       fields: (keyof CountryFields)[];
@@ -182,8 +227,8 @@ describe("helpers", () => {
           "sortingCode",
         ],
       },
-    ])("getOptionnalFields($value) -> $fields", ({ value, fields }) => {
-      expect(getOptionnalFields(value)).toEqual(expect.arrayContaining(fields));
+    ])("getOptionalFields($value) -> $fields", ({ value, fields }) => {
+      expect(getOptionalFields(value)).toEqual(expect.arrayContaining(fields));
     });
   });
 
