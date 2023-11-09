@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.5.0 (2023-11-09)
+
+## What's Changed
+* feat(Zod): add zod-validator by @LancelotP in https://github.com/LancelotP/lib-address/pull/16
+* chore: improve coverage to 100% by @LancelotP in https://github.com/LancelotP/lib-address/pull/18
+
+
+**Full Changelog**: https://github.com/LancelotP/lib-address/compare/v0.4.0...v0.5.0
+
 ## 0.4.0 (2023-11-08)
 
 ## What's Changed
