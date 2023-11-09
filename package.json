@@ -13,6 +13,7 @@
     "email": "lancelot@prigent.dev",
     "name": "Lancelot Prigent"
   },
+  "sideEffects": false,
   "version": "0.5.1",
   "license": "MIT",
   "type": "module",
