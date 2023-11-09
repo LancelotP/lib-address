@@ -41,6 +41,8 @@
     "scripts:download": "ts-node-esm -P scripts/tsconfig.json scripts/generate-metadata.ts"
   },
   "main": "./dist/entry-browser.mjs",
+  "module": "./dist/entry-browser.mjs",
+  "types": "./dist/entry-browser.d.ts",
   "exports": {
     ".": {
       "types": "./dist/entry-browser.d.ts",
@@ -52,10 +54,8 @@
     },
     "./zod": {
       "types": "./dist/validators/zod.d.ts",
-      "node": {
-        "import": "./dist/validators/zod.mjs",
-        "require": "./dist/validators/zod.cjs"
-      }
+      "import": "./dist/validators/zod.mjs",
+      "require": "./dist/validators/zod.cjs"
     },
     "./countries/*": "./countries/*"
   },
