@@ -4,7 +4,7 @@
 ![GitHub Workflow Status (with event)](https://img.shields.io/github/actions/workflow/status/LancelotP/lib-address/release-please.yml)
 ![npm](https://img.shields.io/npm/v/lib-address?link=https%3A%2F%2Fwww.npmjs.com%2Fpackage%2Flib-address)
 ![npm bundle size](https://img.shields.io/bundlephobia/minzip/lib-address?link=https%3A%2F%2Fbundlephobia.com%2Fpackage%2Flib-address)
-![Codecov](https://img.shields.io/codecov/c/github/lancelotp/lib-address)
+[![codecov](https://codecov.io/gh/LancelotP/lib-address/graph/badge.svg?token=28O9XY6WIH)](https://codecov.io/gh/LancelotP/lib-address)
 
 ## Intro
 
