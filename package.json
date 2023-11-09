@@ -40,21 +40,22 @@
     "coverage": "vitest run --coverage",
     "scripts:download": "ts-node-esm -P scripts/tsconfig.json scripts/generate-metadata.ts"
   },
-  "import": "./dist/entry-node.mjs",
-  "require": "./dist/entry-node.cjs",
-  "browser": "./dist/entry-browser.mjs",
-  "types": "./dist/entry-browser.d.ts",
+  "main": "./dist/entry-browser.mjs",
   "exports": {
     ".": {
-      "import": "./dist/entry-node.mjs",
-      "require": "./dist/entry-node.cjs",
-      "browser": "./dist/entry-browser.mjs",
-      "types": "./dist/entry-browser.d.ts"
+      "types": "./dist/entry-browser.d.ts",
+      "node": {
+        "import": "./dist/entry-node.mjs",
+        "require": "./dist/entry-node.cjs"
+      },
+      "browser": "./dist/entry-browser.mjs"
     },
     "./zod": {
-      "import": "./dist/validators/zod.mjs",
-      "require": "./dist/validators/zod.cjs",
-      "types": "./dist/validators/zod.d.ts"
+      "types": "./dist/validators/zod.d.ts",
+      "node": {
+        "import": "./dist/validators/zod.mjs",
+        "require": "./dist/validators/zod.cjs"
+      }
     },
     "./countries/*": "./countries/*"
   },
