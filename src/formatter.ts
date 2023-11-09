@@ -111,7 +111,7 @@ export function formatAddress(
   return nationalFormat;
 }
 
-function convertAddressCasing(
+export function convertAddressCasing(
   address: AddressInput,
   upper: string,
 ): AddressInput {

@@ -10,7 +10,7 @@ import FR from "../countries/FR.json";
 import HK from "../countries/HK.json";
 import KY from "../countries/KY.json";
 import US from "../countries/US.json";
-import { formatAddress } from "./formatter";
+import { convertAddressCasing, formatAddress } from "./formatter";
 import { registerCountry } from "./registry";
 import type { AddressInput } from "./types";
 
@@ -570,6 +570,84 @@ describe("formatter", () => {
           ).toBe(expected);
         },
       );
+    });
+  });
+
+  describe("convertAddressCasing", () => {
+    const address: AddressInput = {
+      country: "US",
+      state: "a",
+      city: "a",
+      zip: "a",
+      addressLine1: "a",
+      addressLine2: "a",
+      addressLine3: "a",
+      sortingCode: "a",
+      dependentLocality: "a",
+      name: "a",
+      organization: "a",
+    };
+
+    it.each<{ upper: string; label: string; expected: (keyof AddressInput)[] }>(
+      [
+        {
+          upper: "A",
+          label: "Address",
+          expected: ["addressLine1", "addressLine2", "addressLine3"],
+        },
+        {
+          upper: "C",
+          label: "City",
+          expected: ["city"],
+        },
+        {
+          upper: "D",
+          label: "Dependent Locality",
+          expected: ["dependentLocality"],
+        },
+        {
+          upper: "N",
+          label: "Name",
+          expected: ["name"],
+        },
+        {
+          upper: "O",
+          label: "Organization",
+          expected: ["organization"],
+        },
+        {
+          upper: "S",
+          label: "State",
+          expected: ["state"],
+        },
+        {
+          upper: "X",
+          label: "Sorting Code",
+          expected: ["sortingCode"],
+        },
+        {
+          upper: "Z",
+          label: "Zip",
+          expected: ["zip"],
+        },
+        {
+          upper: "ACZ",
+          label: "Address, City, Zip",
+          expected: [
+            "addressLine1",
+            "addressLine2",
+            "addressLine3",
+            "city",
+            "zip",
+          ],
+        },
+      ],
+    )("$upper should uppercase $label", ({ upper, expected }) => {
+      const result = convertAddressCasing(address, upper);
+
+      expected.forEach((key) => {
+        expect(result[key]).toBe(address[key]?.toUpperCase());
+      });
     });
   });
 });
