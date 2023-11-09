@@ -33,7 +33,7 @@
   ],
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
+    "build": "tsc && vite build && check-export-map",
     "preview": "vite preview",
     "test": "vitest",
     "lint": "eslint --ignore-path .gitignore .",
@@ -42,22 +42,22 @@
   },
   "main": "./dist/entry-browser.mjs",
   "module": "./dist/entry-browser.mjs",
+  "require": "./dist/entry-browser.mjs",
   "types": "./dist/entry-browser.d.ts",
   "exports": {
     ".": {
       "types": "./dist/entry-browser.d.ts",
-      "node": {
-        "import": "./dist/entry-node.mjs",
-        "require": "./dist/entry-node.cjs"
-      },
-      "browser": "./dist/entry-browser.mjs"
+      "browser": "./dist/entry-browser.mjs",
+      "import": "./dist/entry-node.mjs",
+      "require": "./dist/entry-node.cjs"
     },
     "./zod": {
       "types": "./dist/validators/zod.d.ts",
       "import": "./dist/validators/zod.mjs",
       "require": "./dist/validators/zod.cjs"
     },
-    "./countries/*": "./countries/*"
+    "./countries/*": "./countries/*",
+    "./package.json": "./package.json"
   },
   "files": [
     "dist",
@@ -72,6 +72,7 @@
     "@vitest/coverage-v8": "^0.34.6",
     "axios": "^1.6.0",
     "axios-retry": "^3.8.1",
+    "check-export-map": "^1.3.0",
     "cli-progress": "^3.12.0",
     "eslint": "^8.53.0",
     "eslint-config-prettier": "^9.0.0",

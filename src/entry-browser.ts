@@ -8,8 +8,8 @@ export {
 
 export {
   getCountryFields,
-  getCountryStates,
-  getOptionnalFields,
+  getCountrySubdivisions,
+  getOptionalFields,
   getRequiredFields,
   getZipExamples,
   isAddressError,

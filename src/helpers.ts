@@ -1,6 +1,7 @@
 import { LibAddressError } from "./errors/base.error.ts";
 import type { CountryCode } from "./generated.ts";
 import { getCountryData } from "./registry.ts";
+import type { CountryData } from "./types.ts";
 import { convertAbbrStringToObject } from "./utils.ts";
 
 /**
@@ -37,16 +38,25 @@ type GetCountryStatesOptions = {
 /**
  * @description Get a list of states for a given country. If no language is provided, the default language for the country will be used.
  * @param country CountryCode to get states for (e.g. US, FR, etc.)
+ * @param state if provided, will return a list of cities for the given state
+ * @param city if provided, will return a list of dependent localities for the given city
  */
-export function getCountryStates(
-  country: CountryCode,
+export function getCountrySubdivisions(
+  args:
+    | [CountryCode]
+    | [CountryCode, string]
+    | [CountryCode, string, string]
+    | CountryCode,
   opts?: GetCountryStatesOptions,
 ) {
+  if (typeof args === "string") args = [args];
+  const [country, state, city] = [args[0], args[1], args[2]];
+
   const { lang, useLatin = false } = opts ?? {};
-  const data = getCountryData(country);
+  const data = getDeepRegion(getCountryData(country), state, city);
 
   return (
-    data.sub_regions?.map((sr) => ({
+    data?.map((sr) => ({
       value: sr.key,
       label: [
         lang && sr.name[lang],
@@ -55,6 +65,17 @@ export function getCountryStates(
       ].filter(Boolean)[0] as string,
     })) ?? []
   );
+}
+
+function getDeepRegion(country: CountryData, state?: string, city?: string) {
+  if (!state) return country.sub_regions ?? [];
+
+  const stateData = country.sub_regions?.find((sr) => sr.key === state);
+  if (!stateData || !city) return stateData?.sub_regions ?? [];
+
+  const cityData = stateData.sub_regions?.find((sr) => sr.key === city);
+
+  return cityData?.sub_regions ?? [];
 }
 
 export type CountryFields = {
@@ -115,7 +136,7 @@ export function getRequiredFields(countryCode: CountryCode) {
     .map(([key]) => key) as (keyof CountryFields)[];
 }
 
-export function getOptionnalFields(countryCode: CountryCode) {
+export function getOptionalFields(countryCode: CountryCode) {
   return Object.entries(getCountryFields(countryCode))
     .filter(([_, value]) => value === "optional")
     .map(([key]) => key) as (keyof CountryFields)[];

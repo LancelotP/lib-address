@@ -39,6 +39,7 @@ export type SubRegionData = {
   lname?: string;
   zip?: string;
   zipex?: string;
+  sub_regions?: SubRegionData[];
 };
 
 export type CountryDataWithDefault = CountryData &
