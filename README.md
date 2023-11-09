@@ -1,9 +1,9 @@
 # LibAddress
 
-![GitHub](https://img.shields.io/github/license/lancelotp/lib-address)
-![GitHub Workflow Status (with event)](https://img.shields.io/github/actions/workflow/status/LancelotP/lib-address/release-please.yml)
-![npm](https://img.shields.io/npm/v/lib-address?link=https%3A%2F%2Fwww.npmjs.com%2Fpackage%2Flib-address)
-![npm bundle size](https://img.shields.io/bundlephobia/minzip/lib-address?link=https%3A%2F%2Fbundlephobia.com%2Fpackage%2Flib-address)
+[![GitHub](https://img.shields.io/github/license/lancelotp/lib-address)](https://github.com/LancelotP/lib-address/blob/main/LICENSE)
+[![GitHub Workflow Status (with event)](https://img.shields.io/github/actions/workflow/status/LancelotP/lib-address/release-please.yml)](https://github.com/LancelotP/lib-address/actions)
+[![npm](https://img.shields.io/npm/v/lib-address?link=https%3A%2F%2Fwww.npmjs.com%2Fpackage%2Flib-address)](https://www.npmjs.com/package/lib-address)
+[![npm bundle size](https://img.shields.io/bundlephobia/minzip/lib-address?link=https%3A%2F%2Fbundlephobia.com%2Fpackage%2Flib-address)](https://bundlephobia.com/package/lib-address)
 [![codecov](https://codecov.io/gh/LancelotP/lib-address/graph/badge.svg?token=28O9XY6WIH)](https://codecov.io/gh/LancelotP/lib-address)
 
 ## Intro
