@@ -14,6 +14,7 @@ A tiny library for building forms, parsing and formatting addresses based on Goo
 - 🧙‍♂️&nbsp; Full static typesafety & autocompletion.
 - 🌍&nbsp; Supports countries listed in [AddessValidationMetadata](https://github.com/google/libaddressinput/wiki/AddressValidationMetadata).
 - 🪶&nbsp; Tiny - 2.5kb gzipped and zero dependencies.
+- 🛡️&nbsp; [Zod](https://zod.dev) support (optional).
 - 📖&nbsp; Fully documented.
 - 🎨&nbsp; Supports multiple languages and latinised equivalents.
 - 📦&nbsp; Supports tree-shaking.
@@ -25,7 +26,7 @@ When building applications for the web, it is often necessary to collect address
 
 Whether it is the zip (or postal code) format, the need for a state or province, or the way to format the address itself.
 
-This library aims to provide a simple API for parsing and formatting addresses.
+This library aims to provide a simple API for parsing and formatting addresses and interfaces nicely with [Zod](https://zod.dev).
 
 The library is written in TypeScript and is fully typed.
 
@@ -34,6 +35,7 @@ The library is written in TypeScript and is fully typed.
 - [Install](#install)
 - [Usage](#usage)
 - [API](#api)
+- [Zod](#zod)
 - [Tests](#tests)
 - [Contributing](#contributing)
 - [License](#license)
@@ -503,6 +505,34 @@ const countryFields = getCountryStates("US");
   ...
 ]
 ```
+
+## Zod
+
+This library exports a [Zod](https://zod.dev/) schema for validating addresses.
+
+> [!NOTE]
+> The Zod schema is not exported by default in order to reduce the size of the package. If you want to use it, you need to import it from `lib-address/zod`.
+> Zod is not a dependency of this library and needs to be installed separately.
+
+```ts
+import { getAddressSchema } "lib-address/zod";
+```
+
+```ts
+import { z } from "zod";
+
+const formSchema = z.object({
+  name: z.string().min(1),
+  address: getAddressSchema(),
+});
+
+function validateForm(data: unknown) {
+  return formSchema.parse(data);
+}
+```
+
+> [!WARNING]
+> The Zod schema will throw if you attempt to validate a country that is not registered. (Only applicable in browser environment)
 
 ## Tests
 
