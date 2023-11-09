@@ -3,7 +3,12 @@ import { describe, expect, it } from "vitest";
 import tg from "../countries/TG.json";
 import { CountryMissingError } from "./errors/country-missing.error";
 import type { CountryCode } from "./generated";
-import { getCountryData, registerCountry, registry } from "./registry";
+import {
+  getCountryData,
+  getRegisteredCountries,
+  registerCountry,
+  registry,
+} from "./registry";
 
 describe.sequential("registry", () => {
   describe.sequential("registerCountry", () => {
@@ -54,6 +59,14 @@ describe.sequential("registry", () => {
     it("should throw an error if the country is not registered", () => {
       expect(() => getCountryData("XX" as CountryCode)).toThrowError(
         new CountryMissingError("XX"),
+      );
+    });
+  });
+
+  describe("getRegisteredCountries", () => {
+    it("should return the registered countries", () => {
+      expect(getRegisteredCountries().length).toEqual(
+        Array.from(registry.keys()).length,
       );
     });
   });

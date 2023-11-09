@@ -66,15 +66,16 @@ export function validateAddress(
     const subRegion = address.state
       ? data.sub_regions?.find((sr) => sr.key === address.state)
       : null;
+    const zip = address.zip?.trim() ?? "";
 
-    if (!regex.test(address.zip?.trim() ?? "")) {
+    if (!regex.test(zip)) {
       errors.push(new InvalidZipError(regex.source));
     }
 
     if (subRegion?.zip) {
       const subRegionRegex = new RegExp(`^${subRegion.zip}`);
 
-      if (!subRegionRegex.test(address.zip?.trim() ?? "")) {
+      if (!subRegionRegex.test(zip)) {
         errors.push(
           new InvalidZipSubRegionError(regex.source, subRegionRegex.source),
         );
