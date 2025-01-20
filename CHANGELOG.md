@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.6.1 (2025-01-20)
+
+## What's Changed
+* chore(ci): update engines and workflows by @LancelotP in https://github.com/LancelotP/lib-address/pull/29
+* fix(Readme): fix typo import by @LancelotP in https://github.com/LancelotP/lib-address/pull/28
+
+
+**Full Changelog**: https://github.com/LancelotP/lib-address/compare/v0.6.0...v0.6.1
+
 ## 0.6.0 (2023-11-09)
 
 ## What's Changed
