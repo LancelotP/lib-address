@@ -17,15 +17,6 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v4
 
-      - name: Setup pnpm
-        uses: pnpm/action-setup@v2.4.0
-
-      - name: Setup Node 18
-        uses: actions/setup-node@v4
-        with:
-          node-version: 18
-          registry-url: "https://registry.npmjs.org"
-
       - name: Setup and install
         uses: ./.github/actions/setup-and-install
 
