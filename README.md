@@ -517,7 +517,7 @@ This library exports a [Zod](https://zod.dev/) schema for validating addresses.
 > Zod is not a dependency of this library and needs to be installed separately.
 
 ```ts
-import { getAddressSchema } "lib-address/zod";
+import { getAddressSchema } from "lib-address/zod";
 ```
 
 ```ts
