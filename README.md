@@ -36,6 +36,7 @@ The library is written in TypeScript and is fully typed.
 
 - [Install](#install)
 - [Usage](#usage)
+- [Lite Version](#lite-version)
 - [API](#api)
 - [Zod](#zod)
 - [Tests](#tests)
@@ -99,6 +100,144 @@ isAddressValid({
   zip: "75001",
 });
 ```
+
+## Lite Version
+
+The lite version is a lightweight alternative that includes basic country data for all 252+ countries in a single ~50kb bundle (19kb gzip). It's perfect for building address forms without needing to register individual countries.
+
+### When to use Lite
+
+- ✅ Building address forms with dynamic field requirements
+- ✅ Need CSS Grid layouts for address forms
+- ✅ Want all countries available without registration
+- ✅ Bundle size is not critical (adds ~50kb)
+- ❌ Don't need full validation or formatting features
+
+### Import
+
+```ts
+import {
+  getCountryData,
+  getCountryFields,
+  getGridPattern,
+} from "lib-address/lite";
+```
+
+### getCountryData
+
+Returns basic data for a country including format string, zip pattern, required fields, and subdivisions.
+
+```ts
+import { getCountryData } from "lib-address/lite";
+
+const frData = getCountryData("FR");
+console.log(frData);
+
+// {
+//   code: "FR",
+//   lfmt: "%O%n%N%n%A%n%Z %C",
+//   zip: "\\d{5}",
+//   require: "ACZ",
+//   sub_regions: [...]
+// }
+```
+
+### getCountryFields
+
+Returns field requirements for a country (required, optional, or undefined).
+
+```ts
+import { getCountryFields } from "lib-address/lite";
+
+const fields = getCountryFields("US");
+console.log(fields);
+
+// {
+//   name: "optional",
+//   organization: "optional",
+//   dependentLocality: undefined,
+//   city: "required",
+//   state: "required",
+//   zip: "required",
+//   sortingCode: undefined,
+//   addressLine1: "required"
+// }
+```
+
+Use this to dynamically show/hide form fields or add validation:
+
+```tsx
+import { getCountryFields } from "lib-address/lite";
+
+function AddressForm({ country }: { country: string }) {
+  const fields = getCountryFields(country);
+
+  return (
+    <form>
+      <input name="addressLine1" required={fields?.addressLine1 === "required"} />
+      {fields?.city && (
+        <input name="city" required={fields.city === "required"} />
+      )}
+      {fields?.state && (
+        <input name="state" required={fields.state === "required"} />
+      )}
+      {fields?.zip && (
+        <input name="zip" required={fields.zip === "required"} />
+      )}
+    </form>
+  );
+}
+```
+
+### getGridPattern
+
+Returns CSS Grid template configuration for laying out address forms according to country-specific formats.
+
+```ts
+import { getGridPattern } from "lib-address/lite";
+
+const pattern = getGridPattern("FR");
+console.log(pattern);
+
+// {
+//   templateColumns: "repeat(2, 1fr)",
+//   templateAreas:
+//     '"organization organization"\n' +
+//     '"name name"\n' +
+//     '"addressLine1 addressLine1"\n' +
+//     '"zip city"'
+// }
+```
+
+Use this to create country-specific form layouts:
+
+```tsx
+import { getGridPattern } from "lib-address/lite";
+
+function AddressForm({ country }: { country: string }) {
+  const pattern = getGridPattern(country);
+
+  return (
+    <div
+      style={{
+        display: "grid",
+        gridTemplateColumns: pattern?.templateColumns,
+        gridTemplateAreas: pattern?.templateAreas,
+        gap: "1rem",
+      }}
+    >
+      <input style={{ gridArea: "organization" }} name="organization" />
+      <input style={{ gridArea: "name" }} name="name" />
+      <input style={{ gridArea: "addressLine1" }} name="addressLine1" />
+      <input style={{ gridArea: "city" }} name="city" />
+      <input style={{ gridArea: "zip" }} name="zip" />
+    </div>
+  );
+}
+```
+
+> [!NOTE]
+> The lite version does not include full validation or formatting capabilities. For complete address validation and formatting, use the full API with registered countries.
 
 ## API
 
