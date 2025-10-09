@@ -59,7 +59,8 @@ function extractUniqueValues<T extends Record<string, string | undefined>>(
         .map((data) => data[key])
         .filter(Boolean),
     ),
-  ).sort((a, b) => a!.localeCompare(b!)) as (T[keyof T] & string)[];
+  ).sort((a, b) => (a as string).localeCompare(b as string)) as (T[keyof T] &
+    string)[];
 }
 
 function createFile() {
