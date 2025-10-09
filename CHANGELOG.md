@@ -1,5 +1,19 @@
 # Changelog
 
+## 0.6.1 (2025-10-09)
+
+## What's Changed
+* chore(ci): update engines and workflows by @LancelotP in https://github.com/LancelotP/lib-address/pull/29
+* fix(Readme): fix typo import by @LancelotP in https://github.com/LancelotP/lib-address/pull/28
+* Fix typo "optionnal" by @bblanchon in https://github.com/LancelotP/lib-address/pull/31
+* chore: update dependencies and migrate to biome by @LancelotP in https://github.com/LancelotP/lib-address/pull/32
+* chore: update package dependencies and lockfile versions by @LancelotP in https://github.com/LancelotP/lib-address/pull/33
+
+## New Contributors
+* @bblanchon made their first contribution in https://github.com/LancelotP/lib-address/pull/31
+
+**Full Changelog**: https://github.com/LancelotP/lib-address/compare/v0.6.0...v0.6.1
+
 ## 0.6.0 (2023-11-09)
 
 ## What's Changed
