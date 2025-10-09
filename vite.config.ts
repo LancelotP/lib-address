@@ -17,6 +17,7 @@ export default defineConfig({
       input: [
         "src/entry-node.ts",
         "src/entry-browser.ts",
+        "src/entry-lite.ts",
         "src/validators/zod.ts",
       ],
       external: [

@@ -53,6 +53,12 @@
       "import": "./dist/entry-node.mjs",
       "require": "./dist/entry-node.cjs"
     },
+    "./lite": {
+      "types": "./dist/entry-lite.d.ts",
+      "browser": "./dist/entry-lite.mjs",
+      "import": "./dist/entry-lite.mjs",
+      "require": "./dist/entry-lite.cjs"
+    },
     "./zod": {
       "types": "./dist/validators/zod.d.ts",
       "import": "./dist/validators/zod.mjs",
