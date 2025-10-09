@@ -98,33 +98,33 @@ export function getCountryFields(countryCode: CountryCode): CountryFields {
     state: requiredFields.state
       ? "required"
       : optionnalFields.state
-      ? "optional"
-      : undefined,
+        ? "optional"
+        : undefined,
     zip: requiredFields.zip
       ? "required"
       : optionnalFields.zip
-      ? "optional"
-      : undefined,
+        ? "optional"
+        : undefined,
     dependentLocality: requiredFields.dependentLocality
       ? "required"
       : optionnalFields.dependentLocality
-      ? "optional"
-      : undefined,
+        ? "optional"
+        : undefined,
     city: requiredFields.city
       ? "required"
       : optionnalFields.city
-      ? "optional"
-      : undefined,
+        ? "optional"
+        : undefined,
     sortingCode: requiredFields.sortingCode
       ? "required"
       : optionnalFields.sortingCode
-      ? "optional"
-      : undefined,
+        ? "optional"
+        : undefined,
     addressLine1: requiredFields.addressLine1
       ? "required"
       : optionnalFields.addressLine1
-      ? "optional"
-      : undefined,
+        ? "optional"
+        : undefined,
     addressLine2: optionnalFields.addressLine1 ? "optional" : undefined,
     addressLine3: optionnalFields.addressLine1 ? "optional" : undefined,
   };

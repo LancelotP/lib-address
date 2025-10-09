@@ -1,4 +1,5 @@
 name: Setup and install with pnpm
+description: Setup and install with pnpm
 
 runs:
   using: composite
