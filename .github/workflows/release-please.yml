@@ -55,8 +55,6 @@ jobs:
       - name: Build
         run: pnpm build
 
-      - run: npm install -g npm
-
       - name: Publish to npm latest
         run: npm publish --provenance --access public
         env:
