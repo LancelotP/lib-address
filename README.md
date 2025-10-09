@@ -438,14 +438,14 @@ const countryFields = getRequiredFields("US");
 ["state", "zip", "city", "addressLine1"]
 ```
 
-#### getOptionnalFields
+#### getOptionalFields
 
-Returns an array of optionnal fields for a country.
+Returns an array of optional fields for a country.
 
 ```ts
-import { getOptionnalFields } from "lib-address";
+import { getOptionalFields } from "lib-address";
 
-const countryFields = getOptionnalFields("US");
+const countryFields = getOptionalFields("US");
 ```
 
 ```json
