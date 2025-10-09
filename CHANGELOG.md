@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.6.3 (2025-10-09)
+
+## What's Changed
+* chore: update GitHub Actions configuration to specify npm registry URL and remove global npm installation step by @LancelotP in https://github.com/LancelotP/lib-address/pull/36
+
+
+**Full Changelog**: https://github.com/LancelotP/lib-address/compare/v0.6.2...v0.6.3
+
 ## 0.6.2 (2025-10-09)
 
 ## What's Changed
