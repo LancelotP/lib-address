@@ -62,7 +62,7 @@ export function formatAddress(
     ? data.sub_regions?.find((sr) => sr.key === cpy.state)
     : null;
 
-  const fmt = useLatin ? data.lfmt ?? data.fmt : data.fmt;
+  const fmt = useLatin ? (data.lfmt ?? data.fmt) : data.fmt;
   const upper = data.upper;
 
   if (!useStateISOCode && stateData) {

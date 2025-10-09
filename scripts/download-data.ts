@@ -52,7 +52,7 @@ export async function getCountrySubRegionData(
     }),
   );
 
-  const foo = {
+  return {
     key: res.data.isoid ?? res.data.key,
     name: {
       default: res.data.name ?? res.data.key,
@@ -65,8 +65,6 @@ export async function getCountrySubRegionData(
     zipex: res.data.zipex,
     sub_regions: sub_regions.length ? sub_regions : undefined,
   };
-
-  return foo;
 }
 
 export async function getCountryData<K extends string>(
