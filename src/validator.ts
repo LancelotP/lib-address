@@ -37,7 +37,7 @@ export function isValidCountrySubdivisionCode(
   if (!sanitizedValue || !isValidCountryCode(sanitizedCountry)) return false;
 
   const data = getCountryData(sanitizedCountry);
-  return !!data.sub_regions?.find((sr) => sr.key === sanitizedValue) ?? false;
+  return !!(data.sub_regions?.find((sr) => sr.key === sanitizedValue) ?? false);
 }
 
 /**
