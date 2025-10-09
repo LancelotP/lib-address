@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.7.0 (2025-10-09)
+
+## What's Changed
+* feat: lite dataset by @LancelotP in https://github.com/LancelotP/lib-address/pull/38
+
+
+**Full Changelog**: https://github.com/LancelotP/lib-address/compare/v0.6.3...v0.7.0
+
 ## 0.6.3 (2025-10-09)
 
 ## What's Changed
