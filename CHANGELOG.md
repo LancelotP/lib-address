@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.6.2 (2025-10-09)
+
+## What's Changed
+* chore: add codecov configuration to ignore scripts directory by @LancelotP in https://github.com/LancelotP/lib-address/pull/34
+
+
+**Full Changelog**: https://github.com/LancelotP/lib-address/compare/v0.6.1...v0.6.2
+
 ## 0.6.1 (2025-10-09)
 
 ## What's Changed
