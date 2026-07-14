@@ -25,6 +25,10 @@ describe("entry-lite", () => {
       expect(frData).toHaveProperty("zip");
       expect(frData).toHaveProperty("require");
       expect(frData).toHaveProperty("sub_regions");
+      expect(frData).toHaveProperty("locality_name_type");
+      expect(frData).toHaveProperty("state_name_type");
+      expect(frData).toHaveProperty("sublocality_name_type");
+      expect(frData).toHaveProperty("zip_name_type");
       expect(Array.isArray(frData?.sub_regions)).toBe(true);
     });
 

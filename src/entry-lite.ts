@@ -4,7 +4,11 @@ import {
   r as subRegions,
 } from "../countries/lite.json";
 import type { CountryCode } from "./generated";
-import { type AbbrObject, convertAbbrStringToObject } from "./utils";
+import {
+  type AbbrObject,
+  convertAbbrStringToObject,
+  decodeNameType,
+} from "./utils";
 
 type SubRegionData = {
   key: string;
@@ -17,11 +21,22 @@ export function getCountryData(countryCode: string | CountryCode) {
 
   if (index === -1) return null;
 
+  const {
+    state_name_type,
+    locality_name_type,
+    sublocality_name_type,
+    zip_name_type,
+  } = decodeNameType(dataFormats[index][3]);
+
   return {
     code: countryCodes[index],
     lfmt: dataFormats[index][0],
     zip: dataFormats[index][1],
     require: dataFormats[index][2],
+    state_name_type,
+    locality_name_type,
+    sublocality_name_type,
+    zip_name_type,
     sub_regions: (subRegions[index] as [string, string, string?][]).map(
       (region) => ({
         key: region[0],

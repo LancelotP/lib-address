@@ -3,6 +3,7 @@ import { dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import type { CountryCode } from "../src/generated.ts";
 import type { CountryData } from "../src/types.ts";
+import { encodeNameType } from "../src/utils.ts";
 import { getCountryData } from "./download-data.ts";
 import { generateTypes } from "./generate-type.ts";
 
@@ -24,7 +25,7 @@ export async function persistCountries(dict: Record<string, CountryData>) {
 export async function persistLiteData(dict: Record<CountryCode, CountryData>) {
   const compactData: {
     c: string[]; // country codes
-    d: [string | null, string | null, string | null][]; // [fmt, zip, require] - all optional
+    d: [string | null, string | null, string | null, string | null][]; // [fmt, zip, require, name_type] - all optional
     r: [string, string, string?][][]; // [key, name, zip?][] by country index
   } = {
     c: [],
@@ -38,6 +39,7 @@ export async function persistLiteData(dict: Record<CountryCode, CountryData>) {
       country.lfmt ?? country.fmt ?? null,
       country.zip ?? null,
       country.require ?? null,
+      encodeNameType(country),
     ]);
 
     compactData.r.push(
