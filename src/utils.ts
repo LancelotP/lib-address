@@ -38,9 +38,9 @@ export function convertAbbrStringToObject(value: string): AbbrObject {
 export function encodeNameType(data: CountryData): string | null {
   let n = 0;
   n |= stateNameType.indexOf(data.state_name_type);
-  n |= localityNameType.indexOf(data.locality_name_type) << 4;
-  n |= sublocalityNameType.indexOf(data.sublocality_name_type) << 8;
-  n |= zipNameType.indexOf(data.zip_name_type) << 12;
+  n |= zipNameType.indexOf(data.zip_name_type) << 4;
+  n |= localityNameType.indexOf(data.locality_name_type) << 8;
+  n |= sublocalityNameType.indexOf(data.sublocality_name_type) << 12;
   if (n === 0) return null;
   return n.toString(36);
 }
@@ -58,9 +58,9 @@ export function decodeNameType(
   const n = Number.parseInt(input, 36);
   return {
     state_name_type: stateNameType[n & 0xf],
-    locality_name_type: localityNameType[(n >> 4) & 0xf],
-    sublocality_name_type: sublocalityNameType[(n >> 8) & 0xf],
-    zip_name_type: zipNameType[(n >> 12) & 0xf],
+    zip_name_type: zipNameType[(n >> 4) & 0xf],
+    locality_name_type: localityNameType[(n >> 8) & 0xf],
+    sublocality_name_type: sublocalityNameType[(n >> 12) & 0xf],
   };
 }
 
