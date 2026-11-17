@@ -9,7 +9,6 @@ import {
 import { MissingFieldError } from "../errors/missing-field.error";
 import { AddressValidationError } from "../errors/missing-fields.error";
 import type { Address } from "../generated";
-import type { AddressInput as LibAddressInput } from "../types";
 import { isValidCountryCode, validateAddress } from "../validator";
 
 export type AddressSchemaParams = {
@@ -50,7 +49,7 @@ const buildSchema = (error: AddressSchemaParams["error"]) =>
       }
 
       try {
-        validateAddress(val as LibAddressInput);
+        validateAddress({ ...val, country: val.country });
       } catch (err) {
         if (err instanceof CountryMissingError) {
           throw err;
@@ -104,12 +103,9 @@ const buildSchema = (error: AddressSchemaParams["error"]) =>
 type RawAddressSchema = ReturnType<typeof buildSchema>;
 
 export const getAddressSchema = (params?: AddressSchemaParams) =>
-  // superRefine can no longer narrow the output type in zod v4,
-  // so we assert it: the refinement guarantees the output is an `Address`.
-  buildSchema(params?.error) as unknown as z.ZodType<
-    Address,
-    z.input<RawAddressSchema>
-  >;
+  // superRefine can't narrow the output type in zod v4. The cast is checked
+  // by TS (no `unknown`): the refinement guarantees the output is an `Address`.
+  buildSchema(params?.error) as z.ZodType<Address, z.input<RawAddressSchema>>;
 
 export type AddressInput = z.infer<ReturnType<typeof getAddressSchema>>;
 
@@ -144,6 +140,11 @@ export function isZodLibAddressIssue<
   T extends { code: string; params?: unknown },
 >(issue: T): issue is T & { code: "custom"; params: LibAddressIssueParams } {
   if (issue.code !== "custom") return false;
-  const params = issue.params as Record<string, unknown> | undefined;
-  return params?.__isLibAddressIssue__ === true;
+  const { params } = issue;
+  return (
+    typeof params === "object" &&
+    params !== null &&
+    "__isLibAddressIssue__" in params &&
+    params.__isLibAddressIssue__ === true
+  );
 }
