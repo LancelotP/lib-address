@@ -21,7 +21,10 @@ export default defineConfig({
         "src/validators/zod.ts",
       ],
       external: [
-        ...Object.keys(pkg.optionalDependencies), // don't bundle dependencies
+        // don't bundle peer dependencies (nor their subpaths, e.g. "zod/v4")
+        ...Object.keys(pkg.peerDependencies).map(
+          (dep) => new RegExp(`^${dep}(/.*)?$`),
+        ),
         /^node:.*/, // don't bundle built-in Node.js modules (use protocol imports!)
       ],
       output: [
