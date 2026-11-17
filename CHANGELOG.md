@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.7.1 (2026-11-17)
+
+## What's Changed
+* fix: make zod an optional peer dependency by @LancelotP in https://github.com/LancelotP/lib-address/pull/44
+
+
+**Full Changelog**: https://github.com/LancelotP/lib-address/compare/v0.7.0...v0.7.1
+
 ## 0.7.0 (2025-10-09)
 
 ## What's Changed
