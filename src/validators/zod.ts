@@ -12,6 +12,10 @@ import { AddressValidationError } from "../errors/missing-fields.error";
 import type { Address } from "../generated";
 import { isValidCountryCode, validateAddress } from "../validator";
 
+/**
+ * @deprecated `lib-address/zod` uses the Zod 3 API. Use `lib-address/zod/v4` instead.
+ * @see https://github.com/LancelotP/lib-address#migrating-from-lib-addresszod-to-lib-addresszodv4
+ */
 export const getAddressSchema = (
   params?: Parameters<(typeof z)["object"]>[1],
 ) => {
@@ -108,8 +112,16 @@ export const getAddressSchema = (
     });
 };
 
+/**
+ * @deprecated `lib-address/zod` uses the Zod 3 API. Use `lib-address/zod/v4` instead.
+ * @see https://github.com/LancelotP/lib-address#migrating-from-lib-addresszod-to-lib-addresszodv4
+ */
 export type AddressInput = z.infer<ReturnType<typeof getAddressSchema>>;
 
+/**
+ * @deprecated `lib-address/zod` uses the Zod 3 API. Use `lib-address/zod/v4` instead.
+ * @see https://github.com/LancelotP/lib-address#migrating-from-lib-addresszod-to-lib-addresszodv4
+ */
 export function isZodLibAddressIssue(
   issue: z.ZodIssueOptionalMessage,
 ): issue is ZodLibAddressIssue {
@@ -118,6 +130,10 @@ export function isZodLibAddressIssue(
   return true;
 }
 
+/**
+ * @deprecated `lib-address/zod` uses the Zod 3 API. Use `lib-address/zod/v4` instead.
+ * @see https://github.com/LancelotP/lib-address#migrating-from-lib-addresszod-to-lib-addresszodv4
+ */
 export type ZodLibAddressIssue = Omit<ZodCustomIssue, "params"> & {
   params: {
     __isLibAddressIssue__: true;
