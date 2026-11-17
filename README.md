@@ -652,12 +652,12 @@ const countryFields = getCountryStates("US");
 This library exports a [Zod](https://zod.dev/) schema for validating addresses.
 
 > [!NOTE]
-> The Zod schema is not exported by default in order to reduce the size of the package. If you want to use it, you need to import it from `lib-address/zod`.
+> The Zod schema is not exported by default in order to reduce the size of the package. If you want to use it, you need to import it from `lib-address/zod/v4`.
 > Zod is an optional peer dependency of this library and needs to be installed separately (`zod@^3.25.0 || ^4.0.0`).
-> The schema is built with the Zod 3 API (`zod/v3`): if you use Zod 4, compose it with `import { z } from "zod/v3"`.
+> On Zod 3.25+, compose the schema with `import { z } from "zod/v4"`.
 
 ```ts
-import { getAddressSchema } from "lib-address/zod";
+import { getAddressSchema } from "lib-address/zod/v4";
 ```
 
 ```ts
@@ -675,6 +675,101 @@ function validateForm(data: unknown) {
 
 > [!WARNING]
 > The Zod schema will throw if you attempt to validate a country that is not registered. (Only applicable in browser environment)
+
+### Custom error messages
+
+```ts
+import { getAddressSchema, isZodLibAddressIssue } from "lib-address/zod/v4";
+
+const schema = getAddressSchema({
+  error: (issue) => {
+    if (issue.code === "invalid_type" && issue.input === undefined) {
+      return "This field is required";
+    }
+
+    if (isZodLibAddressIssue(issue)) {
+      switch (issue.params.type) {
+        case "InvalidZipError":
+          return "Invalid zip code";
+        case "InvalidZipSubRegionError":
+          return "Invalid zip code for this state";
+        case "InvalidStateError":
+          return "Invalid state";
+        case "InvalidCountryError":
+          return "Invalid country";
+      }
+    }
+
+    return undefined; // fallback to Zod's default message
+  },
+});
+```
+
+### Migrating from `lib-address/zod` to `lib-address/zod/v4`
+
+> [!WARNING]
+> `lib-address/zod` (Zod 3 API) is deprecated and will be removed in a future major release.
+> Zod 3 is ["functionally end-of-life"](https://zod.dev/library-authors): it only receives security fixes and unambiguous bug fixes, and new libraries should target Zod 4.
+> Some fixes only ship in Zod 4, e.g. [GHSA-mrhx-c7xc-m3w5](https://github.com/advisories/GHSA-mrhx-c7xc-m3w5) (first patched in `zod@4.6.6`).
+
+**1. Imports**
+
+```diff
+-import { z } from "zod";      // zod 3.x
++import { z } from "zod/v4";   // zod 3.25+ (or "zod" on zod 4)
+-import { getAddressSchema, isZodLibAddressIssue } from "lib-address/zod";
++import { getAddressSchema, isZodLibAddressIssue } from "lib-address/zod/v4";
+```
+
+The address schema and the schemas you compose it with must use the same Zod API.
+
+**2. Options**
+
+```diff
+-getAddressSchema({ invalid_type_error: "Invalid address" });
++getAddressSchema({ error: "Invalid address" });
+
+-getAddressSchema({ required_error: "Address is required" });
++getAddressSchema({
++  error: (issue) => (issue.input === undefined ? "Address is required" : undefined),
++});
+```
+
+**3. Error maps**
+
+```diff
+-const errorMap: z.ZodErrorMap = (issue, ctx) => {
+-  if (issue.code === z.ZodIssueCode.invalid_type && issue.received === "undefined") {
+-    return { message: "This field is required" };
+-  }
++const error: z.core.$ZodErrorMap = (issue) => {
++  if (issue.code === "invalid_type" && issue.input === undefined) {
++    return "This field is required";
++  }
+
+   if (isZodLibAddressIssue(issue)) {
+     switch (issue.params.type) {
+-      case "InvalidZipError":
+-        return { message: "Invalid zip code" };
++      case "InvalidZipError":
++        return "Invalid zip code";
+       // ...
+     }
+   }
+
+-  return { message: ctx.defaultError };
++  return undefined; // fallback to Zod's default message
+ };
+
+-getAddressSchema({ errorMap });
+-schema.parse(data, { errorMap });
++getAddressSchema({ error });
++schema.parse(data, { error });
+```
+
+**4. Behaviour change**
+
+An invalid zip for a state now raises a single `InvalidZipSubRegionError` issue. `lib-address/zod` also raised an extra `InvalidZipError` issue for the same field.
 
 ## Tests
 

@@ -19,6 +19,7 @@ export default defineConfig({
         "src/entry-browser.ts",
         "src/entry-lite.ts",
         "src/validators/zod.ts",
+        "src/validators/zod-v4.ts",
       ],
       external: [
         // don't bundle peer dependencies (nor their subpaths, e.g. "zod/v4")
