@@ -86,9 +86,15 @@
     "typescript": "^5.9.3",
     "vite": "^7.1.9",
     "vite-plugin-dts": "^4.5.4",
-    "vitest": "^3.2.4"
+    "vitest": "^3.2.4",
+    "zod": "^4.6.7"
   },
-  "optionalDependencies": {
-    "zod": "^3.25.76"
+  "peerDependencies": {
+    "zod": "^3.25.0 || ^4.0.0"
+  },
+  "peerDependenciesMeta": {
+    "zod": {
+      "optional": true
+    }
   }
 }

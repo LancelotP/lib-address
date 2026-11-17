@@ -653,7 +653,8 @@ This library exports a [Zod](https://zod.dev/) schema for validating addresses.
 
 > [!NOTE]
 > The Zod schema is not exported by default in order to reduce the size of the package. If you want to use it, you need to import it from `lib-address/zod`.
-> Zod is not a dependency of this library and needs to be installed separately.
+> Zod is an optional peer dependency of this library and needs to be installed separately (`zod@^3.25.0 || ^4.0.0`).
+> The schema is built with the Zod 3 API (`zod/v3`): if you use Zod 4, compose it with `import { z } from "zod/v3"`.
 
 ```ts
 import { getAddressSchema } from "lib-address/zod";

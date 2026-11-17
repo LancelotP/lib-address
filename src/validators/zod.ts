@@ -1,5 +1,5 @@
-import type { ZodCustomIssue } from "zod";
-import { z } from "zod";
+import type { ZodCustomIssue } from "zod/v3";
+import { z } from "zod/v3";
 
 import { CountryMissingError } from "../errors/country-missing.error";
 import { InvalidStateError } from "../errors/invalid-state.error";

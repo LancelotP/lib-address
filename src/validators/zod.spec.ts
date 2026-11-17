@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { ZodError, z } from "zod";
+import { ZodError, z } from "zod/v3";
 
 import FR from "../../countries/FR.json";
 import US from "../../countries/US.json";
