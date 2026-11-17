@@ -64,6 +64,11 @@
       "import": "./dist/validators/zod.mjs",
       "require": "./dist/validators/zod.cjs"
     },
+    "./zod/v4": {
+      "types": "./dist/validators/zod-v4.d.ts",
+      "import": "./dist/validators/zod-v4.mjs",
+      "require": "./dist/validators/zod-v4.cjs"
+    },
     "./countries/*": "./countries/*",
     "./package.json": "./package.json"
   },

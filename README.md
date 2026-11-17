@@ -652,12 +652,19 @@ const countryFields = getCountryStates("US");
 This library exports a [Zod](https://zod.dev/) schema for validating addresses.
 
 > [!NOTE]
-> The Zod schema is not exported by default in order to reduce the size of the package. If you want to use it, you need to import it from `lib-address/zod`.
+> The Zod schema is not exported by default in order to reduce the size of the package. If you want to use it, you need to import it from `lib-address/zod` (Zod 3 API) or `lib-address/zod/v4` (Zod 4 API).
 > Zod is an optional peer dependency of this library and needs to be installed separately (`zod@^3.25.0 || ^4.0.0`).
-> The schema is built with the Zod 3 API (`zod/v3`): if you use Zod 4, compose it with `import { z } from "zod/v3"`.
+
+| Entry                | Zod API | Compose with                                                          |
+| -------------------- | ------- | --------------------------------------------------------------------- |
+| `lib-address/zod/v4` | Zod 4   | `import { z } from "zod"` (Zod 4) or `import { z } from "zod/v4"` (Zod 3.25+) |
+| `lib-address/zod`    | Zod 3   | `import { z } from "zod"` (Zod 3) or `import { z } from "zod/v3"` (Zod 4) |
+
+> [!TIP]
+> Prefer `lib-address/zod/v4`: Zod 3 is no longer maintained and will not receive security fixes.
 
 ```ts
-import { getAddressSchema } from "lib-address/zod";
+import { getAddressSchema } from "lib-address/zod/v4";
 ```
 
 ```ts
@@ -675,6 +682,41 @@ function validateForm(data: unknown) {
 
 > [!WARNING]
 > The Zod schema will throw if you attempt to validate a country that is not registered. (Only applicable in browser environment)
+
+### Custom error messages (Zod 4)
+
+```ts
+import { getAddressSchema, isZodLibAddressIssue } from "lib-address/zod/v4";
+
+const schema = getAddressSchema({
+  error: (issue) => {
+    if (issue.code === "invalid_type" && issue.input === undefined) {
+      return "This field is required";
+    }
+
+    if (isZodLibAddressIssue(issue)) {
+      switch (issue.params.type) {
+        case "InvalidZipError":
+          return "Invalid zip code";
+        case "InvalidZipSubRegionError":
+          return "Invalid zip code for this state";
+        case "InvalidStateError":
+          return "Invalid state";
+        case "InvalidCountryError":
+          return "Invalid country";
+      }
+    }
+
+    return undefined; // fallback to Zod's default message
+  },
+});
+```
+
+### Differences between `lib-address/zod` and `lib-address/zod/v4`
+
+- Options: `{ errorMap, invalid_type_error, required_error }` → `{ error }` (string or Zod 4 error map).
+- Error maps: `issue.received` → `issue.input`.
+- An invalid zip for a state raises a single `InvalidZipSubRegionError` issue (`lib-address/zod` also raises an extra `InvalidZipError` issue).
 
 ## Tests
 
